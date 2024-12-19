@@ -1,0 +1,47 @@
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.brand-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-links li {
+    padding: 10px 15px;
+}
+
+.sidebar-links li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-links li a:hover {
+    color: #ddd;
+}

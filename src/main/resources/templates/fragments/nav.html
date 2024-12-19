@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<nav th:fragment="nav">
-    <div class="nav-wrapper">
-        <a href="/" class="brand-logo">Socslingo</a>
-        <ul class="nav-links">
-            <li><a>Home</a></li>
-            <li><a>Courses</a></li>
-            <li><a>About</a></li>
-            <li><a>Contact</a></li>
+<nav th:fragment="nav" class="sidebar">
+    <div class="sidebar-wrapper">
+        <div class="logo">
+            <a href="/" class="brand-logo">Socslingo</a>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="/courses"><i class="fas fa-book"></i> Courses</a></li>
+            <li><a href="/about"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="/contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
     </div>
 </nav>
