@@ -4,13 +4,16 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: #ffffff;
     padding-top: 20px;
+    border-right: 2px solid rgb(239, 239, 239);
+
 }
 
 .sidebar-wrapper {
     display: flex;
     flex-direction: column;
+
 }
 
 .logo {
@@ -18,11 +21,7 @@
     margin-bottom: 30px;
 }
 
-.brand-logo {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-}
+
 
 .sidebar-links {
     list-style: none;
@@ -35,7 +34,8 @@
 }
 
 .sidebar-links li a {
-    color: white;
+    font-size: 18px;
+    color: rgb(50, 50, 50);
     text-decoration: none;
     display: flex;
     align-items: center;
