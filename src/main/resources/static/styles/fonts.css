@@ -40,12 +40,12 @@
 
 
 .logo .socslingo {
-    font-family: 'DINRoundPro-Bold';
-    font-size: 36px;
+    font-family: 'DINRoundPro-Black';
+    font-size: 29px;
     color: rgb(255, 198, 92);
     text-decoration: none;
 }
 
-.sidebar .sidebar-wrapper .sidebar-links {
+.sidebar .sidebar-wrapper .sidebar-button {
     font-family: 'DINRoundPro-Black';
 }

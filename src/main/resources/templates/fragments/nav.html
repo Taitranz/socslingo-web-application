@@ -2,46 +2,77 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <nav th:fragment="nav" class="sidebar">
-    <div class="sidebar-wrapper">
-        <div class="logo">
-            <a href="/" class="socslingo">Socslingo</a>
-        </div>
-        <div class="sidebar-links">
-            <div>
-                <a data-toggle="button">
-                    <img src="/svg/learn.svg" alt="Learn Icon" width="20" height="20"> LEARN
-                </a>
-            </div>
-            <div>
-                <a data-toggle="button">
-                    <img src="/svg/home.svg" alt="Home Icon" width="20" height="20"> HOME
-                </a>
-            </div>
-            <div>
-                <a data-toggle="button">
-                    <img src="/svg/characters.svg" alt="Characters Icon" width="20" height="20"> CHARACTERS
-                </a>
-            </div>
-            <div>
-                <a data-toggle="button">
-                    <img src="/svg/create.svg" alt="Create Icon" width="20" height="20"> CREATE
-                </a>
+	<div class="sidebar-wrapper">
+		<div class="logo">
+			<a href="/" class="socslingo">socslingo</a>
+		</div>
+		<div class="navigation-menu">
+			<div class="sidebar-button learn">
+				<a class="link" data-toggle="button">
+					<span class="content">
+						<img src="/svg/learn.svg" alt="Learn Icon" width="20" height="20">
+						<span>
+							LEARN
+						</span>
+					</span>
+				</a>
+			</div>
+			<div class="sidebar-button home">
+				<a class="link" data-toggle="button" >
+					<span class="content">
+						<img src="/svg/home.svg" alt="Home Icon" width="20" height="20">
+						<span>
+							HOME
+						</span>
+					</span>
+				</a>
+			</div>
+			<div class="sidebar-button characters">
+				<a class="link" data-toggle="button">
+					<span class="content">
+						<img src="/svg/characters.svg" alt="Characters Icon" width="20" height="20">
+						<span>
+							CHARACTERS
+						</span>
+					</span>
+				</a>
+			</div>
+			<div class="sidebar-button create">
+				<a class="link" data-toggle="button">
+					<span class="content">
+						<img class="svg" src="/svg/create.svg" alt="Create Icon" width="20" height="20">
+						<span>
+							CREATE
+						</span>
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="sidebar-links bottom-links">
+			<div class="sidebar-button settings">
+				<a class="link" data-toggle="button">
+					<span class="content">
+						<img src="/svg/create.svg" alt="Settings Icon" width="20" height="20">
+						<span>
+							SETTINGS
+						</span>
+					</span>
+				</a>
+			</div>
+			<div class="sidebar-button more">
+				<a class="link" data-toggle="button">
+					<span class="content">
+						<img src="/svg/more.svg" alt="More Icon" width="20" height="20">
+						<span>
+							MORE
+						</span>
+					</span>
+				</a>
+			</div>
+		</div>
 
-            </div>
-        </div>
-        <div class="sidebar-links bottom-links">
-            <div>
-                <a data-toggle="button">
-                    <img src="/svg/settings.svg" alt="Settings Icon" width="20" height="20"> SETTINGS
-                </a>
-            </div>
-            <div>
-                <a data-toggle="button">
-                    <img src="/svg/more.svg" alt="More Icon" width="20" height="20"> MORE
-                </a>
-            </div>
-        </div>
-    </div>
+	</div>
+	</div>
 </nav>
 
 </html>

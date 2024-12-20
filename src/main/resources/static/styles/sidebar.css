@@ -1,77 +1,91 @@
 .sidebar {
     height: 100vh;
-
-    width: 256px;
+    width: 222px;
+    padding-left: 16px;
+    padding-right: 16px;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #ffffff;
-    padding-top: 20px;
-
     border-right: 2px solid rgb(239, 239, 239);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar-wrapper {
+    box-sizing: content-box;
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    padding-bottom: 40px;
+
+    padding-bottom: 20px;
     height: 100%;
 }
 
 .logo {
-    padding: 0 15px;
-    margin-bottom: 30px;
+
+    height: 30px;
+    padding: 32px 0 30px 16px;
+    width: 206px;
+    line-height: 25px;
+
 }
 
 
+.sidebar-button {
 
-.sidebar-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 222px;
     cursor: pointer;
-
+    margin-bottom: 10px;
+    height: 52px;
+    width: 222px;
 }
 
+.sidebar-button .link {
+    height: 52px;
+    width: 222px;
+    background-color: transparent;
+    text-decoration: none;
+}
 
+.sidebar-button .link .content {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 202px;
 
-.sidebar-links div a {
+    border: 2px solid transparent;
+
     font-size: 18px;
     color: rgb(50, 50, 50);
     text-decoration: none;
-    display: flex;
-    height: 52px;
     border-radius: 12px;
-    border: 2px solid transparent;
 
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
+.sidebar-button a span {
+    display: flex;
     align-items: center;
-    margin-bottom: 10px;
 }
 
-
-
-.sidebar-links div a:hover {
-
+.sidebar-button .content:hover {
     background-color: rgb(238, 238, 238);
-
 }
 
-.sidebar-links div a.active {
+.sidebar-button .content.active {
     background-color: rgb(255, 228, 179);
-
     border: 2px solid rgb(255, 219, 153);
-
 }
 
 .bottom-links {
     margin-top: auto;
-
-
-
-
 }
