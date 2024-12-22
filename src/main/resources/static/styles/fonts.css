@@ -47,5 +47,12 @@
 }
 
 .sidebar .sidebar-wrapper .sidebar-button {
-    font-family: 'DINRoundPro-Black';
+    font-family: 'DINRoundPro-Bold';
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    transition: none;
+
 }

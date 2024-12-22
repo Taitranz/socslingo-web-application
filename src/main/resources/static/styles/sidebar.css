@@ -57,11 +57,10 @@
     align-items: center;
     height: 40px;
     width: 202px;
-
+    justify-content: flex-start;
     border: 2px solid transparent;
 
-    font-size: 18px;
-    color: rgb(50, 50, 50);
+    color: rgb(119, 119, 119);
     text-decoration: none;
     border-radius: 12px;
 
@@ -70,6 +69,18 @@
     padding-left: 8px;
     padding-right: 8px;
 
+}
+
+.sidebar-button .link .content .svg {
+    margin-right: 20px;
+    height: 32px;
+
+}
+
+.sidebar-button .link .content .svg .icon {
+    width: 32px;
+        height: 32px;
+    margin-left: 6px;
 }
 
 .sidebar-button a span {

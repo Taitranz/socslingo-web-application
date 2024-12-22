@@ -13,9 +13,11 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .requiresChannel(channel -> channel
-                        .anyRequest().requiresSecure())
+                        .anyRequest()
+                        .requiresSecure())
                 .authorizeHttpRequests(authorize -> authorize
-                        .anyRequest().permitAll())
+                        .anyRequest()
+                        .permitAll())
                 .csrf(csrf -> csrf.disable());
         return http.build();
     }

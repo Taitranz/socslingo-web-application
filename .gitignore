@@ -4,7 +4,6 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-
 ### SSL Keys ###
 *.p12
 *.key
@@ -45,3 +44,4 @@ build/
 
 ### VS Code ###
 .vscode/
+.github/
