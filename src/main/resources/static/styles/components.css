@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'DINRoundPro-Bold';
+    src: url('../fonts/DIN_ROUND/ff-din-round-bold.otf');
+}
+
+.button-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 330px;
+    /* Adjust as needed */
+}
+
+.button-base {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    padding-bottom: 2px;
+    width: 330px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+
+.button-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    width: 330px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+
+.authentication-button{
+   color: white;
+   font-size: 15px;
+   font-family: 'DINRoundPro-Bold';
+   margin-bottom: 2px;
+}
+.button-base {
+    /*Try Brightness*/
+    background-color: rgb(88, 167, 0);
+}
+
+.button-top {
+    background-color: rgb(88, 204, 2);
+    
+    transform: translateY(-4px);
+    /* Translate the button-top 10px down the y-axis */
+}
+
+.button-top:active {
+    transform: translateY(0);
+
+}
+
+.button-top:hover {
+    background-color: rgb(97, 224, 2)
+}
+
+.authentication.form.container form div {
+    margin-bottom: 20px;
+    /* Adjust the value as needed */
+}

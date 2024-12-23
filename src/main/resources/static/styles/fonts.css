@@ -56,3 +56,13 @@
     transition: none;
 
 }
+
+
+.section .content .socslingo {
+    font-family: 'DINRoundPro-Black';
+    font-size: 56px;
+    color: rgb(255, 198, 92);
+    text-decoration: none;
+}
+
+

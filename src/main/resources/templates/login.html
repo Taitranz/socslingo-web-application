@@ -2,31 +2,45 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}">
+
+
 </head>
 
 <body>
-    <div class="split left">
-        <div class="centered">
-            <h1>socslingo</h1>
+    <div class="section left split">
+        <div class="content centered">
+            <picture>
+                <source srcset="/images/threadjump_grey.gif" type="image/gif">
+                <img class="threadjump_grey" src="/images/threadjump_grey.gif" alt="Socslingo Logo">
+            </picture>
+
+            <span class="socslingo">
+                socslingo
+            </span>
         </div>
     </div>
 
     <div class="split right">
         <div class="centered">
-            <h1>Login</h1>
-            <form th:action="@{/login}" method="post">
-                <div>
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username">
-                </div>
-                <div>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password">
-                </div>
-                <div>
-                    <button type="submit">Login</button>
-                </div>
-            </form>
+            <div>
+                <h1>Log in</h1>
+            </div>
+            <div>
+                <form th:action="@{/login}" method="post">
+                    <div>
+                        <input type="text" id="username" name="username" placeholder="Username">
+                    </div>
+                    <div>
+                        <input type="password" id="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="button-container">
+
+                        <div class="button-base"></div>
+                        <button class="button" type="submit" onclick="event.preventDefault();">LOG IN</button>
+                    </div>
+                </form>
+
+            </div>
         </div>
     </div>
 </body>
