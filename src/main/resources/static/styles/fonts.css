@@ -57,12 +57,18 @@
 
 }
 
-
-.section .content .socslingo {
+.authentication__logo--socslingo {
     font-family: 'DINRoundPro-Black';
     font-size: 56px;
     color: rgb(255, 198, 92);
     text-decoration: none;
+    text-align: center;
 }
 
-
+.authentication__title {
+    font-family: 'DINRoundPro-Black';
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    text-align: center;
+    color: rgb(60, 60, 60);
+}

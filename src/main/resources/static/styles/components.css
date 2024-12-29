@@ -3,32 +3,56 @@
     src: url('../fonts/DIN_ROUND/ff-din-round-bold.otf');
 }
 
-.button-container {
+
+
+.authentication__field {
+    margin-bottom: 20px;
+
+}
+
+.authentication__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(229, 229, 229);
+    background-color: rgb(247, 247, 247);
+    color: rgb(178, 178, 178);
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'DINRoundPro-Bold';
+    outline: none;
+
+}
+
+/* BUTTON 1 */
+.authentication__button-container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 46px;
     width: 330px;
-    /* Adjust as needed */
+
 }
 
-.button-base {
+.authentication__button--base {
     position: absolute;
+
     top: 0;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 44px;
+    height: 46px;
     padding-bottom: 2px;
     width: 330px;
     border-radius: 12px;
     outline: none;
     border: none;
+    background-color: rgb(255, 184, 51);
 }
 
-.button-top {
+.authentication__button--top {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,36 +64,83 @@
     border-radius: 12px;
     outline: none;
     border: none;
-}
-
-.authentication-button{
-   color: white;
-   font-size: 15px;
-   font-family: 'DINRoundPro-Bold';
-   margin-bottom: 2px;
-}
-.button-base {
-    /*Try Brightness*/
-    background-color: rgb(88, 167, 0);
-}
-
-.button-top {
-    background-color: rgb(88, 204, 2);
-    
+    background-color: rgb(255, 198, 92);
     transform: translateY(-4px);
-    /* Translate the button-top 10px down the y-axis */
+    cursor: pointer;
+
 }
 
-.button-top:active {
+.authentication__button--top:active {
     transform: translateY(0);
+}
+
+.authentication__button--top:hover {
+    background-color: hsl(39, 100%, 72%)
+}
+
+.authentication__button--text {
+    color: white;
+    font-size: 15px;
+    font-family: 'DINRoundPro-Bold';
+    margin-bottom: 2px;
+}
+
+
+
+/* BUTTON 2 */
+
+.authentication__switcher-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    width: 98px;
 
 }
 
-.button-top:hover {
-    background-color: rgb(97, 224, 2)
+.authentication__switcher--base {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    padding-bottom: 2px;
+    width: 98px;
+    border-radius: 14px;
+    outline: none;
+    border: none;
+    background-color: rgb(229, 229, 229);
 }
 
-.authentication.form.container form div {
-    margin-bottom: 20px;
-    /* Adjust the value as needed */
+.authentication__switcher--top {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+
+    height: 46px;
+    width: 98px;
+    border-radius: 14px;
+    outline: none;
+    border: 2px solid rgb(229, 229, 229);
+    background-color: white;
+    transform: translateY(-4px);
+    cursor: pointer;
+
+}
+
+.authentication__switcher--top:active {
+    transform: translateY(0);
+}
+
+.authentication__switcher--top:hover {
+    background-color: hsl(0, 0%, 98%)
+}
+
+.authentication__switcher--text {
+    color: #f5d78e;
+    font-size: 15px;
+    font-family: 'DINRoundPro-Bold';
+    margin-bottom: 2px;
 }
