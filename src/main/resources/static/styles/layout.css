@@ -1,9 +1,24 @@
 .layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     min-height: 100vh;
+}
+
+nav {
+    grid-column: 1 / 2;
+    grid-row: 1;
 
 }
+
+.main-content {
+    grid-column: 2 / 3;
+
+    grid-row: 1;
+
+
+}
+
 
 .layout__header {
     grid-column: 3;
@@ -26,6 +41,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(244, 244, 244);
+
 }
 
 .layout__split--right {
@@ -37,7 +53,7 @@
 }
 
 .layout__split--left .layout__content {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 .layout__split--right .layout__content {
@@ -47,4 +63,3 @@
 
 
 }
-

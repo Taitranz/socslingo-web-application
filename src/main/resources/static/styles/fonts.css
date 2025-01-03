@@ -39,6 +39,15 @@
 }
 
 
+
+.socslingo--sidebar {
+    font-family: 'DINRoundPro-Black';
+    font-size: 29px;
+    color: rgb(255, 198, 92);
+    text-decoration: none;
+}
+
+
 .logo .socslingo {
     font-family: 'DINRoundPro-Black';
     font-size: 29px;

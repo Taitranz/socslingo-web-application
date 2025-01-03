@@ -18,6 +18,11 @@ public class AccountController {
         return "register";
     }
 
+    @GetMapping("/setting")
+    public String setting() {
+        return "setting";
+    }
+
     @PostMapping("/register")
     public String handleRegistration(@RequestParam String username, @RequestParam String password) {
         return "redirect:/login";

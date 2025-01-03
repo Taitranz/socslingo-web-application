@@ -1,14 +1,17 @@
+@font-face {
+    font-family: 'DINRoundPro-Bold';
+    src: url('../fonts/DIN_ROUND/ff-din-round-bold.otf');
+}
+
 .sidebar {
     height: 100vh;
-    width: 222px;
+    width: 256px;
     padding-left: 16px;
     padding-right: 16px;
-    position: fixed;
-    top: 0;
-    left: 0;
+
     background-color: #ffffff;
     border-right: 2px solid rgb(239, 239, 239);
-    display: flex;
+    display: grid;
     flex-direction: column;
 
 }
@@ -23,80 +26,83 @@
     display: flex;
     flex-direction: column;
 
-    padding-bottom: 20px;
     height: 100%;
 }
 
 .logo {
 
     height: 30px;
-    padding: 32px 0 30px 16px;
+    margin: 32px 0 30px 16px;
     width: 206px;
+
     line-height: 25px;
 
 }
 
-
-.sidebar-button {
-
-    cursor: pointer;
-    margin-bottom: 10px;
-    height: 52px;
-    width: 222px;
-}
-
-.sidebar-button .link {
-    height: 52px;
-    width: 222px;
-    background-color: transparent;
+.socslingo--sidebar {
+    font-family: 'DINRoundPro-Black';
+    font-size: 29px;
+    color: rgb(255, 198, 92);
     text-decoration: none;
-}
 
-.sidebar-button .link .content {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    width: 202px;
-    justify-content: flex-start;
-    border: 2px solid transparent;
-
-    color: rgb(119, 119, 119);
-    text-decoration: none;
-    border-radius: 12px;
-
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 8px;
-    padding-right: 8px;
 
 }
 
-.sidebar-button .link .content .svg {
-    margin-right: 20px;
-    height: 32px;
 
-}
-
-.sidebar-button .link .content .svg .icon {
-    width: 32px;
-        height: 32px;
-    margin-left: 6px;
-}
-
-.sidebar-button a span {
-    display: flex;
-    align-items: center;
-}
-
-.sidebar-button .content:hover {
-    background-color: rgb(238, 238, 238);
-}
-
-.sidebar-button .content.active {
-    background-color: rgb(255, 228, 179);
-    border: 2px solid rgb(255, 219, 153);
-}
 
 .bottom-links {
     margin-top: auto;
+    margin-bottom: 10px;
+}
+
+
+.sidebar__button-container {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    height: 52px;
+
+}
+
+.sidebar__button {
+    display: flex;
+    flex-direction: row;
+    padding: 4px 8px 4px 8px;
+    height: 52px;
+    width: 222px;
+    border-radius: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    background-color: transparent;
+
+}
+
+.sidebar__button:hover {
+    background-color: hsl(39, 100%, 93%);
+    border-color: hsl(39, 100%, 76%);
+
+    cursor: pointer;
+}
+
+.sidebar__button span {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__button--icon {
+    margin-right: 20px;
+    height: 32px;
+}
+
+.sidebar__button--svg {
+    margin-left: 6px;
+    height: 32px;
+}
+
+.sidebar__button--text {
+    font-family: 'DINRoundPro-Bold';
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: rgb(119, 119, 119);
 }

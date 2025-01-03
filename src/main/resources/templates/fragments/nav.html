@@ -4,53 +4,52 @@
 <nav th:fragment="nav" class="sidebar">
     <div class="sidebar-wrapper">
         <div class="logo">
-            <a href="/" class="socslingo">socslingo</a>
+            <a href="/" class="socslingo--sidebar">socslingo</a>
         </div>
         <div class="navigation-menu">
-            <div class="sidebar-button learn">
-                <a class="link" data-toggle="button">
-                    <span class="content">
-                        <div class="svg">
-                            <img class="icon" src="/svg/learn2.svg" alt="Learn Icon">
+            <div class="sidebar__button-container">
+                <a class="sidebar__button" data-toggle="button" href="/home">
+                    <span>
+                        <div class="sidebar__button--icon">
+                            <img class="sidebar__button--svg" src="/svg/learn2.svg" alt="Learn Icon">
                         </div>
-                        <span >
+                        <span class="sidebar__button--text">
                             LEARN
                         </span>
                     </span>
                 </a>
             </div>
-            <div class="sidebar-button home">
-                <a class="link" data-toggle="button">
-                    <span class="content">
-                        <div class="svg">
-                            <img class="icon" src="/svg/home.svg" alt="Home Icon">
+            <div class="sidebar__button-container">
+                <a class="sidebar__button" data-toggle="button">
+                    <span>
+                        <div class="sidebar__button--icon">
+                            <img class="sidebar__button--svg" src="/svg/home.svg" alt="Learn Icon">
                         </div>
-                        <span>
+                        <span class="sidebar__button--text">
                             HOME
                         </span>
                     </span>
                 </a>
             </div>
-            <div class="sidebar-button characters">
-                <a class="link" data-toggle="button">
-                    <span class="content">
-                        <div class="svg">
-                            <img class="icon" src="/svg/characters.svg" alt="Characters Icon">
-
+            <div class="sidebar__button-container">
+                <a class="sidebar__button" data-toggle="button">
+                    <span>
+                        <div class="sidebar__button--icon">
+                            <img class="sidebar__button--svg" src="/svg/characters.svg" alt="Learn Icon">
                         </div>
-                        <span>
+                        <span class="sidebar__button--text">
                             CHARACTERS
                         </span>
                     </span>
                 </a>
             </div>
-            <div class="sidebar-button create">
-                <a class="link" data-toggle="button">
-                    <span class="content">
-                        <div class="svg">
-                            <img class="icon" src="/svg/create.svg" alt="Create Icon">
+            <div class="sidebar__button-container">
+                <a class="sidebar__button" data-toggle="button">
+                    <span>
+                        <div class="sidebar__button--icon">
+                            <img class="sidebar__button--svg" src="/svg/create.svg" alt="Learn Icon">
                         </div>
-                        <span>
+                        <span class="sidebar__button--text">
                             CREATE
                         </span>
                     </span>
@@ -58,27 +57,25 @@
             </div>
         </div>
         <div class="sidebar-links bottom-links">
-            <div class="sidebar-button settings">
-                <a class="link" data-toggle="button">
-                    <span class="content">
-                        <div class="svg">
-                            <img class="icon" src="/svg/create.svg" alt="Settings Icon">
-
+            <div class="sidebar__button-container">
+                <a class="sidebar__button" data-toggle="button" href="/setting">
+                    <span>
+                        <div class="sidebar__button--icon">
+                            <img class="sidebar__button--svg" src="/svg/create.svg" alt="Learn Icon">
                         </div>
-                        <span>
+                        <span class="sidebar__button--text">
                             SETTINGS
                         </span>
                     </span>
                 </a>
             </div>
-            <div class="sidebar-button more">
-                <a class="link" data-toggle="button">
-                    <span class="content">
-                        <div class="svg">
-                            <img class="icon" src="/svg/more.svg" alt="More Icon">
-
+            <div class="sidebar__button-container">
+                <a class="sidebar__button" data-toggle="button">
+                    <span>
+                        <div class="sidebar__button--icon">
+                            <img class="sidebar__button--svg" src="/svg/more.svg" alt="Learn Icon">
                         </div>
-                        <span>
+                        <span class="sidebar__button--text">
                             MORE
                         </span>
                     </span>
@@ -87,7 +84,7 @@
         </div>
 
     </div>
-    </div>
+
 </nav>
 
 </html>
