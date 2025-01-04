@@ -3,7 +3,118 @@
     src: url('../fonts/DIN_ROUND/ff-din-round-bold.otf');
 }
 
+@font-face {
+    font-family: 'DINRoundPro';
+    src: url('../fonts/DIN_ROUND/ff-din-round-regular.otf');
+}
 
+
+:root {
+    /* Width variables */
+    --button-width-sm: 142px;
+    --button-width-md: 222px;
+    --button-width-lg: 332px;
+    --button-width-xl: 100%;
+
+    /* Height variables */
+    --button-height-sm: 44px;
+    --button-height-md: 48px;
+    --button-height-lg: 56px;
+    --button-height-xl: 64px;
+
+    /* Font size variables */
+    --font-size-sm: 15px;
+    --font-size-md: 20px;
+
+    /* Line Height */
+
+    --line-height-sm: 16px;
+    --line-height-md: 24px;
+
+    /* Color variables */
+
+    --grey-500: rgb(119, 119, 119);
+
+    --grey-700: rgb(75, 75, 75);
+}
+
+.heading {
+    font-family: 'DINRoundPro-Bold';
+
+}
+
+.heading--sm {
+    font-size: var(--font-size-sm);
+
+}
+
+.heading--md {
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-md);
+
+}
+
+.heading--grey-500 {
+    color: var(--grey-500);
+}
+
+.heading--grey-700 {
+    color: var(--grey-700);
+}
+
+
+.btn-container {
+    position: relative;
+}
+
+.btn__bottom {
+    position: absolute;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+
+.btn__top {
+    position: absolute;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+
+.btn__top:active {
+    transform: translateY(0);
+}
+
+.btn__text {
+
+    font-size: 15px;
+    font-family: 'DINRoundPro-Bold';
+    margin-bottom: 2px;
+}
+
+.btn__text--white {
+    color: white;
+
+}
+
+.btn__text--red {
+    color: rgb(255, 74, 74);
+}
+
+.btn__text--light-blue {
+    color: rgb(28, 176, 246);
+}
+
+.btn__text--darker-grey {
+    color: rgb(75, 75, 75);
+}
+
+.btn__text--md {
+    font-size: 20px;
+    line-height: 24px;
+}
 
 .authentication__field {
     margin-bottom: 20px;
@@ -98,7 +209,7 @@
     position: absolute;
     height: 46px;
     width: 98px;
-    border-radius: 14px;
+    border-radius: 12px;
     outline: none;
     border: 2px solid rgb(229, 229, 229);
     background-color: white;
@@ -125,88 +236,149 @@
 .settings__panel {
     border-radius: 12px;
     border: 2px solid rgb(229, 229, 229);
+    padding: 24px 16px 24px 16px;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Borderless Button Base */
 
-.borderless__button-container {}
-
-.borderless__button {
+.btn--borderless {
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
-.borderless__button__text {
-    color: white;
-    font-size: 15px;
-    font-family: 'DINRoundPro-Bold';
-    margin-bottom: 2px;
-
-}
-
-.borderless__button__text--red {
-    color: rgb(255, 74, 74);
-    font-size: 15px;
-    font-family: 'DINRoundPro-Bold';
-
-}
 
 
+/* Borderless Button Settings Panel*/
 
-
-
-.small__button-container {
-    position: relative;
-    height: 44px;
-
-    width: 142px;
-}
-
-.small__button__base {
-    position: absolute;
-
-
-    height: 44px;
-
-    width: 142px;
+.btn-container--settings-panel {
+    padding: 8px 30px 8px 30px;
     border-radius: 12px;
-    outline: none;
-    border: none;
-    background-color: rgb(24, 153, 214);
-}
-
-.small__button__top {
-    position: absolute;
-    height: 44px;
-    width: 142px;
-    border-radius: 12px;
-    outline: none;
-    border: none;
-    background-color: rgb(28, 176, 246);
-    transform: translateY(-4px);
     cursor: pointer;
 
 }
 
-.small__button__top:active {
-    transform: translateY(0);
+.btn-container--settings-panel:hover {
+    background-color: rgb(229, 229, 229);
 }
 
-.small__button__top:hover {
+
+
+/* Bordered Button Full Width */
+.btn-container--full-width {
+    position: relative;
+    height: 46px;
+    width: 100%;
+
+}
+
+.btn__bottom--full-width {
+    width: 100%;
+    height: 46px;
+    background-color: rgb(255, 184, 51);
+}
+
+.btn__bottom--bordered-grey {
+    background-color: rgb(229, 229, 229);
+
+}
+
+
+
+.btn__top--full-width {
+    width: 100%;
+    height: 46px;
+}
+
+
+.btn__top--bordered-grey {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(229, 229, 229);
+}
+
+.btn-container--bordered-grey:hover .btn__top--bordered-grey {
+    background-color: rgb(229, 229, 229);
+    border: 2px solid rgb(206, 206, 206);
+
+
+}
+
+.btn-container--bordered-grey:hover .btn__bottom--bordered-grey {
+    background-color: rgb(206, 206, 206);
+}
+
+
+.btn__top--bordered {
+    border: 2px solid rgb(229, 229, 229);
+}
+
+.btn__top--light-blue {
+    background-color: rgb(28, 176, 246);
+}
+
+.btn__bottom--light-blue {
+    background-color: rgb(24, 153, 214);
+}
+
+.btn__container--light-blue:hover .btn__top--light-blue {
     background-color: rgb(31, 194, 255);
 }
 
-.small__button-container:hover .small__button__base {
-    background-color: rgb(26, 168, 235)
+
+.btn__container--light-blue:hover .btn__bottom--light-blue {
+    background-color: rgb(26, 168, 235);
+}
+
+.btn-container--sm {
+    width: var(--button-width-sm);
+    height: var(--button-height-sm);
+}
+
+.btn-container--md {
+    width: var(--button-width-md);
+    height: var(--button-height-md);
+}
+
+.btn-container--lg {
+    width: var(--button-width-lg);
+    height: var(--button-height-lg);
+}
+
+.btn-container--xl {
+    width: var(--button-width-xl);
+    height: var(--button-height-xl);
+}
+
+.btn__bottom--sm,
+.btn__top--sm {
+    width: var(--button-width-sm);
+    height: var(--button-height-sm);
+}
+
+.btn__bottom--md,
+.btn__top--md {
+    width: var(--button-width-md);
+    height: var(--button-height-md);
+}
+
+.btn__bottom--lg,
+.btn__top--lg {
+    width: var(--button-width-lg);
+    height: var(--button-height-lg);
+}
+
+.btn__bottom--xl,
+.btn__top--xl {
+    width: var(--button-width-xl);
+    height: var(--button-height-xl);
 }
 
 
-.small__button__text {
-    color: white;
-    font-size: 15px;
-    font-family: 'DINRoundPro-Bold';
-    margin-bottom: 2px;
-}
+
+
 
 .profile__avatar-container {
     position: relative;
@@ -216,11 +388,27 @@
 
 }
 
-.profile__avatar--setting{
+.profile__avatar--setting {
     border-radius: 50%;
     height: 100px;
     width: 100px;
 
 
     cursor: pointer;
+}
+
+
+.form__field {}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(229, 229, 229);
+    background-color: rgb(247, 247, 247);
+    color: rgb(178, 178, 178);
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'DINRoundPro-Bold';
+    outline: none;
 }

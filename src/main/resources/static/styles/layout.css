@@ -20,21 +20,27 @@ nav {
 
 .main__settings {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2.5fr 1.5fr 1fr;
     grid-column: 2;
-    grid-row: 1;
+    gap: 50px;
+    padding-top: 24px;
 
 
 }
 
-.settings__container{
-    display: grid;
-
-
+.settings__container--first{
+    gap: 16px;
+        display: flex;
+        flex-direction: column;
 
 }
 
-
+.settings__container--second{
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+        
+}
 
 
 

@@ -8,72 +8,96 @@
     <div class="layout--main">
         <nav th:replace="~{fragments/nav :: nav}"></nav>
         <main class="main__settings">
-            <div class="settings__container" style="grid-column: 2;">
+            <!-- FIRST COLUMN -->
+            <div class="settings__container--first" style="grid-column: 2;">
                 <h1 class="settings__title">Profile</h1>
-                <h1 class="settings__heading">Avatar</h1>
+                <h1 class="heading heading--md heading--grey-700">Avatar</h1>
                 <div class="profile__avatar-container">
                     <img class="profile__avatar--setting" src="/images/profile.jpg" alt="Avatar">
                 </div>
-                <h1 class="settings__heading">Name</h1>
-                <div class="authentication__field">
-                    <input class="authentication__input" type="text" id="password" name="password"
-                        placeholder="Taitranz">
+                <h1 class="heading heading--md heading--grey-700">Name</h1>
+                <div class="form__field">
+                    <input class="form__input" type="text" id="password" name="password" placeholder="Taitranz">
                 </div>
-                <h1 class="settings__heading">Username</h1>
-                <div class="authentication__field">
-                    <input class="authentication__input" type="text" id="password" name="password"
-                        placeholder="Taitranz">
+                <h1 class="heading heading--md heading--grey-700">Username</h1>
+                <div class="form__field">
+                    <input class="form__input" type="text" id="password" name="password" placeholder="Taitranz">
                 </div>
-                <h1 class="settings__heading">Email</h1>
-                <div class="authentication__field">
-                    <input class="authentication__input" type="email" id="password" name="password"
+                <h1 class="heading heading--md heading--grey-700">Email</h1>
+                <div class="form__field">
+                    <input class="form__input" type="email" id="password" name="password"
                         placeholder="taitranz@ymail.com">
                 </div>
-                <h1 class="settings__heading">Current Password</h1>
-                <div class="authentication__field">
-                    <input class="authentication__input" type="password" id="password" name="password" placeholder="">
+                <h1 class="heading heading--md heading--grey-700">Current Password</h1>
+                <div class="form__field">
+                    <input class="form__input" type="password" id="password" name="password" placeholder="">
                 </div>
-                <h1 class="settings__heading">New Password</h1>
-                <div class="authentication__field">
-                    <input class="authentication__input" type="password" id="password" name="password" placeholder="">
+                <h1 class="heading heading--md heading--grey-700">New Password</h1>
+                <div class="form__field">
+                    <input class="form__input" type="password" id="password" name="password" placeholder="">
                 </div>
-                <div class="small__button-container">
-                    <div class="small__button__base"></div>
-                    <button class="small__button__top" type="submit" onclick="event.preventDefault();">
-                        <span class="small__button__text">
+                <div class="btn-container btn__container--light-blue btn-container--sm">
+                    <div class="btn__bottom btn__bottom--light-blue btn__bottom--sm"></div>
+                    <button class="btn__top btn__top--light-blue btn__top--sm" type="submit"
+                        onclick="event.preventDefault();">
+                        <span class="btn__text btn__text--white">
                             SAVE CHANGES
                         </span>
                     </button>
                 </div>
-                <div class="borderless__button-container">
-                    <button class="borderless__button" type="submit" onclick="event.preventDefault();">
-                        <span class="borderless__button__text--red">
+                <div class="btn-container">
+                    <button class="btn--borderless" type="submit" onclick="event.preventDefault();">
+                        <span class="btn__text btn__text--red">
                             DELETE MY ACCOUNT
                         </span>
                     </button>
                 </div>
             </div>
-            <div class="settings__container" style="grid-column: 3;">
-                <!-- Additional content for the second column -->
-                <h1>COLUMN 2</h1>
+            <!-- SECOND COLUMN -->
+            <div class="settings__container--second" style="grid-column: 3;">
                 <div class="settings__panel">
-                    <h1>Account</h1>
-                    <div>
-                        Profile Settings
-                    </div>
-                    <div class="settings_panel__button">
-                        <button class="settings_panel__button--top" type="submit" onclick="event.preventDefault();">
-                            <span class="settings_panel__button--text">
-                                SAVE CHANGES
+                    <h1 class="settings__panel__heading">Account</h1>
+                    <div class="btn-container--settings-panel">
+                        <button class="btn--borderless" type="submit" onclick="event.preventDefault();">
+                            <span class="btn__text btn__text--md btn__text--darker-grey">
+                                Perferences
                             </span>
                         </button>
                     </div>
-
+                    <div class="btn-container--settings-panel">
+                        <button class="btn--borderless" type="submit" onclick="event.preventDefault();">
+                            <span class="btn__text btn__text--md btn__text--darker-grey">
+                                Profile
+                            </span>
+                        </button>
+                    </div>
+                    <div class="btn-container--settings-panel">
+                        <button class="btn--borderless" type="submit" onclick="event.preventDefault();">
+                            <span class="btn__text btn__text--md btn__text--darker-grey">
+                                Courses
+                            </span>
+                        </button>
+                    </div>
+                    <div class="btn-container--settings-panel">
+                        <button class="btn--borderless" type="submit" onclick="event.preventDefault();">
+                            <span class="btn__text btn__text--md btn__text--darker-grey">
+                                Social accounts
+                            </span>
+                        </button>
+                    </div>
+                    <div class="btn-container--settings-panel">
+                        <button class="btn--borderless" type="submit" onclick="event.preventDefault();">
+                            <span class="btn__text btn__text--md btn__text--darker-grey">
+                                Privacy settings
+                            </span>
+                        </button>
+                    </div>
                 </div>
-                <div class="authentication__button-container">
-                    <div class="authentication__button--base"></div>
-                    <button class="authentication__button--top" type="submit" onclick="event.preventDefault();">
-                        <span class="authentication__button--text">
+                <div class="btn-container btn-container--bordered-grey btn-container--full-width">
+                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--full-width"></div>
+                    <button class="btn__top btn__top--bordered-grey btn__top--full-width" type="submit"
+                        onclick="event.preventDefault();">
+                        <span class="btn__text btn__text--light-blue">
                             LOGOUT
                         </span>
                     </button>
