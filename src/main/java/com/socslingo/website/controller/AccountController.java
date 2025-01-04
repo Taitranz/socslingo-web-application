@@ -23,6 +23,8 @@ public class AccountController {
         return "settings";
     }
 
+
+
     @PostMapping("/register")
     public String handleRegistration(@RequestParam String username, @RequestParam String password) {
         return "redirect:/login";
