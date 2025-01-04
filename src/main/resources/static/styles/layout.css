@@ -1,4 +1,11 @@
-.layout {
+.layout--main {
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    grid-template-rows: auto;
+    min-height: 100vh;
+}
+
+.layout--authentication {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -11,13 +18,25 @@ nav {
 
 }
 
-.main-content {
-    grid-column: 2 / 3;
-
+.main__settings {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-column: 2;
     grid-row: 1;
 
 
 }
+
+.settings__container{
+    display: grid;
+
+
+
+}
+
+
+
+
 
 
 .layout__header {

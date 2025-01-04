@@ -12,7 +12,7 @@
     background-color: #ffffff;
     border-right: 2px solid rgb(239, 239, 239);
     display: grid;
-    flex-direction: column;
+    position: fixed;
 
 }
 

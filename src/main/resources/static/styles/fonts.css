@@ -81,3 +81,19 @@
     text-align: center;
     color: rgb(60, 60, 60);
 }
+
+.settings__title {
+    font-family: 'DINRoundPro-Bold';
+    font-size: 32px;
+    line-height: 36px;
+    color: rgb(75, 75, 75);
+    margin: 0;
+}
+
+.settings__heading {
+    font-family: 'DINRoundPro-Bold';
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(75, 75, 75);
+    margin: 0;
+}

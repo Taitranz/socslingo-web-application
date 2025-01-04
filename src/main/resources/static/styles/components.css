@@ -24,7 +24,6 @@
 
 }
 
-/* BUTTON 1 */
 .authentication__button-container {
     position: relative;
     height: 46px;
@@ -121,4 +120,107 @@
     font-size: 15px;
     font-family: 'DINRoundPro-Bold';
     margin-bottom: 2px;
+}
+
+.settings__panel {
+    border-radius: 12px;
+    border: 2px solid rgb(229, 229, 229);
+}
+
+
+.borderless__button-container {}
+
+.borderless__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.borderless__button__text {
+    color: white;
+    font-size: 15px;
+    font-family: 'DINRoundPro-Bold';
+    margin-bottom: 2px;
+
+}
+
+.borderless__button__text--red {
+    color: rgb(255, 74, 74);
+    font-size: 15px;
+    font-family: 'DINRoundPro-Bold';
+
+}
+
+
+
+
+
+.small__button-container {
+    position: relative;
+    height: 44px;
+
+    width: 142px;
+}
+
+.small__button__base {
+    position: absolute;
+
+
+    height: 44px;
+
+    width: 142px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: rgb(24, 153, 214);
+}
+
+.small__button__top {
+    position: absolute;
+    height: 44px;
+    width: 142px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: rgb(28, 176, 246);
+    transform: translateY(-4px);
+    cursor: pointer;
+
+}
+
+.small__button__top:active {
+    transform: translateY(0);
+}
+
+.small__button__top:hover {
+    background-color: rgb(31, 194, 255);
+}
+
+.small__button-container:hover .small__button__base {
+    background-color: rgb(26, 168, 235)
+}
+
+
+.small__button__text {
+    color: white;
+    font-size: 15px;
+    font-family: 'DINRoundPro-Bold';
+    margin-bottom: 2px;
+}
+
+.profile__avatar-container {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+}
+
+.profile__avatar--setting{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+
+
+    cursor: pointer;
 }

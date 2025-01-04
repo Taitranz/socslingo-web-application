@@ -18,9 +18,9 @@ public class AccountController {
         return "register";
     }
 
-    @GetMapping("/setting")
+    @GetMapping("/settings")
     public String setting() {
-        return "setting";
+        return "settings";
     }
 
     @PostMapping("/register")
