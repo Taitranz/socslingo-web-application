@@ -1,10 +1,12 @@
-package com.socslingo.website.controller;
+package com.socslingo.website.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import com.socslingo.website.model.Flashcard;
-import com.socslingo.website.repository.FlashcardRepository;
+
+import com.socslingo.website.models.Flashcard;
+import com.socslingo.website.repositories.FlashcardRepository;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,4 +1,4 @@
-package com.socslingo.website.model;
+package com.socslingo.website.models;
 
 import jakarta.persistence.*;
 
