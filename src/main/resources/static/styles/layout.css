@@ -28,18 +28,39 @@ nav {
 
 }
 
-.settings__container--first{
-    gap: 16px;
-        display: flex;
-        flex-direction: column;
 
+.main--create-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 2;
+    gap: 50px;
+
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
-.settings__container--second{
+.create__container--main {
+    grid-column: 1;
+    height: 100%;
+
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 12px;
+}
+
+.settings__container--first {
     gap: 16px;
     display: flex;
     flex-direction: column;
-        
+
+}
+
+.settings__container--second {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 
