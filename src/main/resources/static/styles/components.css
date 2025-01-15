@@ -1,12 +1,17 @@
 /* Font Definitions */
+
+
+
 @font-face {
-    font-family: 'DINRoundPro-Bold';
-    src: url('../fonts/DIN_ROUND/ff-din-round-bold.otf');
+    font-family: 'din-round';
+    src: url('../fonts/DIN_NEW/DIN-ROUND.woff2');
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: 'DINRoundPro';
-    src: url('../fonts/DIN_ROUND/ff-din-round-regular.otf');
+    font-family: 'din-round';
+    src: url('../fonts/DIN_NEW/DIN-ROUND-BOLD.woff2');
+    font-weight: bold;
 }
 
 /* CSS Variables */
@@ -35,16 +40,23 @@
 
     /* Color variables */
     --grey-10: rgb(250, 250, 250);
-    --grey-500: rgb(119, 119, 119);
-    --grey-700: rgb(75, 75, 75);
+    --grey-100: rgb(229, 229, 229);
+    --grey-175: rgb(175, 175, 175);
+    --grey-119: rgb(119, 119, 119);
+    --grey-75: rgb(75, 75, 75);
     --yellow-100: rgb(245, 215, 142);
     --yellow-400: rgb(255, 198, 92);
     --yellow-500: rgb(255, 184, 51);
+
+
+    --blue-400: rgb(28, 176, 246);
+
 }
 
 /* Headings */
 .heading {
-    font-family: 'DINRoundPro-Bold';
+    font-family: 'din-round';
+    font-weight: bold;
 }
 
 .heading--sm {
@@ -56,17 +68,29 @@
     line-height: var(--line-height-md);
 }
 
-.heading--grey-500 {
-    color: var(--grey-500);
+.heading--grey--119 {
+    color: var(--grey-119);
 }
 
-.heading--grey-700 {
-    color: var(--grey-700);
+.heading--grey-75 {
+    color: var(--grey-75);
+}
+
+
+.heading--panel {
+    margin: 0 30px 16px 30px;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgb(119, 119, 119);
 }
 
 /* Buttons */
 .btn-container {
     position: relative;
+}
+
+.btn {
+    cursor: pointer;
 }
 
 .btn__bottom {
@@ -91,8 +115,9 @@
 
 .btn__text {
     font-size: 15px;
-    font-family: 'DINRoundPro-Bold';
-    margin-bottom: 2px;
+    font-family: 'din-round';
+    font-weight: bold;
+
 }
 
 .btn__text--white {
@@ -108,7 +133,7 @@
 }
 
 .btn__text--darker-grey {
-    color: rgb(75, 75, 75);
+    color: var(--grey-75);
 }
 
 .btn__text--md {
@@ -268,6 +293,22 @@
     background-color: rgb(229, 229, 229);
 }
 
+.btn--panel {
+    border: none;
+    background-color: transparent;
+
+}
+
+.btn-container--panel {
+    padding: 8px 30px 8px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn-container--panel:hover {
+    background-color: rgb(229, 229, 229);
+}
+
 .btn--borderless {
     border: none;
     background-color: transparent;
@@ -288,11 +329,25 @@
     color: rgb(178, 178, 178);
     border-radius: 12px;
     font-size: 16px;
-    font-family: 'DINRoundPro-Bold';
+    font-family: 'din-round';
+    font-weight: bold;
     outline: none;
 }
 
+.container--panel {
+    border-radius: 12px;
+    border: 2px solid rgb(229, 229, 229);
+    padding: 24px 16px 24px 16px;
+    flex-direction: column;
+}
 
+.panel-container {
+    border-radius: 12px;
+    border: 2px solid rgb(229, 229, 229);
+    padding: 24px 16px 24px 16px;
+    display: flex;
+
+}
 
 /* Settings Panel */
 .settings__panel {
@@ -331,6 +386,117 @@
     color: rgb(178, 178, 178);
     border-radius: 12px;
     font-size: 16px;
-    font-family: 'DINRoundPro-Bold';
+    font-family: 'din-round';
+    font-weight: bold;
     outline: none;
+}
+
+
+.container {
+    display: flex;
+
+
+}
+
+.container--row {
+    flex-direction: row;
+}
+
+.container--col {
+    flex-direction: column;
+}
+
+.container__goal-tracking {
+    padding: 24px;
+
+    height: 320px;
+    border-radius: 16px;
+    background-color: var(--blue-400);
+}
+
+
+.container--align-center {
+
+    align-items: center;
+
+}
+
+.container--progress-bar {
+    background-color: white;
+    margin-top: auto;
+    height: 82px;
+    padding: 16px 20px 6px 24px;
+    border-radius: 12px;
+}
+
+.month-display__text {
+    font-family: 'din-round';
+    font-weight: bold;
+
+    font-size: 17px;
+    color: var(--blue-400);
+    background-color: white;
+    border-radius: 6px;
+    line-height: 20px;
+
+    width: fit-content;
+    padding: 5px 8px 5px 8px;
+}
+
+.goal-tracking-days-left__text {
+    font-family: 'din-round';
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    line-height: 20px;
+
+}
+
+.goal-tracking__heading {
+    font-family: 'din-round';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+    color: white;
+}
+
+.progress-bar__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+.progress-bar__container--goal-tracking {
+
+    background-color: var(--grey-100);
+    height: 25px;
+    border-radius: 25px;
+
+
+}
+
+.progress-bar__text {
+    font-family: 'din-round';
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.progress-bar__text--goal-tracking {
+    font-size: 14px;
+    color: var(--grey-175);
+}
+
+.progress-bar__heading {
+    font-family: 'din-round';
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 26px;
+    color: var(--grey-75);
+
 }

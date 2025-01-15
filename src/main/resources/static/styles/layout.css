@@ -18,9 +18,9 @@ nav {
 
 }
 
-.main__settings {
+.main__layout {
     display: grid;
-    grid-template-columns: 1fr 2.5fr 1.5fr 1fr;
+    grid-template-columns: 1fr 2fr 1.25fr 1fr;
     grid-column: 2;
     gap: 50px;
     padding-top: 24px;
@@ -28,7 +28,28 @@ nav {
 
 }
 
+.main__container {
 
+    grid-column: 2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main__container--settings{
+    gap: 16px;
+}
+.secondary__container {
+    grid-column: 3;
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.secondary__container--settings {
+    gap: 16px;
+}
 .main--create-page {
     display: grid;
     grid-template-columns: 1fr;
@@ -48,21 +69,6 @@ nav {
     border: 2px solid rgb(238, 238, 238);
     border-radius: 12px;
 }
-
-.settings__container--first {
-    gap: 16px;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.settings__container--second {
-    gap: 16px;
-    display: flex;
-    flex-direction: column;
-
-}
-
 
 
 

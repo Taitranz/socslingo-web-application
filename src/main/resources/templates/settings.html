@@ -7,32 +7,32 @@
 <body>
     <div class="layout--main">
         <nav th:replace="~{fragments/nav :: nav}"></nav>
-        <main class="main__settings">
+        <main class="main__layout">
             <!-- FIRST COLUMN -->
-            <div class="settings__container--first" style="grid-column: 2;">
+            <div class="main__container main__container--settings" style="grid-column: 2;">
                 <h1 class="settings__title">Profile</h1>
-                <h1 class="heading heading--md heading--grey-700">Avatar</h1>
+                <h1 class="heading heading--md heading--grey-75">Avatar</h1>
                 <div class="profile__avatar-container">
                     <img class="profile__avatar--setting" src="/images/profile.jpg" alt="Avatar">
                 </div>
-                <h1 class="heading heading--md heading--grey-700">Name</h1>
+                <h1 class="heading heading--md heading--grey-75">Name</h1>
                 <div class="form__field">
                     <input class="form__input" type="text" id="password" name="password" placeholder="Taitranz">
                 </div>
-                <h1 class="heading heading--md heading--grey-700">Username</h1>
+                <h1 class="heading heading--md heading--grey-75">Username</h1>
                 <div class="form__field">
                     <input class="form__input" type="text" id="password" name="password" placeholder="Taitranz">
                 </div>
-                <h1 class="heading heading--md heading--grey-700">Email</h1>
+                <h1 class="heading heading--md heading--grey-75">Email</h1>
                 <div class="form__field">
                     <input class="form__input" type="email" id="password" name="password"
                         placeholder="taitranz@ymail.com">
                 </div>
-                <h1 class="heading heading--md heading--grey-700">Current Password</h1>
+                <h1 class="heading heading--md heading--grey-75">Current Password</h1>
                 <div class="form__field">
                     <input class="form__input" type="password" id="password" name="password" placeholder="">
                 </div>
-                <h1 class="heading heading--md heading--grey-700">New Password</h1>
+                <h1 class="heading heading--md heading--grey-75">New Password</h1>
                 <div class="form__field">
                     <input class="form__input" type="password" id="password" name="password" placeholder="">
                 </div>
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <!-- SECOND COLUMN -->
-            <div class="settings__container--second" style="grid-column: 3;">
+            <div class="secondary__container secondary__container--settings" style="grid-column: 3;">
                 <div class="settings__panel">
                     <h1 class="settings__panel__heading">Account</h1>
                     <div class="btn-container--settings-panel">

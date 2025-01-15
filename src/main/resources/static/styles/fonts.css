@@ -1,37 +1,4 @@
-@font-face {
-    font-family: 'DINRoundPro-Bold';
-    src: url('../fonts/DIN_ROUND/ff-din-round-bold.otf');
-}
 
-@font-face {
-    font-family: 'DINRoundPro';
-    src: url('../fonts/DIN_ROUND/ff-din-round-regular.otf');
-}
-
-@font-face {
-    font-family: 'DINRoundPro-Medi';
-    src: url('../fonts/DIN_ROUND/ff-din-round-medium.otf');
-}
-
-@font-face {
-    font-family: 'DINRoundPro-Light';
-    src: url('../fonts/DIN_ROUND/ff-din-round-light.otf');
-}
-
-@font-face {
-    font-family: 'DINRoundPro-Black';
-    src: url('../fonts/DIN_ROUND/ff-din-round-black.otf');
-}
-
-@font-face {
-    font-family: 'DINNextW10-Heavy';
-    src: url('../fonts/DIN_NEXT_W10/DINNextW10Heavy.ttf');
-}
-
-@font-face {
-    font-family: 'DINNextW10-Bold';
-    src: url('../fonts/DIN_NEXT_W10/DINNextW10Bold.ttf');
-}
 
 @font-face {
     font-family: 'Meiryo';
@@ -40,23 +7,40 @@
 
 
 
+@font-face {
+    font-family: 'din-round';
+    src: url('../fonts/DIN_NEW/DIN-ROUND.woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'din-round';
+    src: url('../fonts/DIN_NEW/DIN-ROUND-BOLD.woff2');
+    font-weight: bold;
+}
+
+
+
 .socslingo--sidebar {
-    font-family: 'DINRoundPro-Black';
-    font-size: 29px;
+    font-family: 'din-round';
+        font-weight: 700;
+    font-size: 32px;
     color: rgb(255, 198, 92);
     text-decoration: none;
 }
 
 
 .logo .socslingo {
-    font-family: 'DINRoundPro-Black';
+    font-family: 'din-round';
+        font-weight: 700;
     font-size: 29px;
     color: rgb(255, 198, 92);
     text-decoration: none;
 }
 
 .sidebar .sidebar-wrapper .sidebar-button {
-    font-family: 'DINRoundPro-Bold';
+    font-family: 'din-round';
+        font-weight: 700;
     font-size: 15px;
     font-weight: 500;
     line-height: 25px;
@@ -67,7 +51,8 @@
 }
 
 .socslingo__logo--lg {
-    font-family: 'DINRoundPro-Black';
+    font-family: 'din-round';
+        font-weight: 700;
     font-size: 56px;
     color: rgb(255, 198, 92);
     text-decoration: none;
@@ -77,7 +62,8 @@
 }
 
 .authentication__title {
-    font-family: 'DINRoundPro-Black';
+    font-family: 'din-round';
+        font-weight: 700;
     font-size: 24px;
     margin: 0 0 20px 0;
     text-align: center;
@@ -85,7 +71,8 @@
 }
 
 .settings__title {
-    font-family: 'DINRoundPro-Bold';
+    font-family: 'din-round';
+        font-weight: 700;
     font-size: 32px;
     line-height: 36px;
     color: rgb(75, 75, 75);
@@ -93,7 +80,8 @@
 }
 
 .settings__heading {
-    font-family: 'DINRoundPro-Bold';
+    font-family: 'din-round';
+        font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: rgb(75, 75, 75);
@@ -101,7 +89,8 @@
 }
 
 .settings__panel__heading {
-    font-family: 'DINRoundPro-Bold';
+    font-family: 'din-round';
+        font-weight: 700;
     font-size: 24px;
     line-height: 32px;
     color: rgb(119, 119, 119);

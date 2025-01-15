@@ -16,6 +16,13 @@ public class Flashcard {
         return id;
     }
 
+    public String getFront() {
+        return front;
+    }
+
+    public String getBack() {
+        return back;
+    }
     public void setFront(String front) {
         this.front = front;
     }
