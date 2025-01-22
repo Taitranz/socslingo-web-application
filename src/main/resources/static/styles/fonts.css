@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Meiryo';
-    src: url('../fonts/Meiryo-Bold.ttf');
+    src: url('../fonts/MEIRYO/Meiryo-Bold.ttf');
 }
 
 
@@ -19,7 +19,9 @@
     font-weight: bold;
 }
 
-
+.meiryo {
+    font-family: 'Meiryo';
+}
 
 .socslingo--sidebar {
     font-family: 'din-round';

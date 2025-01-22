@@ -1,3 +1,16 @@
+
+@font-face {
+    font-family: 'din-round';
+    src: url('../fonts/DIN_NEW/DIN-ROUND.woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'din-round';
+    src: url('../fonts/DIN_NEW/DIN-ROUND-BOLD.woff2');
+    font-weight: bold;
+}
+
 *,
 *::before,
 *::after {
@@ -8,4 +21,5 @@
 body, h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
+    font-family: "din-round", sans-serif;
 }
