@@ -19,12 +19,14 @@
     /* Width variables */
     --button-width-xs: 98px;
     --button-width-sm: 142px;
+    --button-width-150: 150px;
     --button-width-md: 222px;
     --button-width-lg: 330px;
     --button-width-xl: 100%;
 
     /* Height variables */
     --button-height-46: 46px;
+    --button-height-50: 50px;
     --button-height-sm: 44px;
     --button-height-md: 46px;
     --button-height-lg: 46px;
@@ -58,6 +60,7 @@
 
 
     --blue-400: rgb(28, 176, 246);
+
 
 }
 
@@ -146,7 +149,7 @@
     color: rgb(255, 74, 74);
 }
 
-.btn__text--light-blue {
+.btn__text--blue-400 {
     color: rgb(28, 176, 246);
 }
 
@@ -208,6 +211,11 @@
     height: var(--button-height-lg);
 }
 
+.btn-container--150 {
+    width: var(--button-width-150);
+    height: var(--button-height-50);
+}
+
 .btn-container--xl {
     width: var(--button-width-xl);
     height: var(--button-height-xl);
@@ -225,6 +233,13 @@
     height: var(--button-height-md);
 }
 
+
+.btn__bottom--150,
+.btn__top--150 {
+    width: var(--button-width-150);
+    height: var(--button-height-50);
+}
+
 .btn__bottom--lg,
 .btn__top--lg {
     width: var(--button-width-lg);
@@ -236,6 +251,7 @@
     width: var(--button-width-xl);
     height: var(--button-height-xl);
 }
+
 
 .btn-container--full-width {
     position: relative;
@@ -473,8 +489,8 @@
 .container--progress-bar {
     background-color: white;
     margin-top: auto;
-    height: 82px;
-    padding: 16px 20px 6px 24px;
+    height: 104px;
+    padding: 16px 20px 16px 24px;
     border-radius: 12px;
 }
 
@@ -547,7 +563,7 @@
     font-size: 19px;
     line-height: 26px;
     color: var(--grey-75);
-
+    margin-bottom: auto;
 }
 
 
@@ -560,7 +576,7 @@
 }
 
 .column {
-    flex: 1;
+    display: grid;
     width: fit-content;
 }
 
@@ -576,9 +592,36 @@
     align-items: center;
 }
 
+.gap-8 {
+    gap: 8px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
 .mb-25 {
     margin-bottom: 25px;
 }
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.ml-10 {
+
+    margin-left: 10px;
+}
+
+.ml-25 {
+    margin-left: 25px;
+}
+
+
 
 .row--grid--5 {
     display: grid;
@@ -591,4 +634,28 @@
     grid-template-columns: 1fr 150px;
     gap: 10px;
 
+}
+
+.container--flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    /* Adjust the gap as needed */
+    height: 100%;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* Align items at the bottom */
+    height: 100%;
+    /* Ensure the grid item takes full height */
 }

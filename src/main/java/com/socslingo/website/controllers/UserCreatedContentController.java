@@ -15,4 +15,10 @@ public class UserCreatedContentController {
         return "user-content-dashboard";
     }
 
+    @GetMapping("/create-deck")
+    public String createDeck() {
+        return "create-deck";
+    }
+
+
 }
