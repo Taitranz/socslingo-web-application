@@ -1,90 +1,74 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-
-<nav th:fragment="nav" class="sidebar">
-    <div class="sidebar-wrapper">
-        <div class="logo">
-            <a href="/" class="socslingo--sidebar">socslingo</a>
-        </div>
-        <div class="navigation-menu">
-            <div class="sidebar__button-container">
-                <a class="sidebar__button" data-toggle="button" href="/home">
-                    <span>
-                        <div class="sidebar__button--icon">
-                            <img class="sidebar__button--svg" src="/svg/learn2.svg" alt="Learn Icon">
-                        </div>
-                        <span class="sidebar__button--text">
-                            LEARN
-                        </span>
-                    </span>
-                </a>
+    <nav th:fragment="nav" class="sidebar">
+        <div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="/" class="socslingo--sidebar">socslingo</a>
             </div>
-            <div class="sidebar__button-container">
-                <a class="sidebar__button" data-toggle="button">
-                    <span>
-                        <div class="sidebar__button--icon">
-                            <img class="sidebar__button--svg" src="/svg/home.svg" alt="Learn Icon">
-                        </div>
-                        <span class="sidebar__button--text">
-                            HOME
+            <div class="navigation-menu">
+                <div class="sidebar__button-container">
+                    <a class="sidebar__button" data-toggle="button" href="/home">
+                        <span>
+                            <div class="sidebar__button--icon">
+                                <img class="sidebar__button--svg" src="/svg/learn2.svg" alt="Learn Icon" />
+                            </div>
+                            <span class="sidebar__button--text">LEARN</span>
                         </span>
-                    </span>
-                </a>
+                    </a>
+                </div>
+                <div class="sidebar__button-container">
+                    <a class="sidebar__button" data-toggle="button">
+                        <span>
+                            <div class="sidebar__button--icon">
+                                <img class="sidebar__button--svg" src="/svg/home.svg" alt="Learn Icon" />
+                            </div>
+                            <span class="sidebar__button--text">HOME</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="sidebar__button-container">
+                    <a class="sidebar__button" data-toggle="button">
+                        <span>
+                            <div class="sidebar__button--icon">
+                                <img class="sidebar__button--svg" src="/svg/characters.svg" alt="Learn Icon" />
+                            </div>
+                            <span class="sidebar__button--text">CHARACTERS</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="sidebar__button-container">
+                    <a class="sidebar__button" data-toggle="button" href="/user-content/dashboard">
+                        <span>
+                            <div class="sidebar__button--icon">
+                                <img class="sidebar__button--svg" src="/svg/create.svg" alt="Learn Icon" />
+                            </div>
+                            <span class="sidebar__button--text">CREATE</span>
+                        </span>
+                    </a>
+                </div>
             </div>
-            <div class="sidebar__button-container">
-                <a class="sidebar__button" data-toggle="button">
-                    <span>
-                        <div class="sidebar__button--icon">
-                            <img class="sidebar__button--svg" src="/svg/characters.svg" alt="Learn Icon">
-                        </div>
-                        <span class="sidebar__button--text">
-                            CHARACTERS
+            <div class="sidebar-links bottom-links">
+                <div class="sidebar__button-container">
+                    <a class="sidebar__button" data-toggle="button">
+                        <span>
+                            <div class="sidebar__button--icon">
+                                <img class="sidebar__button--svg" src="/svg/create.svg" alt="Learn Icon" />
+                            </div>
+                            <span class="sidebar__button--text">PROFILE</span>
                         </span>
-                    </span>
-                </a>
-            </div>
-            <div class="sidebar__button-container">
-                <a class="sidebar__button" data-toggle="button" href="/user-content/dashboard">
-                    <span>
-                        <div class="sidebar__button--icon">
-                            <img class="sidebar__button--svg" src="/svg/create.svg" alt="Learn Icon">
-                        </div>
-                        <span class="sidebar__button--text">
-                            CREATE
+                    </a>
+                </div>
+                <div class="sidebar__button-container">
+                    <a class="sidebar__button" data-toggle="button" href="/settings">
+                        <span>
+                            <div class="sidebar__button--icon">
+                                <img class="sidebar__button--svg" src="/svg/more.svg" alt="Learn Icon" />
+                            </div>
+                            <span class="sidebar__button--text">MORE</span>
                         </span>
-                    </span>
-                </a>
-            </div>
-        </div>
-        <div class="sidebar-links bottom-links">
-            <div class="sidebar__button-container">
-                <a class="sidebar__button" data-toggle="button" >
-                    <span>
-                        <div class="sidebar__button--icon">
-                            <img class="sidebar__button--svg" src="/svg/create.svg" alt="Learn Icon">
-                        </div>
-                        <span class="sidebar__button--text">
-                            PROFILE
-                        </span>
-                    </span>
-                </a>
-            </div>
-            <div class="sidebar__button-container">
-                <a class="sidebar__button" data-toggle="button" href="/settings">
-                    <span>
-                        <div class="sidebar__button--icon">
-                            <img class="sidebar__button--svg" src="/svg/more.svg" alt="Learn Icon">
-                        </div>
-                        <span class="sidebar__button--text">
-                            MORE
-                        </span>
-                    </span>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
-
-    </div>
-
-</nav>
-
+    </nav>
 </html>

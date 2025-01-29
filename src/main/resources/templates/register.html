@@ -1,82 +1,61 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}"></head>
 
-<head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}">
-</head>
+    <body>
+        <div class="layout--authentication">
+            <div class="layout__split--left">
+                <div class="layout__content">
+                    <img class="threadjump--grey" src="/images/threadjump_grey.gif" alt="Socslingo Logo" />
 
-<body>
-    <div class="layout--authentication">
-        <div class="layout__split--left">
-            <div class="layout__content">
-
-
-                <img class="threadjump--grey" src="/images/threadjump_grey.gif" alt="Socslingo Logo">
-
-                <a href="/home">
-                    <span class="socslingo__logo--lg">
-                        socslingo
-                    </span>
-                </a>
-
-
-            </div>
-        </div>  
-
-        <div class="layout__split--right">
-            <div class="layout__header">
-
-                <div class="btn-container btn-container--bordered-grey-10 btn-container--xs">
-                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--xs"></div>
-                    <button class="btn__top btn__top--bordered-grey btn__top--xs" type="button"
-                        onclick="window.location.href='/login'">
-                        <span class="btn__text btn__text--yellow-100 btn__text--mb-2">
-                        
-                            LOG IN
-                            
-                        </span>
-                    </button> 
-                </div>  
-
+                    <a href="/home">
+                        <span class="socslingo__logo--lg">socslingo</span>
+                    </a>
+                </div>
             </div>
 
-            <div class="layout__content">
+            <div class="layout__split--right">
+                <div class="layout__header">
+                    <div class="btn-container btn-container--bordered-grey-10 btn-container--xs">
+                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--xs"></div>
+                        <button class="btn__top btn__top--bordered-grey btn__top--xs" type="button" onclick="window.location.href='/login'">
+                            <span class="btn__text btn__text--yellow-100 btn__text--mb-2">LOG IN</span>
+                        </button>
+                    </div>
+                </div>
 
-                <h1 class="authentication__title">
-                    Create your profile 
-                </h1>
-                <div class="authentication__form-container">
-                    <form th:action="@{/register}" method="post">
-                        <div class="authentication__field">
-                            <input class="authentication__input" type="text" id="username" name="username"
-                                placeholder="Username">
-                        </div>
-                        <div class="authentication__field">
-                            <input class="authentication__input" type="email" id="email" name="email"
-                                placeholder="Email">
-                        </div>
-                        <div class="authentication__field">
-                            <input class="authentication__input" type="password" id="password" name="password"
-                                placeholder="Password">
-
-                        </div>
-                        <div class="authentication__field">
-                            <input class="authentication__input" type="password" id="confirm-password"
-                                name="confirmPassword" placeholder="Confirm Password">
-                        </div>
-                        <div class="btn-container btn-container--yellow-400 btn-container--lg">
-                            <div class="btn__bottom btn__bottom--yellow-500 btn__bottom--lg"></div>
-                            <button class="btn__top btn__top--yellow-400 btn__top--lg" type="submit" >
-                                <span class="btn__text btn__text--white">
-                                    REGISTER
-                                </span>
-                                
-                            </button> 
-                        </div>
-                    </form>
+                <div class="layout__content">
+                    <h1 class="authentication__title">Create your profile</h1>
+                    <div class="authentication__form-container">
+                        <form th:action="@{/register}" method="post">
+                            <div class="authentication__field">
+                                <input class="authentication__input" type="text" id="username" name="username" placeholder="Username" />
+                            </div>
+                            <div class="authentication__field">
+                                <input class="authentication__input" type="email" id="email" name="email" placeholder="Email" />
+                            </div>
+                            <div class="authentication__field">
+                                <input class="authentication__input" type="password" id="password" name="password" placeholder="Password" />
+                            </div>
+                            <div class="authentication__field">
+                                <input
+                                    class="authentication__input"
+                                    type="password"
+                                    id="confirm-password"
+                                    name="confirmPassword"
+                                    placeholder="Confirm Password"
+                                />
+                            </div>
+                            <div class="btn-container btn-container--yellow-400 btn-container--lg">
+                                <div class="btn__bottom btn__bottom--yellow-500 btn__bottom--lg"></div>
+                                <button class="btn__top btn__top--yellow-400 btn__top--lg" type="submit">
+                                    <span class="btn__text btn__text--white">REGISTER</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>

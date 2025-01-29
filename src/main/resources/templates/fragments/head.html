@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="head(title)">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#ffffff" />
 
-<head th:fragment="head(title)">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ffffff">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" th:href="@{/favicon/apple-touch-icon.png}" />
+        <link rel="icon" type="image/png" sizes="32x32" th:href="@{/favicon/favicon-32x32.png}" />
+        <link rel="icon" type="image/png" sizes="16x16" th:href="@{/favicon/favicon-16x16.png}" />
+        <link rel="manifest" th:href="@{/favicon/site.webmanifest}" />
+        <link rel="icon" type="image/x-icon" th:href="@{/favicon/favicon.ico}" />
 
+        <!-- Stylesheets -->
+        <link rel="stylesheet" th:href="@{/styles/sidebar.css}" />
+        <link rel="stylesheet" th:href="@{/styles/main.css}" />
+        <link rel="stylesheet" th:href="@{/styles/layout.css}" />
+        <link rel="stylesheet" th:href="@{/styles/fonts.css}" />
+        <link rel="stylesheet" th:href="@{/styles/graphics.css}" />
+        <link rel="stylesheet" th:href="@{/styles/components.css}" />
+        <link rel="stylesheet" th:href="@{/styles/global.css}" />
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" th:href="@{/favicon/apple-touch-icon.png}">
-    <link rel="icon" type="image/png" sizes="32x32" th:href="@{/favicon/favicon-32x32.png}">
-    <link rel="icon" type="image/png" sizes="16x16" th:href="@{/favicon/favicon-16x16.png}">
-    <link rel="manifest" th:href="@{/favicon/site.webmanifest}">
-    <link rel="icon" type="image/x-icon" th:href="@{/favicon/favicon.ico}">
+        <script th:src="@{/scripts/sidebar.js}"></script>
 
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" th:href="@{/styles/sidebar.css}">
-    <link rel="stylesheet" th:href="@{/styles/main.css}">
-    <link rel="stylesheet" th:href="@{/styles/layout.css}">
-    <link rel="stylesheet" th:href="@{/styles/fonts.css}">
-    <link rel="stylesheet" th:href="@{/styles/graphics.css}">
-    <link rel="stylesheet" th:href="@{/styles/components.css}">
-    <link rel="stylesheet" th:href="@{/styles/global.css}">
-    
-    <script th:src="@{/scripts/sidebar.js}"></script>
-
-    <title th:text="${title}">Socslingo</title>
-</head>
-
+        <title th:text="${title}">Socslingo</title>
+    </head>
 </html>

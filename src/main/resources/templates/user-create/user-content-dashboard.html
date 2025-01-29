@@ -1,639 +1,576 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}"></head>
 
-<head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}">
-</head>
-
-<body>
-    <div class="layout--main">
-        <nav th:replace="~{fragments/nav :: nav}"></nav>
-        <main class="main__layout">
-            <!-- MAIN COLUMN -->
-            <div class="main__container">
-                <div class="container container--col container__goal-tracking">
-                    <div class="container container--align-center mb-12">
-                        <div class="month-display__text">
-                            JANUARY
+    <body>
+        <div class="layout--main">
+            <nav th:replace="~{fragments/nav :: nav}"></nav>
+            <main class="main__layout">
+                <!-- MAIN COLUMN -->
+                <div class="main__container">
+                    <div class="container container--col container__goal-tracking">
+                        <div class="container container--align-center mb-12">
+                            <div class="month-display__text">JANUARY</div>
                         </div>
-                    </div>
-                    <div class="container mb-12">
-                        <div class="goal-tracking__heading">
-                            Socslingo's Frozen Winter
+                        <div class="container mb-12">
+                            <div class="goal-tracking__heading">Socslingo's Frozen Winter</div>
                         </div>
-                    </div>
-                    <div class="container container--row gap-8">
-                        <div class="goal-tracking-days-left__icon">
-                            <img src="/svg/timer.svg" alt="Snowflake Icon">
+                        <div class="container container--row gap-8">
+                            <div class="goal-tracking-days-left__icon">
+                                <img src="/svg/timer.svg" alt="Snowflake Icon" />
+                            </div>
+                            <div class="goal-tracking-days-left__text">10 DAYS</div>
                         </div>
-                        <div class="goal-tracking-days-left__text">
-                            10 DAYS
-                        </div>
-
-
-                    </div>
-                    <div class="container  container--col container--progress-bar">
-                        <div class="progress-bar__heading">
-                            Complete 20 Flashcards
-                        </div>
-                        <div class="container">
-                            <div class="progress-bar__container progress-bar__container--goal-tracking">
-                                <div class="progress-bar__text progress-bar__text--goal-tracking">
-                                    10/20
-
+                        <div class="container container--col container--progress-bar">
+                            <div class="progress-bar__heading">Complete 20 Flashcards</div>
+                            <div class="container">
+                                <div class="progress-bar__container progress-bar__container--goal-tracking">
+                                    <div class="progress-bar__text progress-bar__text--goal-tracking">10/20</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-
-                </div>
-                <div class="container mt-25">
-                    <h2>
-                        Flashcard Decks
-                    </h2>
-
-                </div>
-                <div class="divider"></div>
-                <div class="container container--grid">
-                    <!-- Column 1-->
-                    <div class="column">
-                        <div class="row row--grid mb-25">
-                            <div class="column">
-                                <div class="container">
-                                    <h2>
-                                        Deck I created 1
-                                    </h2>
-
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container ml-10">
-                                    <button class="btn--borderless" type="submit" onclick="event.preventDefault();">
-                                        <span class="btn__text btn__text--blue-400">
-                                            VIEW ALL    
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="row row--grid--5" style="gap: 10px">
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                あ
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                a
-                                            </span>
-                                        </div>
-
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                い
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                i
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                う
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                u
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                え
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                e
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                お
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                o
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="container mt-25">
+                        <h2>Flashcard Decks</h2>
                     </div>
-                    <!-- Column 2-->
-                    <div class="column">
-                        <div class="grid-container">
-                            <div class="grid-item">
-                                <div class="btn-container btn-container--bordered-grey btn-container--150">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--150" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <span class="btn__text btn__text--blue-400">Practice</span>
-                                    </button>
+                    <div class="divider"></div>
+                    <div class="container container--grid">
+                        <!-- Column 1-->
+                        <div class="column">
+                            <div class="row row--grid mb-25">
+                                <div class="column">
+                                    <div class="container">
+                                        <h2>Deck I created 1</h2>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container ml-10">
+                                        <button class="btn--borderless" type="submit" onclick="event.preventDefault();">
+                                            <span class="btn__text btn__text--blue-400">VIEW ALL</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="grid-item">
-                                <div class="btn-container btn-container--bordered-grey btn-container--150">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--150" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <span class="btn__text btn__text--blue-400">Manage</span>
-                                    </button>
+                            <div class="row row--grid--5" style="gap: 10px">
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">あ</span>
+                                                <span class="btn__text btn__text--grey-175">a</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">い</span>
+                                                <span class="btn__text btn__text--grey-175">i</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">う</span>
+                                                <span class="btn__text btn__text--grey-175">u</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">え</span>
+                                                <span class="btn__text btn__text--grey-175">e</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">お</span>
+                                                <span class="btn__text btn__text--grey-175">o</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column 2-->
+                        <div class="column">
+                            <div class="grid-container">
+                                <div class="grid-item">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--150">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--150"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <span class="btn__text btn__text--blue-400">Practice</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--150">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--150"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <span class="btn__text btn__text--blue-400">Manage</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="divider"></div>
-                <div class="container container--grid">
-                    <!-- Column 1-->
-                    <div class="column">
-                        <div class="row row--grid mb-25">
-                            <div class="column">
-                                <div class="container">
-                                    <h2>
-                                        Example Deck 2
-                                    </h2>
-
+                    <div class="divider"></div>
+                    <div class="container container--grid">
+                        <!-- Column 1-->
+                        <div class="column">
+                            <div class="row row--grid mb-25">
+                                <div class="column">
+                                    <div class="container">
+                                        <h2>Example Deck 2</h2>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container ml-10">
+                                        <button class="btn--borderless" type="submit" onclick="event.preventDefault();">
+                                            <span class="btn__text btn__text--blue-400">VIEW ALL</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="btn-container ml-10">
-                                    <button class="btn--borderless" type="submit" onclick="event.preventDefault();">
-                                        <span class="btn__text btn__text--blue-400">
-                                            VIEW ALL
-                                        </span>
-                                    </button>
+                            <div class="row row--grid--5" style="gap: 10px">
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">あ</span>
+                                                <span class="btn__text btn__text--grey-175">a</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">い</span>
+                                                <span class="btn__text btn__text--grey-175">i</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">う</span>
+                                                <span class="btn__text btn__text--grey-175">u</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">え</span>
+                                                <span class="btn__text btn__text--grey-175">e</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">お</span>
+                                                <span class="btn__text btn__text--grey-175">o</span>
+                                            </div>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="row row--grid--5" style="gap: 10px">
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                あ
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                a
-                                            </span>
-                                        </div>
-
-                                    </button>
+                        <!-- Column 2-->
+                        <div class="column">
+                            <div class="grid-container">
+                                <div class="grid-item">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--150">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--150"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <span class="btn__text btn__text--blue-400">Practice</span>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                い
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                i
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                う
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                u
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                え
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                e
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                お
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                o
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Column 2-->
-                    <div class="column">
-                        <div class="grid-container">
-                            <div class="grid-item">
-                                <div class="btn-container btn-container--bordered-grey btn-container--150">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--150" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <span class="btn__text btn__text--blue-400">Practice</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="btn-container btn-container--bordered-grey btn-container--150">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--150" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <span class="btn__text btn__text--blue-400">Manage</span>
-                                    </button>
+                                <div class="grid-item">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--150">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--150"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <span class="btn__text btn__text--blue-400">Manage</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="divider"></div>
-                <div class="container container--grid">
-                    <!-- Column 1-->
-                    <div class="column">
-                        <div class="row row--grid mb-25">
-                            <div class="column">
-                                <div class="container">
-                                    <h2>
-                                        Another Deck 1
-                                    </h2>
-
+                    <div class="divider"></div>
+                    <div class="container container--grid">
+                        <!-- Column 1-->
+                        <div class="column">
+                            <div class="row row--grid mb-25">
+                                <div class="column">
+                                    <div class="container">
+                                        <h2>Another Deck 1</h2>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container ml-10">
+                                        <button class="btn--borderless" type="submit" onclick="event.preventDefault();">
+                                            <span class="btn__text btn__text--blue-400">VIEW ALL</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="btn-container ml-10">
-                                    <button class="btn--borderless" type="submit" onclick="event.preventDefault();">
-                                        <span class="btn__text btn__text--blue-400">
-                                            VIEW ALL
-                                        </span>
-                                    </button>
+                            <div class="row row--grid--5" style="gap: 10px">
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">あ</span>
+                                                <span class="btn__text btn__text--grey-175">a</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">い</span>
+                                                <span class="btn__text btn__text--grey-175">i</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">う</span>
+                                                <span class="btn__text btn__text--grey-175">u</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">え</span>
+                                                <span class="btn__text btn__text--grey-175">e</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">お</span>
+                                                <span class="btn__text btn__text--grey-175">o</span>
+                                            </div>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="row row--grid--5" style="gap: 10px">
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                あ
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                a
-                                            </span>
-                                        </div>
-
-                                    </button>
+                        <!-- Column 2-->
+                        <div class="column">
+                            <div class="grid-container">
+                                <div class="grid-item">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--150">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--150"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <span class="btn__text btn__text--blue-400">Practice</span>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                い
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                i
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                う
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                u
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                え
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                e
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                お
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                o
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Column 2-->
-                    <div class="column">
-                        <div class="grid-container">
-                            <div class="grid-item">
-                                <div class="btn-container btn-container--bordered-grey btn-container--150">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--150" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <span class="btn__text btn__text--blue-400">Practice</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="btn-container btn-container--bordered-grey btn-container--150">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--150" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <span class="btn__text btn__text--blue-400">Manage</span>
-                                    </button>
+                                <div class="grid-item">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--150">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--150"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <span class="btn__text btn__text--blue-400">Manage</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="divider"></div>
-                <div class="container container--grid">
-                    <!-- Column 1-->
-                    <div class="column">
-                        <div class="row row--grid mb-25">
-                            <div class="column">
-                                <div class="container">
-                                    <h2>
-                                        Example Deck 3
-                                    </h2>
-
+                    <div class="divider"></div>
+                    <div class="container container--grid">
+                        <!-- Column 1-->
+                        <div class="column">
+                            <div class="row row--grid mb-25">
+                                <div class="column">
+                                    <div class="container">
+                                        <h2>Example Deck 3</h2>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container ml-10">
+                                        <button class="btn--borderless" type="submit" onclick="event.preventDefault();">
+                                            <span class="btn__text btn__text--blue-400">VIEW ALL</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="btn-container ml-10">
-                                    <button class="btn--borderless" type="submit" onclick="event.preventDefault();">
-                                        <span class="btn__text btn__text--blue-400">
-                                            VIEW ALL
-                                        </span>
-                                    </button>
+                            <div class="row row--grid--5" style="gap: 10px">
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">あ</span>
+                                                <span class="btn__text btn__text--grey-175">a</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">い</span>
+                                                <span class="btn__text btn__text--grey-175">i</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">う</span>
+                                                <span class="btn__text btn__text--grey-175">u</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">え</span>
+                                                <span class="btn__text btn__text--grey-175">e</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--square--md">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--square"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <div class="btn__text-container btn__text-container--column">
+                                                <span class="btn__text btn__text--grey-75" style="font-size: 1.3rem">お</span>
+                                                <span class="btn__text btn__text--grey-175">o</span>
+                                            </div>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="row row--grid--5" style="gap: 10px">
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                あ
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                a
-                                            </span>
-                                        </div>
-
-                                    </button>
+                        <!-- Column 2-->
+                        <div class="column">
+                            <div class="grid-container">
+                                <div class="grid-item">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--150">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--150"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <span class="btn__text btn__text--blue-400">Practice</span>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                い
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                i
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                う
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                u
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                え
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                e
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="btn-container btn-container--bordered-grey btn-container--square--md">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--square"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--square" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <div class="btn__text-container btn__text-container--column">
-                                            <span class="btn__text btn__text--grey-75 " style="font-size: 1.3rem;">
-                                                お
-                                            </span>
-                                            <span class="btn__text btn__text--grey-175">
-                                                o
-                                            </span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Column 2-->
-                    <div class="column">
-                        <div class="grid-container">
-                            <div class="grid-item">
-                                <div class="btn-container btn-container--bordered-grey btn-container--150">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--150" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <span class="btn__text btn__text--blue-400">Practice</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="btn-container btn-container--bordered-grey btn-container--150">
-                                    <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
-                                    <button class="btn__top btn__top--bordered-grey btn__top--150" type="submit"
-                                        onclick="event.preventDefault();">
-                                        <span class="btn__text btn__text--blue-400">Manage</span>
-                                    </button>
+                                <div class="grid-item">
+                                    <div class="btn-container btn-container--bordered-grey btn-container--150">
+                                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--150"></div>
+                                        <button
+                                            class="btn__top btn__top--bordered-grey btn__top--150"
+                                            type="submit"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <span class="btn__text btn__text--blue-400">Manage</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-
-            </div>
-
-            <!-- SECONDARY COLUMN -->
-            <div class="secondary__container">
-                <div class="container container--panel container--col">
-                    <h1 class="heading heading--panel">Create</h1>
-                    <div class="btn-container--panel" onclick="window.location.href='/user-content/create-deck'">
-                        <button class="btn btn--panel">
-                            <span class="btn__text btn__text--md btn__text--darker-grey">
-                                New Deck
-                            </span>
-                        </button>
-                    </div>
-                    <div class="btn-container--panel">
-                        <button class="btn btn--panel" onclick="event.preventDefault();">
-                            <span class="btn__text btn__text--md btn__text--darker-grey">
-                                New Flashcard
-                            </span>
-                        </button>
-                    </div>
-                    <div class="btn-container--panel">
-                        <button class="btn btn--panel" onclick="event.preventDefault();">
-                            <span class="btn__text btn__text--md btn__text--darker-grey">
-                                New Deck Management
-                            </span>
-                        </button>
-                    </div>
-                    <div class="btn-container--panel">
-                        <button class="btn btn--panel" onclick="event.preventDefault();">
-                            <span class="btn__text btn__text--md btn__text--darker-grey">
-                                Import Deck
-                            </span>
-                        </button>
-                    </div>
-                    <div class="btn-container--panel">
-                        <button class="btn btn--panel" onclick="event.preventDefault();">
-                            <span class="btn__text btn__text--md btn__text--darker-grey">
-                                Share Deck
-                            </span>
-                        </button>
+                <!-- SECONDARY COLUMN -->
+                <div class="secondary__container">
+                    <div class="container container--panel container--col">
+                        <h1 class="heading heading--panel">Create</h1>
+                        <div class="btn-container--panel" onclick="window.location.href='/user-content/create-deck'">
+                            <button class="btn btn--panel">
+                                <span class="btn__text btn__text--md btn__text--darker-grey">New Deck</span>
+                            </button>
+                        </div>
+                        <div class="btn-container--panel">
+                            <button class="btn btn--panel" onclick="event.preventDefault();">
+                                <span class="btn__text btn__text--md btn__text--darker-grey">New Flashcard</span>
+                            </button>
+                        </div>
+                        <div class="btn-container--panel">
+                            <button class="btn btn--panel" onclick="event.preventDefault();">
+                                <span class="btn__text btn__text--md btn__text--darker-grey">New Deck Management</span>
+                            </button>
+                        </div>
+                        <div class="btn-container--panel">
+                            <button class="btn btn--panel" onclick="event.preventDefault();">
+                                <span class="btn__text btn__text--md btn__text--darker-grey">Import Deck</span>
+                            </button>
+                        </div>
+                        <div class="btn-container--panel">
+                            <button class="btn btn--panel" onclick="event.preventDefault();">
+                                <span class="btn__text btn__text--md btn__text--darker-grey">Share Deck</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-        </main>
-    </div>
-</body>
-
+            </main>
+        </div>
+    </body>
 </html>
