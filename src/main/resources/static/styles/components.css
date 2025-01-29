@@ -154,6 +154,29 @@
     color: white;
 }
 
+
+.text--red{
+    color: rgb(255, 74, 74);
+}
+
+.text--blue-400 {
+    color: rgb(28, 176, 246);
+}
+
+.text--darker-grey {
+    color: var(--grey-75);
+}
+
+
+.text--grey-75 {
+    color: var(--grey-75);
+}
+
+.text--grey-175 {
+    color: var(--grey-175);
+}
+
+
 .btn__text--red {
     color: rgb(255, 74, 74);
 }
