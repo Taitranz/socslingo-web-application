@@ -20,7 +20,7 @@
 
 
             </div>
-        </div>
+        </div>  
 
         <div class="layout__split--right">
             <div class="layout__header">
@@ -30,17 +30,19 @@
                     <button class="btn__top btn__top--bordered-grey btn__top--xs" type="button"
                         onclick="window.location.href='/login'">
                         <span class="btn__text btn__text--yellow-100 btn__text--mb-2">
+                        
                             LOG IN
+                            
                         </span>
-                    </button>
-                </div>
+                    </button> 
+                </div>  
 
             </div>
 
             <div class="layout__content">
 
                 <h1 class="authentication__title">
-                    Create your profile
+                    Create your profile 
                 </h1>
                 <div class="authentication__form-container">
                     <form th:action="@{/register}" method="post">
@@ -55,6 +57,7 @@
                         <div class="authentication__field">
                             <input class="authentication__input" type="password" id="password" name="password"
                                 placeholder="Password">
+
                         </div>
                         <div class="authentication__field">
                             <input class="authentication__input" type="password" id="confirm-password"
@@ -66,7 +69,8 @@
                                 <span class="btn__text btn__text--white">
                                     REGISTER
                                 </span>
-                            </button>
+                                
+                            </button> 
                         </div>
                     </form>
                 </div>

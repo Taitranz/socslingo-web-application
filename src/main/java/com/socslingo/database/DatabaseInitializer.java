@@ -14,8 +14,8 @@ public class DatabaseInitializer {
         File databaseFile = new File("src/main/resources/database.db");
         if (databaseFile.exists()) {
             System.out.println("Database already exists");
-            return;
-        }
+            return; 
+        }   
 
         try (Connection connection = DriverManager.getConnection(DATABASE_URL)) {
             if (connection != null) {
@@ -25,6 +25,7 @@ public class DatabaseInitializer {
         } catch (SQLException error) {
             System.out.println("Error connecting to SQLite database.");
             error.printStackTrace();
+
         }
     }
 
@@ -35,6 +36,7 @@ public class DatabaseInitializer {
                 + "email TEXT NOT NULL,\n"
                 + "password TEXT NOT NULL\n"
                 + ");";
+            
         try (Statement statement = connection.createStatement()) {
             statement.execute(createUserTable);
 

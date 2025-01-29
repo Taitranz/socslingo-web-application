@@ -12,12 +12,12 @@ public class UserCreatedContentController {
 
     @GetMapping("/dashboard")
     public String userCreated() {
-        return "user-content-dashboard";
+        return "user-create/user-content-dashboard";
     }
 
     @GetMapping("/create-deck")
     public String createDeck() {
-        return "create-deck";
+        return "user-create/create-deck";
     }
 
 

@@ -31,9 +31,10 @@ nav {
 .main__container {
 
     grid-column: 2;
-
+    width: 630px;
     display: flex;
     flex-direction: column;
+    padding-top: 24px;
 }
 
 .main__container--settings{
@@ -41,7 +42,8 @@ nav {
 }
 .secondary__container {
     grid-column: 3;
-    
+
+    width: 340px;
     display: flex;
     flex-direction: column;
 

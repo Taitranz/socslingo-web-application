@@ -124,6 +124,11 @@
     transform: translateY(0);
 }
 
+.btn--borderless {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
 .btn__text-container {
     display: flex;
@@ -135,10 +140,14 @@
 }
 
 .btn__text {
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'din-round';
-    font-weight: bold;
 
+}
+
+
+.btn__text--navigation {
+    font-size: 22px;
 }
 
 .btn__text--white {
@@ -260,6 +269,29 @@
 }
 
 
+.text--bold {
+    font-weight: bold;
+}
+
+.text--fs-22 {
+    font-size: 1.5em;
+}
+
+.text--grey-175 {
+    color: var(--grey-175);
+}
+
+.btn-container--borderless {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn__borderless {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
 
 .btn__bottom--full-width {
     width: 100%;
@@ -348,6 +380,21 @@
 
 }
 
+.btn-container--icon {
+    display: flex;
+    /* Creates flex context */
+    align-items: center;
+    /* Centers icon vertically */
+}
+
+.btn__icon {
+    width: 24px;
+    /* Consistent icon size */
+    height: 24px;
+    display: block;
+    /* Removes any extra space */
+}
+
 .btn-container--panel {
     padding: 8px 30px 8px 30px;
     border-radius: 12px;
@@ -360,6 +407,7 @@
 
 .btn--borderless {
     border: none;
+    align-items: center;
     background-color: transparent;
     cursor: pointer;
 }
@@ -655,7 +703,5 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    /* Align items at the bottom */
     height: 100%;
-    /* Ensure the grid item takes full height */
 }
