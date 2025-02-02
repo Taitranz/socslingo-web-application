@@ -1,15 +1,29 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const sidebarButtons = document.querySelectorAll("a[data-toggle='button']");
+    // Get the current pathname (e.g. "/home")
+    const currentPath = window.location.pathname;
 
-document.addEventListener('DOMContentLoaded', function () {
-    const sidebarButtons = document.querySelectorAll('.sidebar-button');
+    sidebarButtons.forEach((button) => {
+        // If the button has an href, check if its pathname matches the current page
+        const href = button.getAttribute("href");
+        if (href) {
+            const linkPath = new URL(button.href).pathname;
+            if (linkPath === currentPath) {
+                button.classList.add("active");
+            }
+        }
 
-    sidebarButtons.forEach(sidebarButton => {
-        const anchor = sidebarButton.querySelector('a[data-toggle="button"]');
-        const content = sidebarButton.querySelector('.content');
+        // Attach the click event to update active state on click.
+        button.addEventListener("click", function () {
+            // Remove 'active' from all buttons.
+            sidebarButtons.forEach((btn) => btn.classList.remove("active"));
+            // Mark the clicked button as active.
+            this.classList.add("active");
 
-        anchor.addEventListener('click', function (event) {
-            event.preventDefault();
-            document.querySelectorAll('.sidebar-button .content').forEach(c => c.classList.remove('active'));
-            content.classList.add('active');
+
+
+            
+            // Navigation will occur naturally since we're not calling event.preventDefault()
         });
     });
 });
