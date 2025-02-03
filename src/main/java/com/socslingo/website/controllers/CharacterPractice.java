@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/character-practice")
+@RequestMapping("/characters")
 public class CharacterPractice {
     
-    @GetMapping("/demo")
+    @GetMapping("")
     public String characterPractice() {
         return "curated-content/character-practice";
     }   

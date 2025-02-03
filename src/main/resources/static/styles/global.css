@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'din-round';
     src: url('../fonts/DIN_NEW/DIN-ROUND.woff2');
@@ -11,15 +10,40 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: 'Meiryo';
+    src: url('../fonts/MEIRYO/Meiryo-Bold.ttf');
+}
+
 *,
 *::before,
 *::after {
+
     box-sizing: border-box;
     text-decoration: none;
 }
 
-body, h1, h2, h3, h4, h5, h6, p {
+
+body {
+
+    min-height: 100vh;
+
+}
+
+span {
+    font-family: "din-round", "Meiryo";
+}
+
+h1,
+h2,
+h3,
+
+h4,
+h5,
+
+h6,
+p {
     margin: 0;
     padding: 0;
-    font-family: "din-round", sans-serif;
+    font-family: "din-round", "Meiryo";
 }

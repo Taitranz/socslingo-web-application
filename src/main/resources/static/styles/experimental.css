@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'din-round';
+    src: url('../fonts/DIN_NEW/DIN-ROUND.woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'din-round';
+    src: url('../fonts/DIN_NEW/DIN-ROUND-BOLD.woff2');
+    font-weight: bold;
+}
+
+:root {
+    --arrow-color: #e6e6e6;
+}
+
+#curved-arrow {
+
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-left-width: medium;
+    border-left-style: none;
+    border-left-color: currentcolor;
+    border-left: 4px solid var(--arrow-color);
+    border-radius: 200% 0 0 0;
+    transform: rotate(55deg) scaleX(1);
+    margin-left: 164px;
+    margin-top: -79px;
+}
+
+#curved-arrow::after {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 112px;
+    width: 20px;
+    height: 4px;
+    background: var(--arrow-color);
+    transform: rotate(135deg);
+    /* Adjusted angle */
+    border-radius: 2px;
+}
+
+#curved-arrow::before {
+    content: '';
+    position: absolute;
+    left: -18px;
+    top: 112px;
+    width: 20px;
+    height: 4px;
+    background: var(--arrow-color);
+    transform: rotate(-135deg);
+    border-radius: 2px;
+}
+
+#curved-arrow-text {
+    font-family: 'din-round';
+    font-weight: 700;
+    font-size: 20px;
+    position: absolute;
+    transform: rotate(-10deg);
+    margin-left: 292px;
+    margin-top: -5px;
+    color: var(--arrow-color);
+}

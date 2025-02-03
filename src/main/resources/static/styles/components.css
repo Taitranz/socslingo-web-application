@@ -120,7 +120,7 @@
 }
 
 .btn__top {
-    position: absolute;
+
     border-radius: 12px;
     outline: none;
     border: none;
@@ -855,6 +855,22 @@
 
 .btn-container--bottom-border.active {
     border-bottom: 2px solid var(--blue-400);
+}
+
+.error-container {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-align: left
+}
+
+
+
+.error-image {
+
+    width: 350px;
+    height: auto
 }
 
 /* Utility classes for border radius */

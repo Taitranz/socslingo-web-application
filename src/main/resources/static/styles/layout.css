@@ -28,6 +28,12 @@ nav {
 
 }
 
+.main__layout--error {
+    display: grid;
+    min-height: 100vh;
+
+}
+
 .main__container {
 
     grid-column: 2;
@@ -37,9 +43,10 @@ nav {
 
 }
 
-.main__container--settings{
+.main__container--settings {
     gap: 16px;
 }
+
 .secondary__container {
     grid-column: 3;
 
@@ -52,6 +59,7 @@ nav {
 .secondary__container--settings {
     gap: 16px;
 }
+
 .main--create-page {
     display: grid;
     grid-template-columns: 1fr;
