@@ -1,5 +1,3 @@
-/* Font Definitions */
-
 @font-face {
     font-family: "din-round";
     src: url("../fonts/DIN_NEW/DIN-ROUND.woff2");
@@ -12,9 +10,7 @@
     font-weight: bold;
 }
 
-/* CSS Variables */
 :root {
-    /* Width variables */
     --button-width-xs: 98px;
     --button-width-sm: 142px;
     --button-width-150: 150px;
@@ -23,9 +19,6 @@
     --button-width-lg: 330px;
     --button-width-xl: 100%;
 
-
-
-    /* Height variables */
     --button-height-46: 46px;
     --button-height-50: 50px;
     --button-height-sm: 44px;
@@ -33,23 +26,16 @@
     --button-height-lg: 46px;
     --button-height-xl: 64px;
 
-    /* Square Button Width */
-
     --square-button-width-md: 86px;
-
-    /* Square Button Height */
 
     --square-button-height-md: 68px;
 
-    /* Font size variables */
     --font-size-sm: 15px;
     --font-size-md: 20px;
 
-    /* Line Height */
     --line-height-sm: 16px;
     --line-height-md: 24px;
 
-    /* Color variables */
     --grey-10: rgb(250, 250, 250);
     --grey-100: rgb(229, 229, 229);
     --grey-229: rgb(229, 229, 229);
@@ -59,7 +45,6 @@
     --grey-75: rgb(75, 75, 75);
 
     --yellow-50: rgb(255, 243, 219);
-
 
     --yellow-100: rgb(245, 215, 142);
 
@@ -72,8 +57,6 @@
     --blue-34: rgb(63, 34, 236);
 }
 
-
-/* Headings */
 .heading {
     font-family: "din-round";
     font-weight: bold;
@@ -103,7 +86,6 @@
     color: rgb(119, 119, 119);
 }
 
-/* Buttons */
 .btn-container {
     position: relative;
 }
@@ -120,15 +102,12 @@
 }
 
 .btn__top {
-
     border-radius: 12px;
     outline: none;
     border: none;
     transform: translateY(-4px);
     cursor: pointer;
 }
-
-
 
 .btn__top--square {
     transform: translateY(-2px);
@@ -263,7 +242,6 @@
     height: var(--button-height-xl);
 }
 
-
 .btn__bottom--sm,
 .btn__top--sm {
     width: var(--button-width-sm);
@@ -300,7 +278,8 @@
     width: 100%;
 }
 
-.btn--borderless {}
+.btn--borderless {
+}
 
 .text--bold {
     font-weight: bold;
@@ -359,7 +338,6 @@
     background-color: var(--grey-10);
 }
 
-
 .btn__top--bordered {
     border: 2px solid rgb(229, 229, 229);
 }
@@ -379,7 +357,6 @@
 .btn__bottom--blue-34 {
     background-color: var(--blue-34);
 }
-
 
 .btn__container--light-blue:hover .btn__top--light-blue {
     background-color: rgb(31, 194, 255);
@@ -422,17 +399,15 @@
 
 .btn-container--icon {
     display: flex;
-    /* Creates flex context */
+
     align-items: center;
-    /* Centers icon vertically */
 }
 
 .btn__icon {
     width: 24px;
-    /* Consistent icon size */
+
     height: 24px;
     display: block;
-    /* Removes any extra space */
 }
 
 .btn-container--panel {
@@ -452,7 +427,8 @@
     cursor: pointer;
 }
 
-.btn-container--square {}
+.btn-container--square {
+}
 
 .btn-container--square--md {
     width: var(--square-button-width-md);
@@ -464,11 +440,8 @@
     width: 100%;
     height: 100%;
     border-radius: 16px;
-
-
 }
 
-/* Authentication */
 .gfield {
     margin-bottom: 20px;
 }
@@ -501,7 +474,6 @@
     display: flex;
 }
 
-/* Settings Panel */
 .settings__panel {
     border-radius: 12px;
     border: 2px solid rgb(229, 229, 229);
@@ -511,7 +483,6 @@
     flex-direction: column;
 }
 
-/* Profile */
 .profile__avatar-container {
     position: relative;
     height: 100px;
@@ -526,8 +497,8 @@
     cursor: pointer;
 }
 
-/* Forms */
-.form__field {}
+.form__field {
+}
 
 .form__input {
     width: 100%;
@@ -556,7 +527,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
 
 .container--row {
     flex-direction: row;
@@ -627,10 +597,8 @@
 .progress-bar__container--goal-tracking {
     background-color: var(--grey-100);
 
-
     border-radius: 25px;
 }
-
 
 .progress-bar-borderless-right {
     border-bottom-right-radius: 0;
@@ -654,9 +622,7 @@
     background-color: var(--grey-229);
 }
 
-
 .progress-bar__text {
-
     font-family: "din-round";
     font-weight: bold;
     display: flex;
@@ -775,8 +741,6 @@
     gap: 10px;
 }
 
-
-
 .container--flex {
     display: flex;
     justify-content: space-between;
@@ -787,7 +751,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
     gap: 10px;
-    /* Adjust the gap as needed */
+
     height: 100%;
 }
 
@@ -834,19 +798,14 @@
     cursor: pointer;
 }
 
-
 .btn-toggle.active .btn__text {
-
-    color: var(--blue-400)
+    color: var(--blue-400);
 }
 
-
 .sidebar__button.active {
-
     background-color: var(--yellow-50);
     border-color: var(--yellow-150);
 }
-
 
 .btn-container--bottom-border {
     border-bottom: 2px solid rgb(229, 229, 229);
@@ -862,18 +821,14 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-    text-align: left
+    text-align: left;
 }
-
-
 
 .error-image {
-
     width: 350px;
-    height: auto
+    height: auto;
 }
 
-/* Utility classes for border radius */
 .btn--radius-12 {
     border-radius: 12px;
 }
@@ -886,7 +841,6 @@
     border-radius: 24px;
 }
 
-/* Or even more generic */
 .radius-12 {
     border-radius: 12px;
 }
@@ -897,4 +851,73 @@
 
 .radius-24 {
     border-radius: 24px;
+}
+
+.container--flashcard {
+    border: 2px solid #e0e0e0;
+    border-radius: 16px;
+    padding: 16px 16px 16px;
+    width: fit-content;
+    height: 96px;
+
+    min-width: 160px;
+}
+
+.form-input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.form-input--flashcard {
+    padding: 0 0 4px;
+    width: fit-content;
+    display: inline-block;
+}
+
+.flashcard-input {
+    position: relative;
+    padding-bottom: 4px;
+    outline: none;
+    min-width: fit-content;
+    display: inline-block;
+    white-space: pre-wrap;
+    background: none;
+}
+
+.flashcard-input:empty::before {
+    content: attr(data-placeholder);
+    color: var(--grey-175);
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.flashcard-char {
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+
+    font-size: 22px;
+}
+
+.flashcard-char:not(.space):not(.punctuation)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: url("../svg/dotted-line.svg") 0 100% repeat-x;
+    pointer-events: none;
+}
+
+.flashcard-char.space::after {
+    content: none !important;
+}
+
+.flashcard-input.placeholder-cleared {
+    background: none;
+}
+.flashcard-input[data-hidden-input="back"] .flashcard-char:not(.space)::after {
+    display: none;
 }

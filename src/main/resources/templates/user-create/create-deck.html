@@ -37,32 +37,106 @@
                         </div>
                     </div>
                     <div class="divider"></div>
-                    <div class="container container--grid">
-                        <div class="column column--grid">
-                            <div class="column--grid__item">
-                                <h3 class="text--blue-400"> Create Deck </h3>
-                            </div>
-                            <div class="column--grid__item"> 
-                                <h2 class="text--grey-75">
-                                    Card 1
-                                </h2>
-                            </div>
-                            <div class="container">
-                                <div style="border: 2px solid #E0E0E0; border-radius: 10px; padding: 10px;">
-                                    <div class="container container--grid">
-                                        <div class="column column--grid">
-                                            <div class="column--grid__item">
-                                                <label for="front">Front</label>
-                                                <input type="text" id="front" name="front" />
-                                            </div>
-                                            <div class="column--grid__item">
-                                                <label for="back">Back</label>
-                                                <input type="text" id="back" name="back" />
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="container">
+                        <h3 class="text--blue-400">Create Deck</h3>
+                    </div>
+                    <div class="container container--flex container--col gap-10">
+                        <div class="container container--col">
+                            <h2 class="text--grey-75">Card 1</h2>
+                            <div class="container container--flex container--col container--flashcard flashcard-wrapper">
+                                <!-- Front flashcard input -->
+                                <div
+                                    contenteditable="true"
+                                    class="form-input form-input--flashcard text flashcard-input"
+                                    data-placeholder="すし、ください"
+                                    data-hidden-input="front"
+                                ></div>
 
-                                </div>
+                                <!-- Back flashcard input -->
+                                <div
+                                    contenteditable="true"
+                                    class="form-input form-input--flashcard text flashcard-input"
+                                    data-placeholder="Sushi, please"
+                                    data-hidden-input="back"
+                                ></div>
+
+                                <!-- Hidden inputs for form submission -->
+                                <input type="hidden" id="front" name="front" value="" />
+                                <input type="hidden" id="back" name="back" value="" />
+                            </div>
+                        </div>
+                        <div class="container container--col">
+                            <h2 class="text--grey-75">Card 2</h2>
+                            <div class="container container--flex container--col container--flashcard flashcard-wrapper">
+                                <!-- Front flashcard input -->
+                                <div
+                                    contenteditable="true"
+                                    class="form-input form-input--flashcard text flashcard-input"
+                                    data-placeholder="おちゃ、ください！"
+                                    data-hidden-input="front"
+                                ></div>
+
+                                <!-- Back flashcard input -->
+                                <div
+                                    contenteditable="true"
+                                    class="form-input form-input--flashcard text flashcard-input"
+                                    data-placeholder="Green tea, please!"
+                                    data-hidden-input="back"
+                                ></div>
+
+                                <!-- Hidden inputs for form submission -->
+                                <input type="hidden" id="front" name="front" value="" />
+                                <input type="hidden" id="back" name="back" value="" />
+                            </div>
+                        </div>
+                        <div class="container container--col">
+                            <h2 class="text--grey-75">Card 3</h2>
+                            <div class="container container--flex container--col container--flashcard flashcard-wrapper">
+                                <!-- Front flashcard input -->
+                                <div
+
+                                    contenteditable="true"
+                                    class="form-input form-input--flashcard text flashcard-input"
+                                    data-placeholder="ごはんとみず、ください！"
+                                    data-hidden-input="front"
+                                ></div>
+
+                                <!-- Back flashcard input -->
+                                <div
+                                    contenteditable="true"
+                                    class="form-input form-input--flashcard text flashcard-input"
+                                    data-placeholder="Rice and water, please!"
+                                    data-hidden-input="back"
+                                ></div>
+
+                                <!-- Hidden inputs for form submission -->
+                                <input type="hidden" id="front" name="front" value="" />
+                                <input type="hidden" id="back" name="back" value="" />
+                            </div>
+                        </div>
+                        <div class="container container--col">
+                            <h2 class="text--grey-75">Card 4</h2>
+                            <div class="container container--flex container--col container--flashcard flashcard-wrapper">
+                                <!-- Front flashcard input -->
+                                <div
+
+                                    contenteditable="true"
+                                    class="form-input form-input--flashcard text flashcard-input"
+                                    data-placeholder="みずです。"
+                                    data-hidden-input="front"
+                                ></div>
+
+                                <!-- Back flashcard input -->
+                                <div
+                                    contenteditable="true"
+                                    class="form-input form-input--flashcard text flashcard-input"
+                                    data-placeholder="It's water."
+                                    data-hidden-input="back"
+                                ></div>
+
+                                <!-- Hidden inputs for form submission -->
+                                <input type="hidden" id="front" name="front" value="" />
+                                <input type="hidden" id="back" name="back" value="" />
                             </div>
                         </div>
                     </div>
@@ -74,7 +148,7 @@
                         <h1 class="heading heading--panel">Management</h1>
                         <div class="btn-container--panel">
                             <button class="btn btn--panel" onclick="event.preventDefault();">
-                                <span class="btn__text btn__text--md btn__text--darker-grey">Number of cards: 4</span>
+                                <span class="btn__text btn__text--md btn__text--darker-grey"> Number of cards: 4 </span>
                             </button>
                         </div>
                         <div class="btn-container--panel">
@@ -137,5 +211,6 @@
                 </div>
             </main>
         </div>
+        <script src="/scripts/flashcard.js"></script>
     </body>
 </html>

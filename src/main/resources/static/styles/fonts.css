@@ -23,9 +23,20 @@
     font-weight: bold;
 }
 
-.meiryo {
-    font-family: 'Meiryo';
+.text {
+    font-family: 'din-round';
+
+    font-size: 16px;
+
 }
+
+.text--meiryo {
+    font-family: 'Meiryo';
+    
+}
+
+
+
 
 .socslingo--sidebar {
     font-family: 'din-round';
