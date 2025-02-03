@@ -19,8 +19,11 @@
     --button-width-sm: 142px;
     --button-width-150: 150px;
     --button-width-md: 222px;
+    --button-width-300: 300px;
     --button-width-lg: 330px;
     --button-width-xl: 100%;
+
+
 
     /* Height variables */
     --button-height-46: 46px;
@@ -49,8 +52,10 @@
     /* Color variables */
     --grey-10: rgb(250, 250, 250);
     --grey-100: rgb(229, 229, 229);
+    --grey-229: rgb(229, 229, 229);
     --grey-175: rgb(175, 175, 175);
     --grey-119: rgb(119, 119, 119);
+
     --grey-75: rgb(75, 75, 75);
 
     --yellow-50: rgb(255, 243, 219);
@@ -63,7 +68,10 @@
     --yellow-500: rgb(255, 184, 51);
 
     --blue-400: rgb(28, 176, 246);
+    --blue-85: rgb(66, 85, 255);
+    --blue-34: rgb(63, 34, 236);
 }
+
 
 /* Headings */
 .heading {
@@ -118,6 +126,12 @@
     border: none;
     transform: translateY(-4px);
     cursor: pointer;
+}
+
+
+
+.btn__top--square {
+    transform: translateY(-2px);
 }
 
 .btn__top:active {
@@ -239,10 +253,16 @@
     height: var(--button-height-50);
 }
 
+.btn-container--300 {
+    width: var(--button-width-300);
+    height: var(--button-height-50);
+}
+
 .btn-container--xl {
     width: var(--button-width-xl);
     height: var(--button-height-xl);
 }
+
 
 .btn__bottom--sm,
 .btn__top--sm {
@@ -280,18 +300,17 @@
     width: 100%;
 }
 
-.btn--borderless {
-}
+.btn--borderless {}
 
 .text--bold {
     font-weight: bold;
 }
 
 .text--fs-1-5 {
-    font-size: 1.5em;
+    font-size: 1.1rem;
 }
 
-.text--grey-175 {
+.text--fs-17 .text--grey-175 {
     color: var(--grey-175);
 }
 
@@ -340,6 +359,7 @@
     background-color: var(--grey-10);
 }
 
+
 .btn__top--bordered {
     border: 2px solid rgb(229, 229, 229);
 }
@@ -351,6 +371,15 @@
 .btn__bottom--light-blue {
     background-color: rgb(24, 153, 214);
 }
+
+.btn__top--blue-85 {
+    background-color: var(--blue-85);
+}
+
+.btn__bottom--blue-34 {
+    background-color: var(--blue-34);
+}
+
 
 .btn__container--light-blue:hover .btn__top--light-blue {
     background-color: rgb(31, 194, 255);
@@ -423,8 +452,7 @@
     cursor: pointer;
 }
 
-.btn-container--square {
-}
+.btn-container--square {}
 
 .btn-container--square--md {
     width: var(--square-button-width-md);
@@ -435,8 +463,9 @@
 .btn__top--square {
     width: 100%;
     height: 100%;
-    border-radius: 12px;
-    /* Make sure the button is square */
+    border-radius: 16px;
+
+
 }
 
 /* Authentication */
@@ -459,7 +488,7 @@
 }
 
 .container--panel {
-    border-radius: 12px;
+    border-radius: 16px;
     border: 2px solid rgb(229, 229, 229);
     padding: 24px 16px 24px 16px;
     flex-direction: column;
@@ -498,8 +527,7 @@
 }
 
 /* Forms */
-.form__field {
-}
+.form__field {}
 
 .form__input {
     width: 100%;
@@ -519,6 +547,17 @@
     display: flex;
 }
 
+.container--flex-grow {
+    flex: 1;
+    width: 100%;
+}
+
+.container--space-between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 .container--row {
     flex-direction: row;
 }
@@ -537,6 +576,7 @@
 
 .container--align-center {
     align-items: center;
+    justify-content: center;
 }
 
 .container--progress-bar {
@@ -586,11 +626,37 @@
 
 .progress-bar__container--goal-tracking {
     background-color: var(--grey-100);
-    height: 25px;
+
+
     border-radius: 25px;
 }
 
+
+.progress-bar-borderless-right {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.progress-bar-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.bg-grey-100 {
+    background-color: var(--grey-100);
+}
+
+.bg-grey-229 {
+    background-color: var(--grey-229);
+}
+
+
 .progress-bar__text {
+
     font-family: "din-round";
     font-weight: bold;
     display: flex;
@@ -656,6 +722,7 @@
 .gap-25 {
     gap: 25px;
 }
+
 .mt-10 {
     margin-top: 10px;
 }
@@ -680,10 +747,26 @@
     margin-left: 25px;
 }
 
+.py-19 {
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
 .row--grid--5 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
+}
+
+.container--grid-5-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container--grid-row-auto {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-rows: 1fr;
 }
 
 .container--grid {
@@ -691,6 +774,8 @@
     grid-template-columns: 1fr 150px;
     gap: 10px;
 }
+
+
 
 .container--flex {
     display: flex;
@@ -751,12 +836,12 @@
 
 
 .btn-toggle.active .btn__text {
-    
+
     color: var(--blue-400)
 }
 
 
-.sidebar__button.active{
+.sidebar__button.active {
 
     background-color: var(--yellow-50);
     border-color: var(--yellow-150);
@@ -766,4 +851,34 @@
 .btn-container--bottom-border {
     border-bottom: 2px solid rgb(229, 229, 229);
     padding-bottom: 15px;
+}
+
+.btn-container--bottom-border.active {
+    border-bottom: 2px solid var(--blue-400);
+}
+
+/* Utility classes for border radius */
+.btn--radius-12 {
+    border-radius: 12px;
+}
+
+.btn--radius-16 {
+    border-radius: 16px;
+}
+
+.btn--radius-24 {
+    border-radius: 24px;
+}
+
+/* Or even more generic */
+.radius-12 {
+    border-radius: 12px;
+}
+
+.radius-16 {
+    border-radius: 16px;
+}
+
+.radius-24 {
+    border-radius: 24px;
 }

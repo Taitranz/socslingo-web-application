@@ -34,7 +34,7 @@ nav {
     width: 630px;
     display: flex;
     flex-direction: column;
-    padding-top: 24px;
+
 }
 
 .main__container--settings{

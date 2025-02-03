@@ -1,9 +1,13 @@
+:root {
 
+    --fs-19: 19px;
+}
 
 @font-face {
     font-family: 'Meiryo';
     src: url('../fonts/MEIRYO/Meiryo-Bold.ttf');
 }
+
 
 
 
@@ -25,7 +29,7 @@
 
 .socslingo--sidebar {
     font-family: 'din-round';
-        font-weight: 700;
+    font-weight: 700;
     font-size: 32px;
     color: rgb(255, 198, 92);
     text-decoration: none;
@@ -34,7 +38,7 @@
 
 .logo .socslingo {
     font-family: 'din-round';
-        font-weight: 700;
+    font-weight: 700;
     font-size: 29px;
     color: rgb(255, 198, 92);
     text-decoration: none;
@@ -42,7 +46,7 @@
 
 .sidebar .sidebar-wrapper .sidebar-button {
     font-family: 'din-round';
-        font-weight: 700;
+    font-weight: 700;
     font-size: 15px;
     font-weight: 500;
     line-height: 25px;
@@ -54,7 +58,7 @@
 
 .socslingo__logo--lg {
     font-family: 'din-round';
-        font-weight: 700;
+    font-weight: 700;
     font-size: 56px;
     color: rgb(255, 198, 92);
     text-decoration: none;
@@ -65,7 +69,7 @@
 
 .authentication__title {
     font-family: 'din-round';
-        font-weight: 700;
+    font-weight: 700;
     font-size: 24px;
     margin: 0 0 20px 0;
     text-align: center;
@@ -74,7 +78,7 @@
 
 .settings__title {
     font-family: 'din-round';
-        font-weight: 700;
+    font-weight: 700;
     font-size: 32px;
     line-height: 36px;
     color: rgb(75, 75, 75);
@@ -83,7 +87,7 @@
 
 .settings__heading {
     font-family: 'din-round';
-        font-weight: 700;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: rgb(75, 75, 75);
@@ -92,7 +96,7 @@
 
 .settings__panel__heading {
     font-family: 'din-round';
-        font-weight: 700;
+    font-weight: 700;
     font-size: 24px;
     line-height: 32px;
     color: rgb(119, 119, 119);
