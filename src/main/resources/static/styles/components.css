@@ -741,11 +741,6 @@
     gap: 10px;
 }
 
-.container--flex {
-    display: flex;
-    justify-content: space-between;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -920,4 +915,11 @@
 }
 .flashcard-input[data-hidden-input="back"] .flashcard-char:not(.space)::after {
     display: none;
+}
+
+
+
+.number-card-wrapper {
+    display: flex;
+    align-items: center;
 }
