@@ -11,8 +11,11 @@
 }
 
 :root {
-    --arrow-color: #e6e6e6;
+    --arrow-color:rgb(200, 200, 200);
+    --grey-75: rgb(75, 75, 75);
 }
+
+
 
 #curved-arrow {
 

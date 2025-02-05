@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}"></head>
+
+    <body>
+        <div class="layout--main">
+            <nav th:replace="~{fragments/nav :: nav}"></nav>
+            <main class="main__layout">
+                <!-- MAIN COLUMN -->
+                <div class="main__container">
+                    <div class="container border-2" style="height: 200px"> s </div>
+                    <div class="container container--col">
+                        <h1>Taitranz</h1>
+                        <h2>Tai Tran</h2>
+                        <h3>Joined August 2024</h3>
+                        <div class="container container--space-between container--row">
+                            <div class="container">
+                                <div class="container"> Followers </div>
+                                <div class="container"> Following </div>
+                            </div>
+                            <div class="container"> Flags </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="container container--col">
+                            <div class="container">
+                                <h1>Statistics</h1>
+                            </div>
+                            <div class="container container--grid-2-2 gap-10">
+                                <div class="container border-2 radius-12 h-60">
+                                    <h2>box1</h2>
+                                </div>
+
+                                <div class="container border-2 radius-12 h-60">
+                                    <h2>box2</h2>
+                                </div>
+                                <div class="container border-2 radius-12 h-60">
+                                    <h2>box3</h2>
+                                </div>
+                                <div class="container border-2 radius-12 h-60">
+                                    <h2>box4</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container container--col">
+                            <div class="container">
+                                <h1>Achievements</h1>
+                            </div>
+                            <div class="outlined-list">
+                                <div class="outlined-list__item">
+                                    <h1>Achievement 1</h1>
+                                </div>
+                                <div class="outlined-list__item">
+                                    <h1>Achievement 2</h1>
+                                </div>
+                                <div class="outlined-list__item">
+                                    <h1>Achievement 3</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECONDARY COLUMN -->
+                <div class="secondary__container"> </div>
+            </main>
+        </div>
+    </body>
+</html>

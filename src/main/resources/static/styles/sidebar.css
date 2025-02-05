@@ -1,15 +1,12 @@
-
-
-
 @font-face {
-    font-family: 'din-round';
-    src: url('../fonts/DIN_NEW/DIN-ROUND.woff2');
+    font-family: "din-round";
+    src: url("../fonts/DIN_NEW/DIN-ROUND.woff2");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: 'din-round';
-    src: url('../fonts/DIN_NEW/DIN-ROUND-BOLD.woff2');
+    font-family: "din-round";
+    src: url("../fonts/DIN_NEW/DIN-ROUND-BOLD.woff2");
     font-weight: bold;
 }
 .sidebar {
@@ -17,12 +14,11 @@
     width: 256px;
     padding-left: 16px;
     padding-right: 16px;
-
+    
     background-color: #ffffff;
     border-right: 2px solid rgb(239, 239, 239);
     display: grid;
     position: fixed;
-
 }
 
 .navigation-menu {
@@ -39,39 +35,30 @@
 }
 
 .logo {
-
     height: 30px;
     margin: 32px 0 30px 16px;
     width: 206px;
 
     line-height: 25px;
-
 }
 
-
 .socslingo--sidebar {
-    font-family: 'DINRoundPro-Black';
+    font-family: "DINRoundPro-Black";
     font-size: 29px;
     color: rgb(255, 198, 92);
     text-decoration: none;
-
-
 }
-
-
 
 .bottom-links {
     margin-top: auto;
     margin-bottom: 10px;
 }
 
-
 .sidebar__button-container {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     height: 52px;
-
 }
 
 .sidebar__button {
@@ -85,7 +72,6 @@
     border-style: solid;
     border-color: transparent;
     background-color: transparent;
-
 }
 
 .sidebar__button:hover {
@@ -110,16 +96,14 @@
     height: 32px;
 }
 
-.sidebar__button__icon{
+.sidebar__button__icon {
     height: 32px;
     margin-right: 6px;
     border-radius: 50%;
-
-
 }
 
 .sidebar__button--text {
-    font-family: 'din-round';
+    font-family: "din-round";
     font-weight: bold;
     font-size: 16px;
     color: rgb(119, 119, 119);

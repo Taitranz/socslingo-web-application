@@ -3,6 +3,7 @@
     grid-template-columns: 256px 1fr;
     grid-template-rows: auto;
     min-height: 100vh;
+    
 }
 
 .layout--authentication {
@@ -15,7 +16,6 @@
 nav {
     grid-column: 1 / 2;
     grid-row: 1;
-
 }
 
 .main__layout {
@@ -24,23 +24,19 @@ nav {
     grid-column: 2;
     gap: 50px;
     padding-top: 24px;
-
-
+    padding-bottom: 24px;
 }
 
 .main__layout--error {
     display: grid;
     min-height: 100vh;
-
 }
 
 .main__container {
-
     grid-column: 2;
     width: 630px;
     display: flex;
     flex-direction: column;
-
 }
 
 .main__container--settings {
@@ -53,7 +49,6 @@ nav {
     width: 340px;
     display: flex;
     flex-direction: column;
-
 }
 
 .secondary__container--settings {
@@ -80,8 +75,6 @@ nav {
     border-radius: 12px;
 }
 
-
-
 .layout__header {
     grid-column: 3;
 
@@ -103,7 +96,6 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: rgb(244, 244, 244);
-
 }
 
 .layout__split--right {
@@ -122,6 +114,4 @@ nav {
     margin-bottom: 60px;
     grid-column: 2;
     grid-row: 1;
-
-
 }

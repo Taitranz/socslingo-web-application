@@ -53,6 +53,7 @@
     --yellow-500: rgb(255, 184, 51);
 
     --blue-400: rgb(28, 176, 246);
+    --blue-176: rgb(28, 176, 246);
     --blue-85: rgb(66, 85, 255);
     --blue-34: rgb(63, 34, 236);
 }
@@ -96,6 +97,8 @@
 
 .btn__bottom {
     position: absolute;
+    width: 100%;
+    height: 100%;
     border-radius: 12px;
     outline: none;
     border: none;
@@ -103,6 +106,8 @@
 
 .btn__top {
     border-radius: 12px;
+    width: 100%;
+    height: 100%;
     outline: none;
     border: none;
     transform: translateY(-4px);
@@ -152,6 +157,10 @@
     color: rgb(28, 176, 246);
 }
 
+.text--blue-176 {
+    color: var(--blue-176);
+}
+
 .text--darker-grey {
     color: var(--grey-75);
 }
@@ -186,7 +195,6 @@
 
 .btn__text--md {
     font-size: 20px;
-    line-height: 24px;
 }
 
 .btn__text--yellow-100 {
@@ -723,6 +731,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
 }
+.container--grid-2-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 
 .container--grid-5-cols {
     display: grid;
@@ -836,17 +849,7 @@
     border-radius: 24px;
 }
 
-.radius-12 {
-    border-radius: 12px;
-}
 
-.radius-16 {
-    border-radius: 16px;
-}
-
-.radius-24 {
-    border-radius: 24px;
-}
 
 .container--flashcard {
     border: 2px solid #e0e0e0;
@@ -913,13 +916,30 @@
 .flashcard-input.placeholder-cleared {
     background: none;
 }
-.flashcard-input[data-hidden-input="back"] .flashcard-char:not(.space)::after {
+.flashcard-input[data-hidden-input^="back-"] .flashcard-char:not(.space)::after {
     display: none;
 }
-
-
 
 .number-card-wrapper {
     display: flex;
     align-items: center;
+}
+
+/* Outlined List Component */
+.outlined-list {
+    border: 2px solid rgb(229, 229, 229);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* ensures border radius applies to inner items */
+}
+
+.outlined-list__item {
+    /* Optional: add padding inside each item for spacing */
+    padding: 10px;
+}
+
+/* Add a bottom border to every item except the last one */
+.outlined-list__item:not(:last-child) {
+    border-bottom: 2px solid rgb(229, 229, 229);
 }
