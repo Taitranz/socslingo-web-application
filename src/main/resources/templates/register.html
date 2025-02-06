@@ -16,43 +16,37 @@
 
             <div class="layout__split--right">
                 <div class="layout__header">
-                    <div class="btn-container btn-container--bordered-grey-10 btn-container--xs">
-                        <div class="btn__bottom btn__bottom--bordered-grey btn__bottom--xs"></div>
-                        <button class="btn__top btn__top--bordered-grey btn__top--xs" type="button" onclick="window.location.href='/login'">
-                            <span class="btn__text btn__text--yellow-100 btn__text--mb-2">LOG IN</span>
+                    <div class="btn-container btn-container--bordered-grey-10 w-98 h-46">
+                        <div class="btn__bottom btn__bottom--bordered-grey"></div>
+                        <button class="btn__top btn__top--bordered-grey" type="button" onclick="window.location.href='/login'">
+                            <span class="btn__text text-yellow-100 text-bold">LOG IN</span>
                         </button>
                     </div>
                 </div>
 
                 <div class="layout__content">
-                    <h1 class="authentication__title">Create your profile</h1>
-                    <div class="authentication__form-container">
-                        <form th:action="@{/register}" method="post">
-                            <div class="authentication__field">
+                    <h1 class="fs-24 mb-20 text-center text-bold text-grey-100">Create your profile</h1>
+                    <div class="container flex-col w-330 mb-10">
+                        <form class="container flex-col gap-10 mb-10" th:action="@{/register}" method="post">
+                            <div class="container">
                                 <input class="authentication__input" type="text" id="username" name="username" placeholder="Username" />
                             </div>
-                            <div class="authentication__field">
+                            <div class="container">
                                 <input class="authentication__input" type="email" id="email" name="email" placeholder="Email" />
                             </div>
-                            <div class="authentication__field">
+                            <div class="container">
                                 <input class="authentication__input" type="password" id="password" name="password" placeholder="Password" />
                             </div>
-                            <div class="authentication__field">
-                                <input
-                                    class="authentication__input"
-                                    type="password"
-                                    id="confirm-password"
-                                    name="confirmPassword"
-                                    placeholder="Confirm Password"
-                                />
-                            </div>
-                            <div class="btn-container btn-container--yellow-400 btn-container--lg">
-                                <div class="btn__bottom btn__bottom--yellow-500 btn__bottom--lg"></div>
-                                <button class="btn__top btn__top--yellow-400 btn__top--lg" type="submit">
-                                    <span class="btn__text btn__text--white">REGISTER</span>
-                                </button>
+                            <div class="container">
+                                <input class="authentication__input" type="password" id="confirm-password" name="confirmPassword" placeholder="Confirm Password" />
                             </div>
                         </form>
+                        <div class="btn-container btn-container--yellow-400 w-330 h-46">
+                            <div class="btn__bottom btn__bottom--yellow-500"></div>
+                            <button class="btn__top btn__top--yellow-400" type="submit">
+                                <span class="btn__text text-white text-bold">REGISTER</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
