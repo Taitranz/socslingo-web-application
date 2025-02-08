@@ -3,10 +3,13 @@
     <head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}"></head>
 
     <body>
-        <div class="layout--main">
+        <div class="container grid grid-cols-sidebar grid-rows-auto">
             <nav th:replace="~{fragments/nav :: nav}"></nav>
-            <main class="main-content">
-                <h1 style="font-family: 'Noto Sans JP', sans-serif; font-size: 3rem; text-align: center; margin-top: 5rem">Learn JP</h1>
+            <main class="container grid grid-cols-main col-2 gap-50 py-24">
+                <div class="container w-630 flex-col col-2">
+
+                    LEARN JP
+                </div>
             </main>
         </div>
     </body>

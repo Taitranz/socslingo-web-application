@@ -9,102 +9,37 @@
     src: url("../fonts/DIN_NEW/DIN-ROUND-BOLD.woff2");
     font-weight: bold;
 }
-.sidebar {
-    height: 100vh;
-    width: 256px;
-    padding-left: 16px;
-    padding-right: 16px;
-    
-    background-color: #ffffff;
-    border-right: 2px solid rgb(239, 239, 239);
-    display: grid;
-    position: fixed;
+
+:root {
+    --yellow-100: rgb(245, 215, 142);
+
+    --yellow-400: rgb(255, 198, 92);
+    --yellow-500: rgb(255, 184, 51);
+    --yellow-50: hsl(40, 100%, 93%);
+    --yellow-150: hsl(40, 100%, 76%);
+    --yellow-700: hsl(40, 93%, 54%);
 }
 
-.navigation-menu {
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar-wrapper {
-    box-sizing: content-box;
-    display: flex;
-    flex-direction: column;
-
-    height: 100%;
-}
-
-.logo {
-    height: 30px;
-    margin: 32px 0 30px 16px;
-    width: 206px;
-
-    line-height: 25px;
-}
-
-.socslingo--sidebar {
-    font-family: "DINRoundPro-Black";
-    font-size: 29px;
-    color: rgb(255, 198, 92);
-    text-decoration: none;
-}
-
-.bottom-links {
-    margin-top: auto;
-    margin-bottom: 10px;
-}
-
-.sidebar__button-container {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    height: 52px;
-}
-
-.sidebar__button {
-    display: flex;
-    flex-direction: row;
-    padding: 4px 8px 4px 8px;
-    height: 52px;
-    width: 222px;
-    border-radius: 12px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: transparent;
+.btn--sidebar {
     background-color: transparent;
 }
+.btn--sidebar.active {
+    background-color: var(--yellow-50);
+    border-color: var(--yellow-150);
+    
 
-.sidebar__button:hover {
-    background-color: hsl(39, 100%, 93%);
-    border-color: hsl(39, 100%, 76%);
 
-    cursor: pointer;
 }
 
-.sidebar__button span {
-    display: flex;
-    align-items: center;
+.btn--sidebar.active .btn__text--sidebar {
+    color: var(--yellow-700);
 }
 
-.sidebar__button--icon {
-    margin-right: 20px;
-    height: 32px;
+.btn--sidebar.active:hover {
+    background-color: var(--yellow-50);
 }
 
-.sidebar__button--svg {
-    margin-left: 6px;
-    height: 32px;
-}
 
-.sidebar__button__icon {
-    height: 32px;
-    margin-right: 6px;
-    border-radius: 50%;
-}
-
-.sidebar__button--text {
-    font-family: "din-round";
-    font-weight: bold;
-    font-size: 16px;
-    color: rgb(119, 119, 119);
+.btn--sidebar:hover {
+    background-color: rgb(247, 247, 247);
 }

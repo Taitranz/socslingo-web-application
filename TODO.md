@@ -1,3 +1,13 @@
 # TODO
 
-- [ ] Research font size, specifically whether the font size should be set in pixels or ems.
+Rework css naming conventions for
+
+- character-practice.html (done)
+- nav.html
+- profile.html
+- user-content-dashboard.html
+- home.html
+- index.html
+- login.html
+- register.html
+- settings.html
