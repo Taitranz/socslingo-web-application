@@ -871,11 +871,13 @@
 .flashcard-input {
     position: relative;
     padding-bottom: 4px;
+    min-height: 35px;
     outline: none;
     min-width: fit-content;
     display: inline-block;
     white-space: pre-wrap;
     background: none;
+
 }
 
 .flashcard-input:empty::before {

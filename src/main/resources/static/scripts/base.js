@@ -11,33 +11,36 @@ document.addEventListener("DOMContentLoaded", function () {
     function createFlashcard(index) {
         // Create main card container
         var cardContainer = document.createElement("div");
-        cardContainer.classList.add("container", "container--col");
+        cardContainer.classList.add("container", "flex-col");
 
         // Create card heading
         var heading = document.createElement("h2");
-        heading.classList.add("text--grey-75");
+        heading.classList.add("text-grey-75");
         heading.textContent = "Card " + index;
         cardContainer.appendChild(heading);
 
         // Create wrapper for flashcard inputs
         var flashcardWrapper = document.createElement("div");
-        flashcardWrapper.classList.add("container", "container--flex", "container--col", "container--flashcard", "flashcard-wrapper");
+        flashcardWrapper.classList.add("container", "flex", "flex-col", "w-min-160", "h-96", "p-16", "border-2", "border-grey-224", "radius-16", "w-fit-content");
+
 
         // Create front flashcard input (contenteditable div)
         var frontDiv = document.createElement("div");
         frontDiv.contentEditable = "true";
-        frontDiv.classList.add("form-input", "form-input--flashcard", "text", "flashcard-input");
+        frontDiv.classList.add("border-none", "bg-transparent", "outline-none", "w-fit-content", "pb-4", "fs-22", "flashcard-input");
         frontDiv.setAttribute("data-placeholder", "Enter front text");
         frontDiv.setAttribute("data-hidden-input", "front-" + index);
         flashcardWrapper.appendChild(frontDiv);
 
+
         // Create back flashcard input (contenteditable div)
         var backDiv = document.createElement("div");
         backDiv.contentEditable = "true";
-        backDiv.classList.add("form-input", "form-input--flashcard", "text", "flashcard-input");
+        backDiv.classList.add("border-none", "bg-transparent", "outline-none", "w-fit-content", "fs-22", "flashcard-input");
         backDiv.setAttribute("data-placeholder", "Enter back text");
         backDiv.setAttribute("data-hidden-input", "back-" + index);
         flashcardWrapper.appendChild(backDiv);
+
 
         // Create hidden input for front side of the flashcard
         var frontInput = document.createElement("input");
