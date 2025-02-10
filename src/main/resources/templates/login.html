@@ -3,44 +3,46 @@
     <head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}"></head>
 
     <body>
-        <div class="layout--authentication">
-            <div class="layout__split--left">
-                <div class="layout__content">
-                    <img class="threadjump--grey" src="/images/threadjump_grey.gif" alt="Socslingo Logo" />
-                    <a href="/home">
-                        <span class="socslingo__logo--lg">socslingo</span>
+        <div class="container grid grid-cols-2 grid-rows-auto min-h-screen">
+            <div class="container grid justify-center align-center bg-grey-244">
+                <div class="container grid justify-center align-center mb-180">
+                    <img class="w-350 object-fit-cover object-position-right" src="/images/threadjump_grey.gif" alt="Socslingo Logo" />
+                    <a href="/home" class="container justify-center align-center">
+                        <span class="fs-56 -tracking-2 text-yellow-400 text-bold">socslingo</span>
                     </a>
                 </div>
             </div>
 
-            <div class="layout__split--right">
-                <div class="layout__header">
-                    <div class="btn-container btn-container--bordered-grey-10 w-98 h-46">
-                        <div class="btn__bottom btn__bottom--bordered-grey"></div>
+            <div class="container grid grid-cols-3 justify-center align-center bg-white">
+                <div class="container justify-self-end align-self-start m-15 col-3">
+                    <div class="btn-container group radius-parent-12 w-98 h-46">
+                        <div class="btn__bottom bg-grey-229 group-hover:bg-grey-224 group-hover:border-grey-224 "></div>
 
-                        <button class="btn__top btn__top--bordered-grey" type="button" onclick="window.location.href='/register'">
+                        <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-250 group-hover:border-grey-224" type="button" onclick="window.location.href='/register'">
                             <span class="btn__text text-yellow-100 text-bold">SIGN UP</span>
                         </button>
                     </div>
                 </div>
 
-                <div class="layout__content">
+                <div class="container grid justify-center align-center row-1 col-2 mb-60">
                     <h1 class="fs-24 mb-20 text-center text-bold text-grey-100">Log In</h1>
                     <div class="container flex-col w-330 mb-10">
                         <form class="container flex-col gap-10 mb-10" th:action="@{/login}" method="post">
-                            <div class="container">
-
-                                <input class="authentication__input" type="email" id="email" name="email" placeholder="Email" />
+                            <div class="container mb-10 ">
+                                <input class="w-full p-10 border-2 border-grey-229 radius-12 fs-16 text-grey-178 text-bold outline-none bg-grey-247" type="email" id="email" name="email" placeholder="Email" />
                             </div>
 
-                            <div class="container">
-                                <input class="authentication__input" type="password" id="password" name="password" placeholder="Password" />
+                            <div class="container mb-10">
+                                <input class="w-full p-10 border-2 border-grey-229 radius-12 fs-16 text-grey-178 text-bold outline-none bg-grey-247 " type="password" id="password" name="password" placeholder="Password" />
                             </div>
                         </form>
-                        <div class="btn-container btn-container--yellow-400 w-330 h-46">
-                            <div class="btn__bottom btn__bottom--yellow-500"></div>
-                            <button class="btn__top btn__top--yellow-400" type="submit" onclick="event.preventDefault();">
-                                <span class="btn__text text-bold text-white">LOG IN</span>
+
+                        <div class="btn-container group radius-parent-12 w-330 h-46">
+                            <div class="btn__bottom bg-yellow-500 group-hover:bg-yellow-400"></div>
+                            <button class="btn__top bg-yellow-400 group-hover:bg-yellow-500" type="submit" onclick="event.preventDefault();">
+
+                                <span class="fs-16 text-bold text-white">LOG IN</span>
+
                             </button>
                         </div>
                     </div>

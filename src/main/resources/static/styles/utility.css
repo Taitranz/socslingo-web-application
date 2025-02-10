@@ -28,6 +28,7 @@
     --blue-194: rgb(31, 194, 255);
 
     --grey-229: rgb(229, 229, 229);
+    --grey-244: rgb(244, 244, 244);
     --grey-224: rgb(224, 224, 224);
     --grey-175: rgb(175, 175, 175);
     --grey-119: rgb(119, 119, 119);
@@ -130,9 +131,14 @@
     font-size: 30px;
 }
 
+.fs-56 {
+    font-size: 56px;
+}
+
 .text--fs-17 {
     font-size: var(--fs-17);
 }
+
 
 /* Text Colors */
 .text-yellow-100 {
@@ -156,9 +162,15 @@
     color: var(--grey-60);
 }
 
+.text-grey-178 {
+    color: rgb(178, 178, 178);
+}
+
+
 .text--blue-123 {
     color: var(--blue-123);
 }
+
 .text--blue-176 {
     color: var(--blue-176);
 }
@@ -202,14 +214,30 @@
 .capitalize {
     text-transform: capitalize;
 }
+.overflow-hidden {
+    overflow: hidden;
+}
 .truncate {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
+.outline-none {
+    outline: none;
+}
+
 .no-underline {
     text-decoration: none;
+}
+
+
+.-tracking-1 {
+    letter-spacing: -   1px;
+}
+
+.-tracking-2 {
+    letter-spacing: -2px;
 }
 /* ==========================================================================
    Flexbox & Layout Utilities
@@ -238,13 +266,31 @@
     width: 100%;
 }
 
+.object-fit-cover {     
+    object-fit: cover;
+}
+.object-position-right {
+    object-position: right;
+}
+
 .align-center {
     align-items: center;
+}
+
+.align-self-start {
+    align-self: start;
+}
+
+
+
+.justify-self-end {
+    justify-self: end;
 }
 
 .justify-center {
     justify-content: center;
 }
+
 
 .flex-center-xy {
     align-items: center;
@@ -254,10 +300,19 @@
 .flex-align-center {
     align-items: center;
 }
+.row-1 {
+    grid-row: 1;
+}
+
+.row-2 {
+    grid-row: 2;
+}
 
 .col-1 {
     grid-column: 1;
 }
+
+
 
 .col-2 {
     grid-column: 2;
@@ -366,9 +421,15 @@
 .m-0 {
     margin: 0;
 }
+
+.m-15 {
+    margin: 15px;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
+
 .mt-25 {
     margin-top: 25px;
 }
@@ -385,9 +446,23 @@
     margin-bottom: 30px;
 }
 
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mb-180 {
+    margin-bottom: 180px;
+}
+
 .ml-16 {
     margin-left: 16px;
 }
+
+
 
 .mt-50 {
     margin-top: 50px;
@@ -454,6 +529,10 @@
 .p-18 {
     padding: 18px;
 }
+.p-10 {
+    padding: 10px;
+}
+
 
 
 
@@ -659,10 +738,13 @@
 .w-340 {
     width: 340px;
 }
-
+.w-350 {
+    width: 350px;
+}
 .w-630 {
     width: 630px;
 }
+
 
 .w-full {
     width: 100%;
@@ -700,6 +782,10 @@
     border: 2px solid var(--grey-229);
 }
 .border-bottom {
+    border-bottom: 2px solid var(--grey-229);
+}
+
+.border-b-except-last > *:not(:last-child) {
     border-bottom: 2px solid var(--grey-229);
 }
 /* Individual Side Borders */
@@ -745,7 +831,7 @@
 }
 
 .border-grey-229 {
-    border-color: var(--grey-229);
+    border-color: rgb(229, 229, 229);
 }
 
 .border-grey-239 {
@@ -830,9 +916,17 @@
 .bg-blue-176 {
     background-color: var(--blue-176);
 }
+.bg-grey-247 {
+    background-color: rgb(247, 247, 247);
+}
+.bg-grey-244 {  
+    background-color: var(--grey-244);
+}
+
 .bg-grey-229 {
     background-color: var(--grey-229);
 }
+
 
 /* Additional Background Utilities */
 .bg-red-100 {
@@ -841,6 +935,15 @@
 .bg-yellow-50 {
     background-color: var(--yellow-50);
 }
+
+.bg-yellow-400 {
+    background-color: var(--yellow-400);
+}
+
+.bg-yellow-500 {
+    background-color: var(--yellow-500);
+}
+
 
 /* ==========================================================================
    Hover & Group Hover Utilities
@@ -862,10 +965,20 @@
     background-color: hsl(39, 100%, 93%);
 }
 
+.hover\:bg-yellow-400:hover{
+    background-color: hsl(39, 100%, 72%);
+}
+
+.hover\:bg-yellow-500:hover{
+    background-color: hsl(39, 100%, 64%);
+}
+
+
 /* Border Colors - Yellow */
 .hover\:border-yellow-100:hover {
     border-color: hsl(39, 100%, 76%);
 }
+
 
 /* Border Styles */
 .border-transparent {
@@ -876,12 +989,33 @@
     border-style: dashed;
 }
 /* Group Hover */
+
+
+.group:hover .group-hover\:bg-grey-250 {
+    background-color: rgb(250, 250, 250);
+}
+
+.group:hover .group-hover\:bg-grey-247 {
+    background-color: rgb(247, 247, 247);
+}
+
+
+.group:hover .group-hover\:bg-grey-240 {
+    background-color: rgb(240, 240, 240);
+}
+
 .group:hover .group-hover\:bg-grey-229 {
     background-color: rgb(229, 229, 229);
 }
+
+.group:hover .group-hover\:bg-grey-224 {
+    background-color: rgb(224, 224, 224);
+}
+
 .group:hover .group-hover\:bg-grey-206 {
     background-color: rgb(206, 206, 206);
 }
+
 .group:hover .group-hover\:bg-blue-168 {
     background-color: rgb(26, 168, 235);
 }
@@ -894,9 +1028,13 @@
 .group:hover .group-hover\:border-grey-206 {
     border: 2px solid rgb(206, 206, 206);
 }
+.group:hover .group-hover\:border-grey-224 {
+    border: 2px solid rgb(224, 224, 224);
+}
 .group:hover .group-hover\:bg-grey-10 {
     background-color: var(--grey-10);
 }
+
 /* ==========================================================================
    Active State Utilities
    ========================================================================== */
