@@ -8,6 +8,7 @@ Rework css naming conventions for
 - home.html (done)
 - profile.html (done)
 - index.html (done)
-- login.html
-- register.html
+- login.html (done)
+- register.html (done)
+- create-deck.html ()
 - settings.html

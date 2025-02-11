@@ -3,61 +3,63 @@
     <head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}"></head>
 
     <body>
-        <div class="container grid grid-cols-sidebar grid-rows-auto">
+        <div class="grid-cols-sidebar grid-rows-auto container grid">
             <nav th:replace="~{fragments/nav :: nav}"></nav>
-            <main class="container grid grid-cols-main col-2 gap-50 py-24">
+            <main class="grid-cols-main col-2 gap-50 container grid py-24">
                 <!-- MAIN COLUMN -->
-                <div class="container w-630 flex-col col-2">
-                    <div class="container flex-col bg-blue-176 p-24 w-min-540 h-320 radius-16">
+                <div class="w-630 col-2 container flex-col">
+                    <div class="bg-blue-176 w-min-540 h-320 radius-16 container flex-col p-24">
                         <div class="container mb-12">
-                            <span class="fs-17 w-fit-content bg-white radius-6 py-5 px-8 text-blue-176">JANUARY</span>
+                            <span class="fs-17 w-fit-content radius-6 text-blue-176 bg-white px-8 py-5">JANUARY</span>
                         </div>
                         <div class="container mb-12">
-                            <h1 class="fs-24 text-white text-bold">Socslingo's Frozen Winter</h1>
+                            <h1 class="fs-24 text-bold text-white">Socslingo's Frozen Winter</h1>
                         </div>
                         <div class="container flex-row gap-8">
                             <div class="container">
                                 <img class="h-20 w-16" src="/svg/timer.svg" alt="Snowflake Icon" />
                             </div>
                             <div class="container">
-                                <h2 class="fs-17 text-white text-bold">10 DAYS</h2>
+                                <h2 class="fs-17 text-bold text-white">10 DAYS</h2>
                             </div>
                         </div>
 
-                        <div class="container flex-col mt-auto bg-white pt-16 pr-20 pl-24 pb-16 w-full h-104 radius-16">
+                        <div class="h-104 radius-16 container mt-auto w-full flex-col bg-white pb-16 pl-24 pr-20 pt-16">
                             <div class="container mb-auto">
                                 <h1 class="fs-19 text-grey-75 text-bold">Complete 20 Flashcards</h1>
                             </div>
 
-                            <div class="container flex-center-xy w-full bg-grey-229 radius-25 h-25">
+                            <div class="flex-center-xy bg-grey-229 radius-25 h-25 container w-full">
                                 <span class="text-flex text-grey-175 fs-14 flex-center-xy text-bold h-25">10/20</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="container mt-25">
+                    <div class="mt-25 container">
                         <h2>Flashcard Decks</h2>
                     </div>
-                    <div class="divider my-20"></div>
-                    <div class="container flex-col gap-8">
+                    <div class="divider"></div>
+                    <div class="container gap-8">
                         <div class="container flex-col">
-                            <div class="container flex-row mb-25">
+                            <div class="mb-25 container flex-row">
                                 <div class="container">
                                     <h2>Deck I created 1</h2>
                                 </div>
-                                <div class="container flex-center-xy">
+                                <div class="flex-center-xy container">
                                     <div class="btn-container ml-10">
-                                        <button class="border-0 bg-transparent align-center cursor-pointer">
+                                        <button class="align-center cursor-pointer border-0 bg-transparent">
                                             <span class="fs-16 text-blue-176 text-bold">VIEW ALL</span>
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="container grid grid-col-5 gap-10">
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                            <div class="grid-col-5 container grid gap-10">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">あ</span>
 
@@ -66,10 +68,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">い</span>
                                             <span class="fs-16 text-grey-175">i</span>
@@ -77,10 +81,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">う</span>
                                             <span class="fs-16 text-grey-175">u</span>
@@ -88,10 +94,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">え</span>
                                             <span class="fs-16 text-grey-175">e</span>
@@ -99,10 +107,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">お</span>
                                             <span class="fs-16 text-grey-175">o</span>
@@ -111,42 +121,48 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container flex-col space-between pt-4">
-                            <div class="btn-container group w-150 h-50 radius-parent-16">
+                        <div class="space-between container flex-col pt-4">
+                            <div class="btn-container w-150 h-50 radius-parent-16 group">
                                 <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
-                                <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                <button
+                                    class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                >
                                     <span class="fs-16 text-blue-176 text-bold">PRACTICE</span>
                                 </button>
                             </div>
 
-                            <div class="btn-container group w-150 h-50 radius-parent-16">
+                            <div class="btn-container w-150 h-50 radius-parent-16 group">
                                 <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
-                                <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                <button
+                                    class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                >
                                     <span class="fs-16 text-blue-176 text-bold">MANAGE</span>
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="divider my-20"></div>
+                    <div class="divider"></div>
                     <div class="container gap-8">
                         <div class="container flex-col">
-                            <div class="container flex-row mb-25">
+                            <div class="mb-25 container flex-row">
                                 <div class="container">
                                     <h2>Deck I created 2</h2>
                                 </div>
-                                <div class="container flex-center-xy">
+                                <div class="flex-center-xy container">
                                     <div class="btn-container ml-10">
-                                        <button class="border-0 bg-transparent align-center cursor-pointer">
+                                        <button class="align-center cursor-pointer border-0 bg-transparent">
                                             <span class="fs-16 text-blue-176 text-bold">VIEW ALL</span>
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="container grid grid-col-5 gap-10">
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                            <div class="grid-col-5 container grid gap-10">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">あ</span>
                                             <span class="fs-16 text-grey-175">a</span>
@@ -154,10 +170,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">い</span>
                                             <span class="fs-16 text-grey-175">i</span>
@@ -165,10 +183,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">う</span>
                                             <span class="fs-16 text-grey-175">u</span>
@@ -176,10 +196,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">え</span>
                                             <span class="fs-16 text-grey-175">e</span>
@@ -187,10 +209,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">お</span>
                                             <span class="fs-16 text-grey-175">o</span>
@@ -199,42 +223,48 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container flex-col space-between pt-4">
-                            <div class="btn-container group w-150 h-50 radius-parent-16">
+                        <div class="space-between container flex-col pt-4">
+                            <div class="btn-container w-150 h-50 radius-parent-16 group">
                                 <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
-                                <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                <button
+                                    class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                >
                                     <span class="fs-16 text-blue-176 text-bold">PRACTICE</span>
                                 </button>
                             </div>
 
-                            <div class="btn-container group w-150 h-50 radius-parent-16">
+                            <div class="btn-container w-150 h-50 radius-parent-16 group">
                                 <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
-                                <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                <button
+                                    class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                >
                                     <span class="fs-16 text-blue-176 text-bold">MANAGE</span>
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="divider my-20"></div>
+                    <div class="divider"></div>
                     <div class="container gap-8">
                         <div class="container flex-col">
-                            <div class="container flex-row mb-25">
+                            <div class="mb-25 container flex-row">
                                 <div class="container">
-                                    <h2> Deck I created 2</h2>
+                                    <h2>Deck I created 2</h2>
                                 </div>
-                                <div class="container flex-center-xy">
+                                <div class="flex-center-xy container">
                                     <div class="btn-container ml-10">
-                                        <button class="border-0 bg-transparent align-center cursor-pointer">
+                                        <button class="align-center cursor-pointer border-0 bg-transparent">
                                             <span class="fs-16 text-blue-176 text-bold">VIEW ALL</span>
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="container grid grid-col-5 gap-10">
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                            <div class="grid-col-5 container grid gap-10">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">あ</span>
                                             <span class="fs-16 text-grey-175">a</span>
@@ -242,10 +272,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">い</span>
                                             <span class="fs-16 text-grey-175">i</span>
@@ -253,10 +285,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">う</span>
                                             <span class="fs-16 text-grey-175">u</span>
@@ -264,10 +298,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">え</span>
                                             <span class="fs-16 text-grey-175">e</span>
@@ -275,10 +311,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">お</span>
                                             <span class="fs-16 text-grey-175">o</span>
@@ -287,42 +325,48 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container flex-col space-between pt-4">
-                            <div class="btn-container group w-150 h-50 radius-parent-16">
+                        <div class="space-between container flex-col pt-4">
+                            <div class="btn-container w-150 h-50 radius-parent-16 group">
                                 <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
-                                <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                <button
+                                    class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                >
                                     <span class="fs-16 text-blue-176 text-bold">PRACTICE</span>
                                 </button>
                             </div>
 
-                            <div class="btn-container group w-150 h-50 radius-parent-16">
+                            <div class="btn-container w-150 h-50 radius-parent-16 group">
                                 <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
-                                <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                <button
+                                    class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                >
                                     <span class="fs-16 text-blue-176 text-bold">MANAGE</span>
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="divider my-20"></div>
+                    <div class="divider"></div>
                     <div class="container gap-8">
                         <div class="container flex-col">
-                            <div class="container flex-row mb-25">
+                            <div class="mb-25 container flex-row">
                                 <div class="container">
                                     <h2>Example Deck 3</h2>
                                 </div>
-                                <div class="container flex-center-xy">
+                                <div class="flex-center-xy container">
                                     <div class="btn-container ml-10">
-                                        <button class="border-0 bg-transparent align-center cursor-pointer">
+                                        <button class="align-center cursor-pointer border-0 bg-transparent">
                                             <span class="fs-16 text-blue-176 text-bold">VIEW ALL</span>
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="container grid grid-col-5 gap-10">
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                            <div class="grid-col-5 container grid gap-10">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">あ</span>
                                             <span class="fs-16 text-grey-175">a</span>
@@ -330,10 +374,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">い</span>
                                             <span class="fs-16 text-grey-175">i</span>
@@ -341,10 +387,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">う</span>
                                             <span class="fs-16 text-grey-175">u</span>
@@ -352,10 +400,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">え</span>
                                             <span class="fs-16 text-grey-175">e</span>
@@ -363,10 +413,12 @@
                                     </button>
                                 </div>
 
-                                <div class="btn-container group radius-parent-16 w-86 h-68">
+                                <div class="btn-container radius-parent-16 w-86 h-68 group">
                                     <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                                    <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                    <button
+                                        class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    >
                                         <div class="container flex-col">
                                             <span class="fs-21 text-grey-75 text-jp">お</span>
                                             <span class="fs-16 text-grey-175">o</span>
@@ -375,64 +427,73 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container flex-col space-between pt-4">
-                            <div class="btn-container group w-150 h-50 radius-parent-16">
+                        <div class="space-between container flex-col pt-4">
+                            <div class="btn-container w-150 h-50 radius-parent-16 group">
                                 <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
-                                <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                <button
+                                    class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                >
                                     <span class="fs-16 text-blue-176 text-bold">PRACTICE</span>
                                 </button>
                             </div>
 
-                            <div class="btn-container group w-150 h-50 radius-parent-16">
+                            <div class="btn-container w-150 h-50 radius-parent-16 group">
                                 <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
-                                <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
+                                <button
+                                    class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                >
                                     <span class="fs-16 text-blue-176 text-bold">MANAGE</span>
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="divider my-20"></div>
+                    <div class="divider"></div>
                 </div>
 
                 <!-- SECONDARY COLUMN -->
-                <div class="container w-340 flex-col col-3 gap-25">
-                    <div class="container flex-col border-2 border-grey-229 py-24 px-16 radius-16">
-                        <h1 class="fs-24 mx-30 mb-16 text-grey-119 font-bold">Create</h1>
+                <div class="w-340 col-3 gap-25 container flex-col">
+                    <div class="border-grey-229 radius-16 container flex-col border-2 px-16 py-24">
+                        <h1 class="fs-24 mx-30 text-grey-119 mb-16 font-bold">Create</h1>
                         <div class="container flex-col gap-4">
-                            <div class="container hover:bg-grey-229 py-8 px-30 radius-12 h-40" onclick="window.location.href='/user-content/create-deck'">
-                                <button class="bg-transparent border-0 cursor-pointer">
-                                    <span class="fs-20 text-grey-75 font-bold lh-24">New Deck</span>
+                            <div
+                                class="hover:bg-grey-229 px-30 radius-12 container h-40 py-8"
+                                onclick="window.location.href='/user-content/create-deck'"
+                            >
+                                <button class="cursor-pointer border-0 bg-transparent">
+                                    <span class="fs-20 text-grey-75 lh-24 font-bold">New Deck</span>
                                 </button>
                             </div>
-                            <div class="container hover:bg-grey-229 py-8 px-30 radius-12 h-40 cursor-pointer">
-                                <button class="bg-transparent border-0 cursor-pointer">
-                                    <span class="fs-20 text-grey-75 font-bold lh-24">New Flashcard</span>
+                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
+                                <button class="cursor-pointer border-0 bg-transparent">
+                                    <span class="fs-20 text-grey-75 lh-24 font-bold">New Flashcard</span>
                                 </button>
                             </div>
-                            <div class="container hover:bg-grey-229 py-8 px-30 radius-12 h-40 cursor-pointer">
-                                <button class="bg-transparent border-0 cursor-pointer">
-                                    <span class="fs-20 text-grey-75 font-bold lh-24">New Deck Management</span>
-                                </button>
-                            </div>
-
-                            <div class="container hover:bg-grey-229 py-8 px-30 radius-12 h-40 cursor-pointer">
-                                <button class="bg-transparent border-0 cursor-pointer">
-                                    <span class="fs-20 text-grey-75 font-bold lh-24">Import Deck</span>
+                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
+                                <button class="cursor-pointer border-0 bg-transparent">
+                                    <span class="fs-20 text-grey-75 lh-24 font-bold">New Deck Management</span>
                                 </button>
                             </div>
 
-                            <div class="container hover:bg-grey-229 py-8 px-30 radius-12 h-40 cursor-pointer">
-                                <button class="bg-transparent border-0 cursor-pointer">
-                                    <span class="fs-20 text-grey-75 font-bold lh-24">Share Deck</span>
+                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
+                                <button class="cursor-pointer border-0 bg-transparent">
+                                    <span class="fs-20 text-grey-75 lh-24 font-bold">Import Deck</span>
+                                </button>
+                            </div>
+
+                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
+                                <button class="cursor-pointer border-0 bg-transparent">
+                                    <span class="fs-20 text-grey-75 lh-24 font-bold">Share Deck</span>
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="btn-container group radius-parent-16 w-full h-46">
+                    <div class="btn-container radius-parent-16 h-46 group w-full">
                         <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
 
-                        <button class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206">
-                            <span class="fs-16 text-red-500 font-bold">ENABLE QUICK DELETE</span>
+                        <button
+                            class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                        >
+                            <span class="fs-16 font-bold text-red-500">ENABLE QUICK DELETE</span>
                         </button>
                     </div>
                 </div>
