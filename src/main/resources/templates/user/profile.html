@@ -1,42 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
     <head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}"></head>
 
     <body>
-        <div class="container grid grid-cols-sidebar grid-rows-auto">
+        <div class="grid-cols-sidebar grid-rows-auto container grid">
             <nav th:replace="~{fragments/nav :: nav}"></nav>
-            <main class="container grid grid-cols-main col-2 gap-50 py-24">
+            <main class="grid-cols-main col-2 gap-50 container grid py-24">
                 <!-- MAIN COLUMN -->
-                <div class="container w-630 flex-col col-2">
-                    <div class="container border-2" style="height: 200px"> s </div>
+                <div class="w-630 col-2 container flex-col">
+                    <div class="container border-2" style="height: 200px">s</div>
                     <div class="container flex-col">
                         <h1>Taitranz</h1>
                         <h2>Tai Tran</h2>
                         <h3>Joined August 2024</h3>
-                        <div class="container justify-between align-center flex-row">
+                        <div class="align-center container flex-row justify-between">
                             <div class="container">
-                                <div class="container"> Followers </div>
-                                <div class="container"> Following </div>
+                                <div class="container">Followers</div>
+                                <div class="container">Following</div>
                             </div>
-                            <div class="container"> Flags </div>
+                            <div class="container">Flags</div>
                         </div>
                         <div class="divider"></div>
                         <div class="container flex-col">
                             <div class="container">
                                 <h1>Statistics</h1>
                             </div>
-                            <div class="container grid grid-cols-2-2 gap-10">
-                                <div class="container border-2 radius-12 h-60">
+                            <div class="grid-cols-2-2 container grid gap-10">
+                                <div class="radius-12 container h-60 border-2">
                                     <h2>box1</h2>
                                 </div>
 
-                                <div class="container border-2 radius-12 h-60">
+                                <div class="radius-12 container h-60 border-2">
                                     <h2>box2</h2>
                                 </div>
-                                <div class="container border-2 radius-12 h-60">
+                                <div class="radius-12 container h-60 border-2">
                                     <h2>box3</h2>
                                 </div>
-                                <div class="container border-2 radius-12 h-60">
+                                <div class="radius-12 container h-60 border-2">
                                     <h2>box4</h2>
                                 </div>
                             </div>
@@ -46,7 +46,9 @@
                             <div class="container">
                                 <h1>Achievements</h1>
                             </div>
-                            <div class="container border-2 border-grey-229 radius-12 flex-col overflow-hidden border-b-except-last">
+                            <div
+                                class="border-grey-229 radius-12 border-b-except-last container flex-col overflow-hidden border-2"
+                            >
                                 <div class="p-10">
                                     <h1>Achievement 1</h1>
                                 </div>
@@ -62,33 +64,33 @@
                 </div>
 
                 <!-- SECONDARY COLUMN -->
-                <div class="container w-340 flex-col col-3 gap-25">
-                    <div class="container flex-col border-2 border-grey-229 py-24 px-16 radius-16">
-                        <h1 class="fs-24 mx-30 mb-16 text-grey-119 font-bold">Management</h1>
+                <div class="w-340 col-3 gap-25 container flex-col">
+                    <div class="border-grey-229 radius-16 container flex-col border-2 px-16 py-24">
+                        <h1 class="fs-24 mx-30 text-grey-119 mb-16 font-bold">Management</h1>
                         <div class="container flex-col gap-4">
-                            <div class="container hover:bg-grey-229 py-8 px-30 radius-12 h-40 cursor-pointer">
-                                <button class="bg-transparent border-0 cursor-pointer">
-                                    <span class="fs-20 text-grey-75 font-bold lh-24">Number of cards: 4</span>
+                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
+                                <button class="cursor-pointer border-0 bg-transparent">
+                                    <span class="fs-20 text-grey-75 lh-24 font-bold">Number of cards: 4</span>
                                 </button>
                             </div>
-                            <div class="container hover:bg-grey-229 py-8 px-30 radius-12 h-40 cursor-pointer">
-                                <button class="bg-transparent border-0 cursor-pointer">
-                                    <span class="fs-20 text-grey-75 font-bold lh-24">View created cards</span>
+                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
+                                <button class="cursor-pointer border-0 bg-transparent">
+                                    <span class="fs-20 text-grey-75 lh-24 font-bold">View created cards</span>
                                 </button>
                             </div>
-                            <div class="container hover:bg-grey-229 py-8 px-30 radius-12 h-40 cursor-pointer">
-                                <button class="bg-transparent border-0 cursor-pointer">
-                                    <span class="fs-20 text-grey-75 font-bold lh-24">Quick view deck</span>
+                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
+                                <button class="cursor-pointer border-0 bg-transparent">
+                                    <span class="fs-20 text-grey-75 lh-24 font-bold">Quick view deck</span>
                                 </button>
                             </div>
-                            <div class="container hover:bg-grey-229 py-8 px-30 radius-12 h-40 cursor-pointer">
-                                <button class="bg-transparent border-0 cursor-pointer">
-                                    <span class="fs-20 text-grey-75 font-bold lh-24">Delete deck</span>
+                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
+                                <button class="cursor-pointer border-0 bg-transparent">
+                                    <span class="fs-20 text-grey-75 lh-24 font-bold">Delete deck</span>
                                 </button>
                             </div>
-                            <div class="container hover:bg-grey-229 py-8 px-30 radius-12 h-40 cursor-pointer">
-                                <button class="bg-transparent border-0 cursor-pointer">
-                                    <span class="fs-20 text-grey-75 font-bold lh-24">Save as draft</span>
+                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
+                                <button class="cursor-pointer border-0 bg-transparent">
+                                    <span class="fs-20 text-grey-75 lh-24 font-bold">Save as draft</span>
                                 </button>
                             </div>
                         </div>

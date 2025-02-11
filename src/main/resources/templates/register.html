@@ -1,40 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
     <head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}"></head>
 
     <body>
-        <div class="container grid grid-cols-2 grid-rows-auto min-h-screen">
-            <div class="container grid justify-center align-center bg-grey-244">
-                <div class="container grid justify-center align-center mb-180">
-                    <img class="w-350 object-fit-cover object-position-right" src="/images/threadjump_grey.gif" alt="Socslingo Logo" />
-
-                    <a href="/home" class="container justify-center align-center">
-                        <span class="fs-56 -tracking-2 text-yellow-400 text-bold">socslingo</span>
+        <div class="grid-rows-auto container grid min-h-screen grid-cols-2">
+            <div class="align-center bg-grey-244 container grid justify-center">
+                <div class="align-center mb-180 container grid justify-center">
+                    <img
+                        class="w-350 object-fit-cover object-position-right"
+                        src="/images/threadjump_grey.gif"
+                        alt="Socslingo Logo"
+                    />
+                    <a href="/home" class="align-center container justify-center">
+                        <span class="fs-56 -tracking-2 text-bold text-yellow-400">socslingo</span>
                     </a>
                 </div>
             </div>
 
-            <div class="container grid grid-cols-3 justify-center align-center bg-white">
-                <div class="container justify-self-end align-self-start m-15 col-3">
-                    <div class="btn-container group radius-parent-12 w-98 h-46">
+            <div class="align-center container grid grid-cols-3 justify-center bg-white">
+                <div class="align-self-start m-15 col-3 container justify-self-end">
+                    <div class="btn-container radius-parent-12 w-98 h-46 group">
                         <div class="btn__bottom bg-grey-229 group-hover:bg-grey-224 group-hover:border-grey-224"></div>
                         <button
-                            class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-250 group-hover:border-grey-224"
+                            class="btn__top border-grey-229 group-hover:bg-grey-250 group-hover:border-grey-224 border-2 bg-white"
                             type="button"
                             onclick="window.location.href='/login'"
                         >
-                            <span class="btn__text text-yellow-100 text-bold">LOG IN</span>
+                            <span class="btn__text text-bold text-yellow-100">LOG IN</span>
                         </button>
                     </div>
                 </div>
 
-                <div class="container grid justify-center align-center row-1 col-2 mb-60">
-                    <h1 class="fs-24 mb-20 text-center text-bold text-grey-100">Create your profile</h1>
-                    <div class="container flex-col w-330 mb-10">
-                        <form class="container flex-col gap-10 mb-10" th:action="@{/register}" method="post">
+                <div class="align-center row-1 col-2 container mb-60 grid justify-center">
+                    <h1 class="fs-24 text-bold text-grey-100 mb-20 text-center">Create your profile</h1>
+                    <div class="w-330 container mb-10 flex-col">
+                        <form class="container mb-10 flex-col gap-10" th:action="@{/register}" method="post">
                             <div class="container mb-10">
                                 <input
-                                    class="w-full p-10 border-2 border-grey-229 radius-12 fs-16 text-grey-178 text-bold outline-none bg-grey-247"
+                                    class="border-grey-229 radius-12 fs-16 text-grey-178 text-bold bg-grey-247 w-full border-2 p-10 outline-none"
                                     type="text"
                                     id="username"
                                     name="username"
@@ -43,7 +46,7 @@
                             </div>
                             <div class="container mb-10">
                                 <input
-                                    class="w-full p-10 border-2 border-grey-229 radius-12 fs-16 text-grey-178 text-bold outline-none bg-grey-247"
+                                    class="border-grey-229 radius-12 fs-16 text-grey-178 text-bold bg-grey-247 w-full border-2 p-10 outline-none"
                                     type="email"
                                     id="email"
                                     name="email"
@@ -52,7 +55,7 @@
                             </div>
                             <div class="container mb-10">
                                 <input
-                                    class="w-full p-10 border-2 border-grey-229 radius-12 fs-16 text-grey-178 text-bold outline-none bg-grey-247"
+                                    class="border-grey-229 radius-12 fs-16 text-grey-178 text-bold bg-grey-247 w-full border-2 p-10 outline-none"
                                     type="password"
                                     id="password"
                                     name="password"
@@ -62,7 +65,7 @@
 
                             <div class="container mb-10">
                                 <input
-                                    class="w-full p-10 border-2 border-grey-229 radius-12 fs-16 text-grey-178 text-bold outline-none bg-grey-247"
+                                    class="border-grey-229 radius-12 fs-16 text-grey-178 text-bold bg-grey-247 w-full border-2 p-10 outline-none"
                                     type="password"
                                     id="confirm-password"
                                     name="confirmPassword"
@@ -70,9 +73,13 @@
                                 />
                             </div>
                         </form>
-                        <div class="btn-container group radius-parent-12 w-330 h-46">
+                        <div class="btn-container radius-parent-12 w-330 h-46 group">
                             <div class="btn__bottom bg-yellow-500 group-hover:bg-yellow-400"></div>
-                            <button class="btn__top bg-yellow-400 group-hover:bg-yellow-500" type="submit" onclick="event.preventDefault();">
+                            <button
+                                class="btn__top bg-yellow-400 group-hover:bg-yellow-500"
+                                type="submit"
+                                onclick="event.preventDefault();"
+                            >
                                 <span class="fs-16 text-bold text-white">REGISTER</span>
                             </button>
                         </div>

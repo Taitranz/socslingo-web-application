@@ -1,15 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
     <head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}"></head>
 
     <body>
-        <div class="container grid grid-cols-sidebar grid-rows-auto">
+        <div class="grid-cols-sidebar grid-rows-auto container grid">
             <nav th:replace="~{fragments/nav :: nav}"></nav>
-            <main class="container grid grid-cols-main col-2 gap-50 py-24">
-                <div class="container w-630 flex-col col-2"> LEARN JP </div>
-                <div class="container w-340 flex-col col-3 gap-25">
-                Test    
-                </div>
+            <main class="grid-cols-main col-2 gap-50 container grid py-24">
+                <div class="w-630 col-2 container flex-col">LEARN JP</div>
+                <div class="w-340 col-3 gap-25 container flex-col">Test</div>
             </main>
         </div>
     </body>

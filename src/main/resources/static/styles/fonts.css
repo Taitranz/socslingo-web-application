@@ -1,54 +1,44 @@
 :root {
-
     --fs-19: 19px;
 }
 
 @font-face {
-    font-family: 'Meiryo';
-    src: url('../fonts/MEIRYO/Meiryo-Bold.ttf');
+    font-family: "Meiryo";
+    src: url("../fonts/MEIRYO/Meiryo-Bold.ttf");
 }
 
-
-
-
 @font-face {
-    font-family: 'din-round';
-    src: url('../fonts/DIN_NEW/DIN-ROUND.woff2');
+    font-family: "din-round";
+    src: url("../fonts/DIN_NEW/DIN-ROUND.woff2");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: 'din-round';
-    src: url('../fonts/DIN_NEW/DIN-ROUND-BOLD.woff2');
+    font-family: "din-round";
+    src: url("../fonts/DIN_NEW/DIN-ROUND-BOLD.woff2");
     font-weight: bold;
 }
 
 .text {
-    font-family: 'din-round';
+    font-family: "din-round";
 
     font-size: 16px;
-
 }
 
 .text--meiryo {
-    font-family: 'Meiryo';
-    
+    font-family: "Meiryo";
 }
 
-
-
-
 .socslingo--sidebar {
-    font-family: 'din-round';
+    font-family: "din-round";
     font-weight: 700;
     font-size: 32px;
     color: rgb(255, 198, 92);
     text-decoration: none;
 }
 
-
 .logo .socslingo {
-    font-family: 'din-round';
+    font-family: "din-round";
     font-weight: 700;
     font-size: 29px;
     color: rgb(255, 198, 92);
@@ -56,19 +46,18 @@
 }
 
 .sidebar .sidebar-wrapper .sidebar-button {
-    font-family: 'din-round';
+    font-family: "din-round";
     font-weight: 700;
     font-size: 15px;
     font-weight: 500;
     line-height: 25px;
-    letter-spacing: .8px;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
     transition: none;
-
 }
 
 .socslingo__logo--lg {
-    font-family: 'din-round';
+    font-family: "din-round";
     font-weight: 700;
     font-size: 56px;
     color: rgb(255, 198, 92);
@@ -79,7 +68,7 @@
 }
 
 .authentication__title {
-    font-family: 'din-round';
+    font-family: "din-round";
     font-weight: 700;
     font-size: 24px;
     margin: 0 0 20px 0;
@@ -88,7 +77,7 @@
 }
 
 .settings__title {
-    font-family: 'din-round';
+    font-family: "din-round";
     font-weight: 700;
     font-size: 32px;
     line-height: 36px;
@@ -97,7 +86,7 @@
 }
 
 .settings__heading {
-    font-family: 'din-round';
+    font-family: "din-round";
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -106,7 +95,7 @@
 }
 
 .settings__panel__heading {
-    font-family: 'din-round';
+    font-family: "din-round";
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;

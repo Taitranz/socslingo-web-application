@@ -26,9 +26,6 @@
 .btn--sidebar.active {
     background-color: var(--yellow-50);
     border-color: var(--yellow-150);
-    
-
-
 }
 
 .btn--sidebar.active .btn__text--sidebar {
@@ -38,7 +35,6 @@
 .btn--sidebar.active:hover {
     background-color: var(--yellow-50);
 }
-
 
 .btn--sidebar:hover {
     background-color: rgb(247, 247, 247);

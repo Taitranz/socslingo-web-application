@@ -392,7 +392,6 @@
     background-color: rgb(229, 229, 229);
 }
 
-
 .btn--panel {
     border: none;
     background-color: transparent;
@@ -412,7 +411,6 @@
 }
 
 .btn-container--panel {
-
     cursor: pointer;
 }
 
@@ -447,7 +445,6 @@
 }
 
 .authentication__input {
-
     padding: 10px;
     margin-bottom: 10px;
     border: 2px solid rgb(229, 229, 229);
@@ -725,7 +722,6 @@
 }
 
 .grid-col-5 {
-
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -734,7 +730,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
-
 
 .container--grid-5-cols {
     display: grid;
@@ -877,7 +872,6 @@
     display: inline-block;
     white-space: pre-wrap;
     background: none;
-
 }
 
 .flashcard-input:empty::before {

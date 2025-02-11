@@ -3,7 +3,6 @@
     grid-template-columns: 256px 1fr;
     grid-template-rows: auto;
     min-height: 100vh;
-    
 }
 
 .layout--authentication {

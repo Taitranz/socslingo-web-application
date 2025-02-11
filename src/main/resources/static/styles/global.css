@@ -1,48 +1,42 @@
 @font-face {
-    font-family: 'din-round';
-    src: url('../fonts/DIN_NEW/DIN-ROUND.woff2');
+    font-family: "din-round";
+    src: url("../fonts/DIN_NEW/DIN-ROUND.woff2");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: 'din-round';
-    src: url('../fonts/DIN_NEW/DIN-ROUND-BOLD.woff2');
+    font-family: "din-round";
+    src: url("../fonts/DIN_NEW/DIN-ROUND-BOLD.woff2");
     font-weight: bold;
 }
 
 @font-face {
-    font-family: 'Meiryo';
-    src: url('../fonts/MEIRYO/Meiryo-Bold.ttf');
+    font-family: "Meiryo";
+    src: url("../fonts/MEIRYO/Meiryo-Bold.ttf");
 }
 
 *,
 *::before,
 *::after {
-
     box-sizing: border-box;
     text-decoration: none;
 }
 
-
 body {
     margin: 0;
     min-height: 100vh;
-
-
 }
 
-span, input {
+span,
+input {
     font-family: "din-round", "Meiryo";
 }
-
 
 h1,
 h2,
 h3,
-
 h4,
 h5,
-
 h6,
 p {
     margin: 0;
@@ -52,12 +46,12 @@ p {
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Hide spinner arrows in Firefox */
 input[type="number"] {
-  -moz-appearance: textfield;
-  appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }

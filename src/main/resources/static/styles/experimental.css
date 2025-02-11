@@ -1,24 +1,21 @@
 @font-face {
-    font-family: 'din-round';
-    src: url('../fonts/DIN_NEW/DIN-ROUND.woff2');
+    font-family: "din-round";
+    src: url("../fonts/DIN_NEW/DIN-ROUND.woff2");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: 'din-round';
-    src: url('../fonts/DIN_NEW/DIN-ROUND-BOLD.woff2');
+    font-family: "din-round";
+    src: url("../fonts/DIN_NEW/DIN-ROUND-BOLD.woff2");
     font-weight: bold;
 }
 
 :root {
-    --arrow-color:rgb(200, 200, 200);
+    --arrow-color: rgb(200, 200, 200);
     --grey-75: rgb(75, 75, 75);
 }
 
-
-
 #curved-arrow {
-
     position: absolute;
     width: 120px;
     height: 120px;
@@ -33,7 +30,7 @@
 }
 
 #curved-arrow::after {
-    content: '';
+    content: "";
     position: absolute;
     left: -6px;
     top: 112px;
@@ -46,7 +43,7 @@
 }
 
 #curved-arrow::before {
-    content: '';
+    content: "";
     position: absolute;
     left: -18px;
     top: 112px;
@@ -58,7 +55,7 @@
 }
 
 #curved-arrow-text {
-    font-family: 'din-round';
+    font-family: "din-round";
     font-weight: 700;
     font-size: 20px;
     position: absolute;

@@ -1,102 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <nav th:fragment="nav" class="container grid fixed border-r-2 border-grey-239 px-16 w-256 min-h-screen">
-        <div class="container flex-col box-content">
-            <div class="mt-32 ml-16 mb-30 w-206 h-30 lh-25">
-                <a href="/" class="font-din-round fs-30 no-underline text-yellow-400 text-bold">socslingo</a>
+    <nav th:fragment="nav" class="border-grey-239 w-256 container fixed grid min-h-screen border-r-2 px-16">
+        <div class="container box-content flex-col">
+            <div class="mb-30 w-206 h-30 lh-25 ml-16 mt-32">
+                <a href="/" class="font-din-round fs-30 text-bold text-yellow-400 no-underline">socslingo</a>
             </div>
             <div class="container flex-col gap-8">
-                <div class="btn-container flex align-center h-52">
+                <div class="btn-container align-center flex h-52">
                     <a
-                        class="btn--sidebar flex py-4 px-8 h-52 w-222 radius-12 border-2 border-transparent bg-transparent hover:bg-grey-247 cursor-pointer"
+                        class="btn--sidebar w-222 radius-12 hover:bg-grey-247 flex h-52 cursor-pointer border-2 border-transparent bg-transparent px-8 py-4"
                         data-toggle="button"
                     >
-                        <span class="flex flex-row align-center">
-                            <div class="h-32 mr-20">
-                                <img class="h-32 ml-6" src="/svg/home.svg" />
+                        <span class="align-center flex flex-row">
+                            <div class="mr-20 h-32">
+                                <img class="ml-6 h-32" src="/svg/home.svg" />
                             </div>
-                            <span class="btn__text--sidebar fs-16 font-bold text-grey-119">LEARN</span>
+                            <span class="btn__text--sidebar fs-16 text-grey-119 font-bold">LEARN</span>
                         </span>
                     </a>
                 </div>
-                <div class="btn-container flex align-center h-52">
+                <div class="btn-container align-center flex h-52">
                     <a
-                        class="btn--sidebar flex py-4 px-8 h-52 w-222 radius-12 border-2 border-transparent bg-transparent hover:bg-grey-247 cursor-pointer"
+                        class="btn--sidebar w-222 radius-12 hover:bg-grey-247 flex h-52 cursor-pointer border-2 border-transparent bg-transparent px-8 py-4"
                         data-toggle="button"
                         href="/characters"
                     >
-                        <span class="flex flex-row align-center">
-                            <div class="h-32 mr-20">
-                                <img class="h-32 ml-6" src="/svg/characters.svg" />
+                        <span class="align-center flex flex-row">
+                            <div class="mr-20 h-32">
+                                <img class="ml-6 h-32" src="/svg/characters.svg" />
                             </div>
-                            <span class="btn__text--sidebar fs-16 font-bold text-grey-119">CHARACTERS</span>
+                            <span class="btn__text--sidebar fs-16 text-grey-119 font-bold">CHARACTERS</span>
                         </span>
                     </a>
                 </div>
 
-                <div class="btn-container flex align-center h-52">
+                <div class="btn-container align-center flex h-52">
                     <a
-                        class="btn--sidebar flex py-4 px-8 h-52 w-222 radius-12 border-2 border-transparent bg-transparent hover:bg-grey-247 cursor-pointer"
+                        class="btn--sidebar w-222 radius-12 hover:bg-grey-247 flex h-52 cursor-pointer border-2 border-transparent bg-transparent px-8 py-4"
                         data-toggle="button"
                         href="/user-content/dashboard"
                     >
-                        <span class="flex flex-row align-center">
-                            <div class="h-32 mr-20">
-                                <img class="h-32 ml-6" style="transform: scale(1.4)" src="/svg/create.svg" />
+                        <span class="align-center flex flex-row">
+                            <div class="mr-20 h-32">
+                                <img class="ml-6 h-32" style="transform: scale(1.4)" src="/svg/create.svg" />
                             </div>
-                            <span class="btn__text--sidebar fs-16 font-bold text-grey-119">CREATE</span>
+                            <span class="btn__text--sidebar fs-16 text-grey-119 font-bold">CREATE</span>
                         </span>
                     </a>
                 </div>
-                <div class="btn-container flex align-center h-52">
+                <div class="btn-container align-center flex h-52">
                     <a
-                        class="btn--sidebar flex py-4 px-8 h-52 w-222 radius-12 border-2 border-transparent bg-transparent hover:bg-grey-247 cursor-pointer"
+                        class="btn--sidebar w-222 radius-12 hover:bg-grey-247 flex h-52 cursor-pointer border-2 border-transparent bg-transparent px-8 py-4"
                         data-toggle="button"
                         href="/home"
                     >
-                        <span class="flex flex-row align-center">
-                            <div class="h-32 mr-20">
-                                <img class="h-32 ml-6" style="transform: scale(1.3)" src="/svg/blue-stopwatch.svg" />
+                        <span class="align-center flex flex-row">
+                            <div class="mr-20 h-32">
+                                <img class="ml-6 h-32" style="transform: scale(1.3)" src="/svg/blue-stopwatch.svg" />
                             </div>
-                            <span class="btn__text--sidebar fs-16 font-bold text-grey-119">ANALYSIS</span>
+                            <span class="btn__text--sidebar fs-16 text-grey-119 font-bold">ANALYSIS</span>
                         </span>
                     </a>
                 </div>
-
             </div>
 
-            <div class="container flex-col mt-auto mb-10">
-                <div class="btn-container flex align-center h-52 mb-8">
+            <div class="container mb-10 mt-auto flex-col">
+                <div class="btn-container align-center mb-8 flex h-52">
                     <a
-                        class="btn--sidebar flex py-4 px-8 h-52 w-222 radius-12 border-2 border-transparent bg-transparent hover:bg-grey-247 cursor-pointer"
+                        class="btn--sidebar w-222 radius-12 hover:bg-grey-247 flex h-52 cursor-pointer border-2 border-transparent bg-transparent px-8 py-4"
                         data-toggle="button"
                         href="/profile"
                     >
-                        <span class="flex flex-row align-center">
-                            <div class="h-32 mr-20">
+                        <span class="align-center flex flex-row">
+                            <div class="mr-20 h-32">
                                 <span>
                                     <div
-                                        class="ml-6 border-2 border-grey-175 justify-center align-center align-center h-32 w-32 inline-flex radius-50 border-dashed text-grey-175 text-bold fs-1472"
+                                        class="border-grey-175 align-center align-center radius-50 text-grey-175 text-bold fs-1472 ml-6 inline-flex h-32 w-32 justify-center border-2 border-dashed"
                                     >
                                         T
                                     </div>
                                 </span>
                             </div>
-                            <span class="btn__text--sidebar fs-16 font-bold text-grey-119">PROFILE</span>
+                            <span class="btn__text--sidebar fs-16 text-grey-119 font-bold">PROFILE</span>
                         </span>
                     </a>
                 </div>
-                <div class="btn-container flex align-center h-52 mb-8">
+                <div class="btn-container align-center mb-8 flex h-52">
                     <a
-                        class="btn--sidebar flex py-4 px-8 h-52 w-222 radius-12 border-2 border-transparent bg-transparent hover:bg-grey-247 cursor-pointer"
+                        class="btn--sidebar w-222 radius-12 hover:bg-grey-247 flex h-52 cursor-pointer border-2 border-transparent bg-transparent px-8 py-4"
                         data-toggle="button"
                         href="/settings"
                     >
-                        <span class="flex flex-row align-center">
-                            <div class="h-32 mr-20">
-                                <img class="h-32 ml-6" src="/svg/more.svg" />
+                        <span class="align-center flex flex-row">
+                            <div class="mr-20 h-32">
+                                <img class="ml-6 h-32" src="/svg/more.svg" />
                             </div>
-                            <span class="btn__text--sidebar fs-16 font-bold text-grey-119">MORE</span>
+                            <span class="btn__text--sidebar fs-16 text-grey-119 font-bold">MORE</span>
                         </span>
                     </a>
                 </div>
