@@ -1,89 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
     <head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}"></head>
 
     <body>
-        <div class="container grid grid-cols-sidebar grid-rows-auto">
+        <div class="grid-cols-sidebar grid-rows-auto container grid">
             <nav th:replace="~{fragments/nav :: nav}"></nav>
-            <main class="container grid grid-cols-main col-2 gap-50 py-24">
-                <!-- FIRST COLUMN -->
-                <div class="container w-630 flex-col col-2 gap-16">
-                    <h1 class="settings__title"> Profile </h1>
-                    <h1 class="fs-20 text-grey-75 text-bold"> Avatar </h1>
-                    <div class="container radius-parent-50 w-100 h-100">
+            <main class="grid-cols-main col-2 gap-50 container grid py-24">
+                <div class="w-630 col-2 container flex-col gap-16">
+                    <h1 class="fs-32 lh-32 text-grey-75 m-0">Profile</h1>
+                    <h1 class="fs-20 text-grey-75 text-bold">Avatar</h1>
+                    <div class="radius-parent-50 w-100 h-100 container">
                         <img class="w-100 h-100" src="/images/profile.jpg" alt="Avatar" />
                     </div>
-                    <h1 class="fs-20 text-grey-75 text-bold"> Name </h1>
-                    <div class="container">
-                        <input class="form__input" type="text" id="password" name="password" placeholder="Taitranz" />
+                    <h1 class="fs-20 text-grey-75 text-bold">Name</h1>
+                    <div class="container mb-10">
+                        <input
+                            class="border-grey-229 bg-grey-247 text-grey-178 radius-12 fs-16 w-full border-2 p-10 font-bold outline-none"
+                            type="text"
+                            id="password"
+                            name="password"
+                            placeholder="Taitranz"
+                        />
                     </div>
-                    <h1 class="fs-20 text-grey-75 text-bold"> Username </h1>
-                    <div class="container">
-                        <input class="form__input" type="text" id="password" name="password" placeholder="Taitranz" />
+                    <h1 class="fs-20 text-grey-75 text-bold">Username</h1>
+                    <div class="container mb-10">
+                        <input
+                            class="border-grey-229 bg-grey-247 text-grey-178 radius-12 fs-16 w-full border-2 p-10 font-bold outline-none"
+                            type="text"
+                            id="password"
+                            name="password"
+                            placeholder="Taitranz"
+                        />
                     </div>
-                    <h1 class="fs-20 text-grey-75 text-bold"> Email </h1>
-                    <div class="container">
-                        <input class="form__input" type="email" id="password" name="password" placeholder="taitranz@ymail.com" />
+                    <h1 class="fs-20 text-grey-75 text-bold">Email</h1>
+                    <div class="container mb-10">
+                        <input
+                            class="border-grey-229 bg-grey-247 text-grey-178 radius-12 fs-16 w-full border-2 p-10 font-bold outline-none"
+                            type="email"
+                            id="password"
+                            name="password"
+                            placeholder="taitranz@ymail.com"
+                        />
                     </div>
-                    <h1 class="fs-20 text-grey-75 text-bold"> Current Password </h1>
-                    <div class="container">
-                        <input class="form__input" type="password" id="password" name="password" placeholder="" />
+                    <h1 class="fs-20 text-grey-75 text-bold">Current Password</h1>
+                    <div class="container mb-10">
+                        <input
+                            class="border-grey-229 bg-grey-247 text-grey-178 radius-12 fs-16 w-full border-2 p-10 font-bold outline-none"
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder=""
+                        />
                     </div>
-                    <h1 class="fs-20 text-grey-75 text-bold"> New Password </h1>
-                    <div class="container">
-                        <input class="form__input" type="password" id="password" name="password" placeholder="" />
+                    <h1 class="fs-20 text-grey-75 text-bold">New Password</h1>
+                    <div class="container mb-10">
+                        <input
+                            class="border-grey-229 bg-grey-247 text-grey-178 radius-12 fs-16 w-full border-2 p-10 font-bold outline-none"
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder=""
+                        />
                     </div>
-                    <div class="btn-container group radius-parent-12 w-142 h-44">
+                    <div class="btn-container radius-parent-12 w-142 group h-44">
                         <div class="btn__bottom bg-blue-153 group-hover:bg-blue-168"></div>
 
-                        <button class="btn__top bg-blue-176 group-hover:bg-blue-194" type="submit" onclick="event.preventDefault();">
-                            <span class="btn__text text-white text-bold"> SAVE CHANGES </span>
+                        <button
+                            class="btn__top bg-blue-176 group-hover:bg-blue-194"
+                            type="submit"
+                            onclick="event.preventDefault();"
+                        >
+                            <span class="btn__text text-bold text-white"> SAVE CHANGES </span>
                         </button>
                     </div>
 
                     <div class="btn-container">
-                        <button class="btn--borderless" type="submit" onclick="event.preventDefault();">
-                            <span class="btn__text text-red-500 text-bold"> DELETE MY ACCOUNT </span>
+                        <button
+                            class="align-center container cursor-pointer gap-8 border-0 bg-transparent"
+                            type="submit"
+                            onclick="event.preventDefault();"
+                        >
+                            <span class="btn__text text-bold text-red-500"> DELETE MY ACCOUNT </span>
                         </button>
                     </div>
                 </div>
-                <!-- SECOND COLUMN -->
-                <div class="container w-340 flex-col col-3 gap-25">
-                    <div class="container flex-col border-2 border-grey-229 py-24 px-16 radius-16">
-                        <h1 class="fs-24 mx-30 mb-16 text-grey-119 font-bold"> Account </h1>
+
+                <div class="w-340 col-3 gap-25 container flex-col">
+                    <div class="border-grey-229 radius-16 container flex-col border-2 px-16 py-24">
+                        <h1 class="fs-24 mx-30 text-grey-119 mb-16 font-bold">Account</h1>
                         <div class="container flex-col gap-4">
-                            <div class="container hover:bg-grey-229 py-8 px-30 radius-12 h-40 cursor-pointer">
-                                <button class="bg-transparent border-0 cursor-pointer">
-                                    <span class="fs-20 text-grey-75 font-bold lh-24"> Preferences </span>
+                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
+                                <button class="cursor-pointer border-0 bg-transparent">
+                                    <span class="fs-20 text-grey-75 lh-24 font-bold"> Preferences </span>
                                 </button>
                             </div>
-                            <div class="container hover:bg-grey-229 py-8 px-30 radius-12 h-40 cursor-pointer">
-                                <button class="bg-transparent border-0 cursor-pointer">
-                                    <span class="fs-20 text-grey-75 font-bold lh-24"> Profile </span>
+                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
+                                <button class="cursor-pointer border-0 bg-transparent">
+                                    <span class="fs-20 text-grey-75 lh-24 font-bold"> Profile </span>
                                 </button>
                             </div>
-                            <div class="container hover:bg-grey-229 py-8 px-30 radius-12 h-40 cursor-pointer">
-                                <button class="bg-transparent border-0 cursor-pointer">
-                                    <span class="fs-20 text-grey-75 font-bold lh-24"> Courses </span>
+                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
+                                <button class="cursor-pointer border-0 bg-transparent">
+                                    <span class="fs-20 text-grey-75 lh-24 font-bold"> Courses </span>
                                 </button>
                             </div>
-                            <div class="container hover:bg-grey-229 py-8 px-30 radius-12 h-40 cursor-pointer">
-                                <button class="bg-transparent border-0 cursor-pointer">
-                                    <span class="fs-20 text-grey-75 font-bold lh-24"> Social accounts </span>
+                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
+                                <button class="cursor-pointer border-0 bg-transparent">
+                                    <span class="fs-20 text-grey-75 lh-24 font-bold"> Social accounts </span>
                                 </button>
                             </div>
-                            <div class="container hover:bg-grey-229 py-8 px-30 radius-12 h-40 cursor-pointer">
-                                <button class="bg-transparent border-0 cursor-pointer">
-                                    <span class="fs-20 text-grey-75 font-bold lh-24"> Privacy settings </span>
+                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
+                                <button class="cursor-pointer border-0 bg-transparent">
+                                    <span class="fs-20 text-grey-75 lh-24 font-bold"> Privacy settings </span>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="btn-container group radius-parent-16 w-full h-46">
+                    <div class="btn-container radius-parent-16 h-46 group w-full">
                         <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
                         <button
-                            class="btn__top bg-white border-grey-229 border-2 group-hover:bg-grey-229 group-hover:border-grey-206"
+                            class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
                             type="submit"
                             onclick="window.location.href='/login'"
                         >

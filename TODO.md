@@ -10,5 +10,5 @@ Rework css naming conventions for
 - index.html (done)
 - login.html (done)
 - register.html (done)
-- create-deck.html ()
-- settings.html
+- create-deck.html (done)
+- settings.html 

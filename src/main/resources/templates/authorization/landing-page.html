@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}"></head>
+
+    <body class="container min-h-screen flex-col">
+        <header class="bg-white shadow-md">
+            <div class="container mx-auto px-32 py-16">
+                <span class="fs-32 -tracking-2 text-bold text-yellow-400">socslingo</span>
+            </div>
+        </header>
+
+        <main class="align-center container flex-grow justify-center">
+            <div class="container flex-row gap-16">
+                <div class="w-fit-content container">
+                    <img
+                        class="w-424 object-fit-cover object-position-right"
+                        src="/images/threadjump_white_cropped.gif"
+                        alt="Socslingo Logo"
+                    />
+                </div>
+
+                <!-- Right Column - Text -->
+                <div class="w-500 align-center container mt-80">
+                    <div class="h-fit-content align-center h-fit-content container flex-col">
+                        <h1 class="fs-32 text-center">The free, fun, and effective way to learn a language!</h1>
+                        <div class="container mt-40 flex-col gap-16">
+                            <div class="btn-container radius-parent-16 w-330 h-46 group">
+                                <div class="btn__bottom bg-blue-153 group-hover:bg-blue-168"></div>
+                                <button
+                                    class="btn__top bg-blue-176 group-hover:bg-blue-194"
+                                    type="submit"
+                                    onclick="event.preventDefault();"
+                                >
+                                    <span class="fs-16 text-bold text-white"> LEARN THE CHARACTERS </span>
+                                </button>
+                            </div>
+                            <div class="btn-container radius-parent-16 w-330 h-46 group">
+                                <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
+                                <button
+                                    class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    type="submit"
+                                    onclick="event.preventDefault();"
+                                >
+                                    <span class="fs-16 text-blue-176 text-bold"> TIPS </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="border-grey-229 border-t-2">
+            <div class="container mx-auto px-32 py-16 h-80">Footer</div>
+        </footer>
+    </body>
+</html>
