@@ -7,23 +7,72 @@
             <nav th:replace="~{fragments/nav :: nav}"></nav>
             <main class="grid-cols-main col-2 gap-50 container grid py-24">
                 <!-- MAIN COLUMN -->
-                <div class="w-630 col-2 container flex-col">
-                    <div class="container border-2" style="height: 200px">s</div>
-                    <div class="container flex-col">
-                        <h1>Taitranz</h1>
-                        <h2>Tai Tran</h2>
-                        <h3>Joined August 2024</h3>
-                        <div class="align-center container flex-row justify-between">
-                            <div class="container">
-                                <div class="container">Followers</div>
-                                <div class="container">Following</div>
-                            </div>
-                            <div class="container">Flags</div>
+                <div class="w-630 col-2 container flex-col gap-24">
+                    <div class="radius-12 h-224 bg-light-turquoise container relative justify-center overflow-hidden">
+                        <div class="btn-container radius-parent-16 h-50 w-50 mt-15 mr-15 group absolute right-0 top-0">
+                            <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
+                            <button
+                                class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 -translate-y-2 border-2 bg-white"
+                            >
+                                <svg
+                                    class="text-grey-67"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M10.8637 2.28623L12.1531 1.00038C13.4906 -0.33346 15.659 -0.333457 16.9965 1.00038C18.3339 2.33421 18.3339 4.49679 16.9965 5.83062L15.7071 7.11648L10.8637 2.28623ZM9.34202 3.80383L0.902018 12.2209C0.0785876 13.0421 -0.354215 16.9413 0.363097 17.6567C1.08041 18.3722 4.90788 17.8864 5.7454 17.0512L14.1854 8.63408L9.34202 3.80383Z"
+                                        fill="currentColor"
+                                    ></path>
+                                </svg>
+                            </button>
                         </div>
-                        <div class="divider"></div>
-                        <div class="container flex-col">
+
+                        <img
+                            src="/svg/default-character.svg"
+                            alt="Profile Picture"
+                            style="transform: translateY(60px)"
+                        />
+                    </div>
+                    <div class="container mb-32 flex-col">
+                        <h1 class="container mb-6 flex-col">
+                            <span class="fs-28 text-grey-60 lh-34">Taitranz</span>
                             <div class="container">
-                                <h1>Statistics</h1>
+                                <span class="fs-17 text-grey-175 lh-20">Tai Tran</span>
+                            </div>
+                        </h1>
+                        <div class="container mb-12">
+                            <span class="fs-17 text-grey-119 lh-20">Joined August 2024</span>
+                        </div>
+                        <div class="align-center container flex-row justify-between">
+                            <div class="container gap-16">
+                                <div class="fs-16 container">
+                                    <span class="fs-16 text-blue-176 font-bold">0 Followers</span>
+                                </div>
+                                <div class="fs-16 container">
+                                    <span class="fs-16 text-blue-176 font-bold">0 Following</span>
+                                </div>
+                            </div>
+                            <div class="container gap-8">
+                                <div class="container">
+                                    <img src="/svg/japan_flag.svg" alt="Flag" class="w-31 h-24" />
+                                </div>
+                                <div class="container">
+                                    <img src="/svg/korean_flag.svg" alt="Flag" class="w-31 h-24" />
+                                </div>
+                                <div class="container">
+                                    <img src="/svg/spanish_flag.svg" alt="Flag" class="w-31 h-24" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider my-32"></div>
+                        <div class="container mb-32 flex-col">
+                            <div class="container mb-12">
+                                <h1 class="text-grey-60 fs-24">Statistics</h1>
                             </div>
                             <div class="grid-cols-2-2 container grid gap-10">
                                 <div class="radius-12 container h-60 border-2">
@@ -43,8 +92,15 @@
                         </div>
 
                         <div class="container flex-col">
-                            <div class="container">
-                                <h1>Achievements</h1>
+                            <div class="container mb-12 flex-row justify-between">
+                                <h1 class="text-grey-60 fs-24">Achievements</h1>
+                                <div class="flex-center-xy container">
+                                    <div class="btn-container ml-10">
+                                        <button class="align-center cursor-pointer border-0 bg-transparent">
+                                            <span class="fs-16 text-blue-176 text-bold">VIEW ALL</span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                             <div
                                 class="border-grey-229 radius-12 border-b-except-last container flex-col overflow-hidden border-2"

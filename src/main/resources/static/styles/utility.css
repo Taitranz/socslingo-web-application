@@ -19,6 +19,7 @@
 }
 
 :root {
+    --light-turquoise: rgb(221, 244, 255);
     --blue-34: rgb(63, 34, 236);
     --blue-85: rgb(66, 85, 255);
     --blue-123: rgb(0, 123, 255);
@@ -30,7 +31,7 @@
     --grey-229: rgb(229, 229, 229);
     --grey-244: rgb(244, 244, 244);
     --grey-224: rgb(224, 224, 224);
-    --grey-175: rgb(175, 175, 175);
+    --grey-175: rgb(175, 175, 175); 
     --grey-119: rgb(119, 119, 119);
     --grey-75: rgb(75, 75, 75);
     --grey-60: rgb(60, 60, 60);
@@ -54,6 +55,7 @@
     --fs-18: 18px;
     --fs-19: 19px;
     --fs-20: 20px;
+    --fs-28: 28px;
 }
 
 /* ==========================================================================
@@ -86,6 +88,9 @@
 }
 
 /* Line Height */
+.lh-20 {
+    line-height: 20px;
+}
 .lh-24 {
     line-height: 24px;
 }
@@ -102,6 +107,10 @@
     line-height: 32px;
 }
 
+.lh-34 {
+    line-height: 34px;
+}
+
 /* Font Sizes */
 .fs-1472 {
     font-size: 14.72px;
@@ -110,6 +119,10 @@
 .fs-16 {
     font-size: 16px;
 }
+
+.fs-28 {
+    font-size: var(--fs-28);
+}   
 
 .fs-17 {
     font-size: var(--fs-17);
@@ -436,6 +449,9 @@
     gap: 25px;
 }
 
+.gap-24 {
+    gap: 24px;
+}
 .gap-32 {
     gap: 32px;
 }
@@ -455,6 +471,14 @@
 
 .m-15 {
     margin: 15px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mr-15 {
+    margin-right: 15px;
 }
 
 .mt-20 {
@@ -499,7 +523,12 @@
 .mb-30 {
     margin-bottom: 30px;
 }
-
+.mb-32 {
+    margin-bottom: 32px;
+}
+.mb-6 {
+    margin-bottom: 6px;
+}
 .mb-60 {
     margin-bottom: 60px;
 }
@@ -565,6 +594,11 @@
 }
 .mr-10 {
     margin-right: 10px;
+}
+
+.my-32 {
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .mr-22 {
@@ -764,7 +798,9 @@
 .h-320 {
     height: 320px;
 }
-
+.h-224 {
+    height: 224px;
+}
 .h-100 {
     height: 100px;
 }
@@ -1002,6 +1038,10 @@
 /* ==========================================================================
    Background Utilities
    ========================================================================== */
+
+.bg-light-turquoise {
+    background-color: var(--light-turquoise);
+}
 
 .bg-transparent {
     background-color: transparent;
@@ -1251,4 +1291,58 @@
 
 .h-80 {
     height: 80px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.top-4 {
+    top: 4px;
+}
+
+.left-4 {
+    left: 4px;
+}
+
+.right-4 {
+    right: 4px;
+}
+
+.bottom-4 {
+    bottom: 4px;
+}
+
+
+.top-0 {
+    top: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.h-48 {
+    height: 48px;
+}
+
+.w-48 {
+    width: 48px;
+}
+
+
+.h-50 {
+    height: 50px;
+}
+
+.w-50 {
+    width: 50px;
+}
+
+.text-grey-67 {
+    color: rgb(103, 103, 103);
 }
