@@ -51,6 +51,7 @@
     --yellow-500: rgb(255, 184, 51);
 
     --fs-17: 17px;
+    --fs-11: 11px;
     --fs-22: 22px;
     --fs-18: 18px;
     --fs-19: 19px;
@@ -76,7 +77,8 @@
 }
 
 .text-left {
-    text-align: left;
+    text-align: left;   
+
 }
 /* Font Family */
 .font-din-round {
@@ -118,6 +120,10 @@
 
 .fs-16 {
     font-size: 16px;
+}
+
+.fs-11 {
+    font-size: var(--fs-11);
 }
 
 .fs-28 {
@@ -262,6 +268,10 @@
 
 .-tracking-2 {
     letter-spacing: -2px;
+}
+
+.tracking-08 {
+    letter-spacing: 0.8px;
 }
 /* ==========================================================================
    Flexbox & Layout Utilities
@@ -481,6 +491,10 @@
     margin-right: 15px;
 }
 
+.mr-30 {
+    margin-right: 30px;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
@@ -626,7 +640,9 @@
 .p-10 {
     padding: 10px;
 }
-
+.p-20 {
+    padding: 20px;
+}
 .p-24 {
     padding: 24px;
 }
@@ -639,12 +655,20 @@
 .pt-16 {
     padding-top: 16px;
 }
+.pt-12 {
+    padding-top: 12px;
+}
 .pt-35 {
     padding-top: 35px;
 }
 .pb-4 {
     padding-bottom: 4px;
 }
+
+.pb-12 {
+    padding-bottom: 12px;
+}
+
 .pb-5 {
     padding-bottom: 5px;
 }
@@ -719,6 +743,13 @@
     padding-right: 30px;
 }
 
+.px-24 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+
 /* ==========================================================================
    Sizing Utilities
    ========================================================================== */
@@ -734,6 +765,10 @@
 .h-2 {
     height: 2px;
 }
+
+.h-78 {
+    height: 78px;
+}
 .h-20 {
     height: 20px;
 }
@@ -742,6 +777,9 @@
     height: 16px;
 }
 
+.h-14 {
+    height: 14px;
+}
 .h-24 {
     height: 24px;
 }
