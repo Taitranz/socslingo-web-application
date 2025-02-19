@@ -30,3 +30,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+function toggleActiveState(el) {
+    // Remove the active class from all activity toggle buttons on the page
+    const allToggles = document.querySelectorAll(".btn-toggle--activity");
+    allToggles.forEach((toggle) => toggle.classList.remove("active"));
+
+    // Get the toggle container for the clicked button and add active class
+    const container = el.closest(".btn-toggle--activity");
+    if (container) {
+        container.classList.add("active");
+    }
+}
