@@ -104,18 +104,17 @@
 }
 
 .divider {
-
     border-bottom: 2px solid rgb(229, 229, 229);
     margin: 20px 0;
 }
 
-.btn-toggle{
+.btn-toggle {
     border: none;
     background: transparent;
     cursor: pointer;
 }
 
-.btn-toggle--blue.active .btn__text{
+.btn-toggle--blue.active .btn__text {
     color: var(--blue-400);
 }
 
@@ -126,7 +125,6 @@
     cursor: pointer;
 }
 
-
 .btn-toggle--character-practice.active .btn__text {
     color: var(--blue-400);
 }
@@ -135,8 +133,6 @@
     background-color: var(--yellow-50);
     border-color: var(--yellow-150);
 }
-
-
 
 .flashcard-input {
     position: relative;
@@ -185,3 +181,17 @@
 .flashcard-input[data-hidden-input^="back-"] .flashcard-char:not(.space)::after {
     display: none;
 }
+
+.right-arrow-sprite {
+    background-image: url("../svg/THE_LATEST_SPRITE.svg");
+    background-position: -678px -70px;
+}
+
+.btn-toggle-container:hover {
+    border-color: var(--blue-176);
+}
+
+.btn-toggle-container:hover .btn__text {
+    color: var(--blue-400);
+}
+
