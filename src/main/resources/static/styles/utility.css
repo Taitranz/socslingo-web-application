@@ -598,6 +598,10 @@
     margin-left: 30px;
     margin-right: 30px;
 }
+.mx-12 {
+    margin-left: 12px;
+    margin-right: 12px;
+}
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -605,6 +609,18 @@
 .my-20 {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.my-8 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.my-12 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.my-16 {
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 .mr-10 {
     margin-right: 10px;

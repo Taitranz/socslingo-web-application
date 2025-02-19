@@ -109,11 +109,23 @@
     margin: 20px 0;
 }
 
+.btn-toggle{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-toggle--blue.active .btn__text{
+    color: var(--blue-400);
+}
+
+
 .btn-toggle--character-practice {
     background: transparent;
     border: none;
     cursor: pointer;
 }
+
 
 .btn-toggle--character-practice.active .btn__text {
     color: var(--blue-400);

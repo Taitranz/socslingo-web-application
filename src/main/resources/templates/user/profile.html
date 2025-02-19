@@ -275,37 +275,98 @@
                     <div class="border-grey-229 radius-16 container flex-col border-2">
                         <div class="row container flex justify-evenly pt-16">
                             <div class="border-grey-229 container w-full justify-center border-b-2 pb-12">
-                                <span class="fs-16 text-grey-119 font-bold tracking-08"> FOLLOWING </span>
+                                <button class="btn-toggle btn-toggle--blue active" id="following-button">
+                                    <span class="btn__text fs-17 text-grey-175 text-bold">FOLLOWING</span>
+                                </button>
                             </div>
                             <div class="border-grey-229 container w-full justify-center border-b-2 pb-12">
-                                <span class="fs-16 text-grey-119 font-bold tracking-08">FOLLOWERS</span>
+                                <button class="btn-toggle btn-toggle--blue" id="followers-button">
+                                    <span class="btn__text fs-17 text-grey-175 text-bold">FOLLOWERS</span>
+                                </button>
                             </div>
                         </div>
-                        <div class="container flex-col gap-4">
-                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
-                                <button class="cursor-pointer border-0 bg-transparent">
-                                    <span class="fs-20 text-grey-75 lh-24 font-bold">Number of cards: 4</span>
-                                </button>
+                        <div class="container flex-col gap-4 ">
+                            <div class="container p-16 my-8">
+                                <div class="container flex-row">
+                                    <div class="radius-parent-50 w-50 h-50 container">
+                                        <img class="w-50 h-50 object-fit-cover" src="/images/caleb_profile.webp" alt="Avatar" />
+                                    </div>
+                                </div>
+                                <div class="container flex-col mx-12 justify-center">
+                                    <span class="fs-17 text-grey-175 text-bold">Caleb</span>
+                                    <span class="fs-17 text-grey-175">MOVING FAST</span>
+                                </div>
                             </div>
-                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
-                                <button class="cursor-pointer border-0 bg-transparent">
-                                    <span class="fs-20 text-grey-75 lh-24 font-bold">View created cards</span>
-                                </button>
+                            <div class="container p-16 my-8">
+                                <div class="container flex-row">
+                                    <div class="radius-parent-50 w-50 h-50 container"  >
+                                        <img class="w-50 h-50 object-fit-cover" src="/images/john_profile.png" alt="Avatar" />
+                                    </div>
+                                </div>
+                                <div class="container flex-col mx-12 justify-center">
+                                    <span class="fs-17 text-grey-175 text-bold">John Cena</span>
+                                    <span class="fs-17 text-grey-175">WWE</span>
+                                </div>
                             </div>
-                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
-                                <button class="cursor-pointer border-0 bg-transparent">
-                                    <span class="fs-20 text-grey-75 lh-24 font-bold">Quick view deck</span>
-                                </button>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="border-grey-229 radius-16 p-18 container flex-col border-2">
+                        <div class="align-center container justify-between">
+                            <div class="container">
+                                <span class="text-grey-75 fs-19 text-bold">Adds friends</span>
                             </div>
-                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
-                                <button class="cursor-pointer border-0 bg-transparent">
-                                    <span class="fs-20 text-grey-75 lh-24 font-bold">Delete deck</span>
-                                </button>
+                            
+                        </div>
+
+                        <div class="container flex-col">
+                            <div class="container py-20">
+                                <div class="mr-22 container">
+                                    <img class="h-60" src="/svg/magnifying_glass.svg" alt="Flashcard Image" />
+                                </div>
+                                <div class="container justify-center flex-col gap-4">
+                                    <div class="radius-12 container h-40 cursor-pointer py-8">
+                                        <button
+                                            class="cursor-pointer border-0 bg-transparent"
+                                            onclick="event.preventDefault();"
+                                        >
+                                            <span class="fs-20 text-grey-75 lh-24 font-bold">Find friends</span>
+                                            
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="hover:bg-grey-229 px-30 radius-12 container h-40 cursor-pointer py-8">
-                                <button class="cursor-pointer border-0 bg-transparent">
-                                    <span class="fs-20 text-grey-75 lh-24 font-bold">Save as draft</span>
-                                </button>
+                            <div class="container py-20">
+                                <div class="mr-22 container">
+                                    <img class="h-60" src="/svg/hot-calender.svg" alt="Flashcard Image" />
+                                </div>
+                                <div class="space-between container flex-grow flex-col gap-4">
+                                    <div class="container">
+                                        <span class="text-grey-75 fs-17 text-bold">Spend 5 minutes learning</span>
+                                    </div>
+                                    <div class="align-center radius-25 bg-grey-229 h-23 container justify-center">
+                                        <span class="text-flex align-center text-grey-175 h-23 justify-center"
+                                            >3/10</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container py-20">
+                                <div class="mr-22 container w-60">
+                                    <img class="h-60" src="/svg/blue-stopwatch.svg" alt="Flashcard Image" />
+                                </div>
+                                <div class="space-between container flex-grow flex-col gap-4">
+                                    <div class="container">
+                                        <span class="text-grey-75 fs-17 text-bold">Decks created</span>
+                                    </div>
+
+                                    <div class="align-center radius-25 bg-grey-229 h-23 container justify-center">
+                                        <span class="text-flex align-center text-grey-175 h-23 justify-center"
+                                            >3/10</span
+                                        >
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
