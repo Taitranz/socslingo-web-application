@@ -888,7 +888,13 @@
 .h-23 {
     height: 23px;
 }
+.h-67 {
+    height: 67px;
+}
 
+.h-73 {
+    height: 73px;
+}
 .h-68 {
     height: 68px;
 }
@@ -996,6 +1002,9 @@
     width: 222px;
 }
 
+.w-255 {
+    width: 255px;
+}
 .w-256 {
     width: 256px;
 }
@@ -1068,6 +1077,10 @@
 
 .border-2 {
     border: 2px solid var(--grey-229);
+}
+
+.border-3 {
+    border: 3px solid var(--grey-229);
 }
 .border-bottom {
     border-bottom: 2px solid var(--grey-229);

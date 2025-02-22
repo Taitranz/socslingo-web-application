@@ -209,7 +209,6 @@
     color: var(--blue-153);
 }
 
-/* Override hover styles on active toggle buttons */
 .btn-toggle--activity.active:hover .btn__top,
 .btn-toggle--activity.active .btn__top:hover {
     background-color: var(--blue-221) !important;
@@ -222,4 +221,49 @@
 .btn-toggle--activity.active:hover .btn__text,
 .btn-toggle--activity.active .btn__text:hover {
     color: var(--blue-153) !important;
+}
+
+.btn__bottom--select-pairs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+
+    border: none;
+}
+
+.btn-toggle--select-pairs .btn__top .btn__text {
+    transition:
+        width 0.25s ease,
+        height 0.25s ease;
+    width: 125px;
+    height: 50px;
+}
+
+.btn-toggle--select-pairs:active .btn__top .btn__text {
+    width: 125px;
+    height: 50px;
+    border-radius: 16px;
+    color: var(--blue-153);
+    background-color: var(--blue-221);
+}
+
+.btn-toggle--select-pairs.active .btn__top .btn__text {
+    width: 255px;
+    height: 72px;
+    border-radius: 16px;
+    background-color: var(--blue-221);
+    color: var(--blue-153);
+}
+
+
+.btn-toggle--select-pairs.active .btn__top.border-changed {
+    transition: border-color 0ms;
+    border-color: var(--blue-132);
+}
+
+.btn-toggle--select-pairs.active .btn__bottom--select-pairs.border-changed {
+    transition: border-color 0ms;
+    border-color: var(--blue-132);
+    background-color: var(--blue-132);
 }

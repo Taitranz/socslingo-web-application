@@ -1,3 +1,5 @@
+// Sidebar.js
+
 document.addEventListener("DOMContentLoaded", function () {
     const sidebarButtons = document.querySelectorAll("a[data-toggle='button']");
     // Get the current pathname (e.g. "/home")
