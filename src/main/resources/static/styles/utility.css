@@ -1033,6 +1033,9 @@
 .w-630 {
     width: 630px;
 }
+.w-270 {
+    width: 270px;
+}
 
 .max-w-800 {
     max-width: 800px;
@@ -1493,8 +1496,13 @@
     margin-top: 80px;
 }
 
+
 .h-80 {
     height: 80px;
+}
+
+.h-75 {
+    height: 75px;
 }
 
 .absolute {
@@ -1541,11 +1549,31 @@
     height: 70px;
 }
 
+.h-74 {
+    height: 74px;
+}
+
+.h-71 {
+    height: 71px;
+}
+
+.h-72 {
+    height: 72px;
+}
+
+.h-80 {
+    height: 80px;
+}
+
 .h-50 {
     height: 50px;
 }
 
 .w-50 {
     width: 50px;
+}
+
+.h-82 {
+    height: 82px;
 }
 
