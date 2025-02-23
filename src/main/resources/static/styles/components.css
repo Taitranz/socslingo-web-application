@@ -60,6 +60,21 @@
     --blue-132: rgb(132, 216, 255);
     --blue-221: rgb(221, 244, 255);
     --blue-153: rgb(24, 153, 214);
+
+    --select-pairs-initial-width: 125px;
+    --select-pairs-initial-height: 40px;
+    --select-pairs-final-width: 255px;
+    --select-pairs-final-height: 73px;
+    --select-pairs-overshoot-width: 262px;
+    --select-pairs-overshoot-height: 80px;
+
+    --transition-transform: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-size: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), height 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --correct-bg: rgb(215, 255, 184);
+    --correct-border: rgb(165, 237, 110);
+    --incorrect-bg: rgb(255, 223, 224);
+    --incorrect-border: rgb(255, 179, 179);
 }
 
 .heading {
@@ -69,6 +84,7 @@
 
 .btn-container {
     position: relative;
+    overflow: visible;
 }
 
 .btn {
@@ -225,125 +241,108 @@
     color: var(--blue-153) !important;
 }
 
-.btn__bottom--select-pairs {
+/* Rename the classes but keep exact same functionality */
+.select-pairs {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 12px;
-
     border: none;
 }
 
-.btn__top--select-pairs {
+.select-pairs-toggle {
+    position: relative;
+    overflow: visible;
+    cursor: pointer;
+}
+
+/* Common styles for .select-pairs__top and .select-pairs__middle */
+.select-pairs__top,
+.select-pairs__middle {
     border-radius: 12px;
-    width: 100%;
-    height: 100%;
     outline: none;
     border: none;
-    transform: translateY(-4px);
+    cursor: pointer;
+    position: absolute;
+    pointer-events: none;
+}
+
+.select-pairs__top {
     z-index: 3;
-    transition:
-        transform 0.15s cubic-bezier(0.4, 0, 0.2, 1),
-        width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
-        height 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-    pointer-events: none;
+    width: var(--select-pairs-initial-width);
+    height: var(--select-pairs-initial-height);
+    transition: var(--transition-transform), var(--transition-size);
 }
-.btn__middle--select-pairs {
-    border-radius: 12px;
-    outline: none;
-    border: none;
-    transform: translateY(-4px);
-    cursor: pointer;
-    position: absolute;
+
+.select-pairs__middle {
     z-index: 2;
-    transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-    pointer-events: none;
-}
-
-.btn-toggle--select-pairs {
-    cursor: pointer;
-}
-
-.btn-toggle--select-pairs .btn__top--select-pairs {
-    width: 125px;
-    height: 40px;
     transform: translateY(-4px);
-    pointer-events: auto;
+    transition: var(--transition-transform);
 }
 
-.btn-toggle--select-pairs:active .btn__top--select-pairs {
-    width: 125px;
-    height: 40px;
+/* Default positioning within the toggle */
+.select-pairs-toggle .select-pairs__top {
+    width: var(--select-pairs-initial-width);
+    height: var(--select-pairs-initial-height);
+    pointer-events: auto;
+    left: 50%;
+    transform: translateX(-50%) translateY(-4px);
+}
+
+/* Active press state */
+.select-pairs-toggle:active .select-pairs__top {
+    width: var(--select-pairs-initial-width);
+    height: var(--select-pairs-initial-height);
     border-radius: 16px;
     background-color: var(--blue-221);
+    transform: translateX(-50%) translateY(0);
+}
+
+.select-pairs-toggle:active .select-pairs__middle {
     transform: translateY(0);
 }
 
-.btn-toggle--select-pairs:active .btn__middle--select-pairs {
-    transform: translateY(0);
-}
-
-.btn-toggle--select-pairs.active .btn__top--select-pairs {
+/* Active toggle state */
+.select-pairs-toggle.active .select-pairs__top {
     animation: overshootSelectPairs 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
     border-radius: 16px;
     background-color: var(--blue-221);
     border-color: var(--blue-132);
     transition:
-        transform 0.15s cubic-bezier(0.4, 0, 0.2, 1),
-        width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
-        height 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+        var(--transition-transform),
+        var(--transition-size),
         background-color 0.2s ease-in-out,
         border-color 0.2s ease-in-out;
 }
 
-.btn-toggle--select-pairs.active .btn__middle--select-pairs {
-    transform: translateY(-4px);
+.select-pairs-toggle.active .select-pairs__top:active,
+.select-pairs-toggle.active:active .select-pairs__top {
+    transform: translateX(-50%) translateY(0) !important;
+    transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-toggle--select-pairs.active .btn__top--select-pairs:active,
-.btn-toggle--select-pairs.active:active .btn__top--select-pairs {
+.select-pairs-toggle.active .select-pairs__middle:active,
+.select-pairs-toggle.active:active .select-pairs__middle {
     transform: translateY(0) !important;
     transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-toggle--select-pairs.active .btn__middle--select-pairs:active,
-.btn-toggle--select-pairs.active:active .btn__middle--select-pairs {
-    transform: translateY(0) !important;
-    transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@keyframes overshootSelectPairs {
-    0% {
-        width: 125px;
-        height: 40px;
-        transform: scale(1) translateY(-4px);
-    }
-    50% {
-        width: 262px;
-        height: 80px;
-        transform: scale(1.04) translateY(-4px);
-    }
-    100% {
-        width: 255px;
-        height: 73px;
-        transform: scale(1) translateY(-4px);
-    }
-}
-
-.btn-toggle--select-pairs .btn__text {
+/* Button text within the toggle */
+.select-pairs-toggle .btn__text {
     transition: none;
 }
 
-.btn-toggle--select-pairs:active .btn__text {
+.select-pairs-toggle:active .btn__text,
+.select-pairs-toggle.active .btn__text {
     color: var(--blue-153);
 }
 
-.btn-toggle--select-pairs.active .btn__text {
-    color: var(--blue-153);
+.select-pairs-toggle.active .btn__text {
     transition: color 0.2s ease-in-out;
 }
 
-.btn-toggle--select-pairs.active .btn__top--select-pairs.border-changed {
+/* Border changed state */
+.select-pairs-toggle.active .select-pairs__top.border-changed {
     transition: border-color 0ms;
     border-radius: 16px;
     border-style: solid;
@@ -351,37 +350,72 @@
     border-color: var(--blue-132);
 }
 
-.btn-toggle--select-pairs.active .btn__bottom--select-pairs.border-changed,
-.btn-toggle--select-pairs.active .btn__middle--select-pairs.border-changed {
+.select-pairs-toggle.active .select-pairs__bottom.border-changed,
+.select-pairs-toggle.active .select-pairs__middle.border-changed {
     transition: border-color 0ms 0.125s;
     border-color: var(--blue-132);
     background-color: var(--blue-132);
 }
 
-.btn__top--select-pairs--correct {
-    background-color: rgb(215, 255, 184);
+/* State modifiers */
+
+.select-pairs__top--correct {
+    background-color: var(--correct-bg);
 }
 
-.btn__middle--select-pairs--correct {
-    background-color: rgb(215, 255, 184);
-    border: 2px solid rgb(165, 237, 110);
+.select-pairs__middle--correct {
+    background-color: var(--correct-bg);
+    border: 2px solid var(--correct-border);
 }
 
-.btn__bottom--select-pairs--correct {
-    background-color: rgb(165, 237, 110);
-    border: 2px solid rgb(165, 237, 110);
+.select-pairs__bottom--correct {
+    background-color: var(--correct-border);
+    border: 2px solid var(--correct-border);
 }
 
-.btn__top--select-pairs--incorrect {
-    background-color: rgb(255, 223, 224);
+.select-pairs__top--incorrect {
+    background-color: var(--incorrect-bg);
 }
 
-.btn__middle--select-pairs--incorrect {
-    background-color: rgb(255, 223, 224);
-    border: 2px solid rgb(255, 179, 179);
+.select-pairs__middle--incorrect {
+    background-color: var(--incorrect-bg);
+    border: 2px solid var(--incorrect-border);
 }
 
-.btn__bottom--select-pairs--incorrect {
-    background-color: rgb(255, 179, 179);
-    border: 2px solid rgb(255, 179, 179);
+.select-pairs__bottom--incorrect {
+    background-color: var(--incorrect-border);
+    border: 2px solid var(--incorrect-border);
+}
+
+.select-pairs__top--default {
+    background-color: white;
+}
+
+.select-pairs__middle--default {
+    background-color: white;
+    border: 2px solid var(--grey-229);
+}
+
+.select-pairs__bottom--default {
+    background-color: var(--grey-229);
+    border: 2px solid var(--grey-229);
+}
+
+/* Keyframes */
+@keyframes overshootSelectPairs {
+    0% {
+        width: var(--select-pairs-initial-width);
+        height: var(--select-pairs-initial-height);
+        transform: translateX(-50%) translateY(-4px) scale(1);
+    }
+    50% {
+        width: var(--select-pairs-overshoot-width);
+        height: var(--select-pairs-overshoot-height);
+        transform: translateX(-50%) translateY(-4px) scale(1.04);
+    }
+    100% {
+        width: var(--select-pairs-final-width);
+        height: var(--select-pairs-final-height);
+        transform: translateX(-50%) translateY(-4px) scale(1);
+    }
 }
