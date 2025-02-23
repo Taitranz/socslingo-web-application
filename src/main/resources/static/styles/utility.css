@@ -23,8 +23,6 @@
 
     --medium-turquoise: rgb(199, 220, 229);
 
-
-    
     --blue-34: rgb(63, 34, 236);
     --blue-85: rgb(66, 85, 255);
     --blue-123: rgb(0, 123, 255);
@@ -59,6 +57,16 @@
 
     --yellow-500: rgb(255, 184, 51);
 
+
+
+    
+    --yellow-hsl-80: hsl(33, 98%, 72%);
+    --yellow-hsl-76: hsl(33, 98%, 68%);
+    --yellow-hsl-72: hsl(27, 100%, 64%);
+    --yellow-hsl-69: hsl(27, 100%, 61%);
+
+
+
     --fs-17: 17px;
     --fs-11: 11px;
     --fs-22: 22px;
@@ -67,6 +75,9 @@
     --fs-20: 20px;
     --fs-28: 28px;
     --fs-72: 72px;
+
+
+
 }
 
 /* ==========================================================================
@@ -145,6 +156,10 @@
 
 .fs-11 {
     font-size: var(--fs-11);
+}
+
+.fs-26 {
+    font-size: 26px;
 }
 
 .fs-28 {
@@ -467,6 +482,12 @@
 .gap-4 {
     gap: 4px;
 }
+.gap-30 {
+    gap: 30px;
+}
+.gap-20 {
+    gap: 20px;
+}
 .gap-8 {
     gap: 8px;
 }
@@ -494,6 +515,10 @@
     gap: 50px;
 }
 
+.gap-80 {
+    gap: 80px;
+}
+
 /* ==========================================================================
    Spacing Utilities
    ========================================================================== */
@@ -510,7 +535,9 @@
 .mt-15 {
     margin-top: 15px;
 }
-
+.mt-16 {
+    margin-top: 16px;
+}
 .mr-15 {
     margin-right: 15px;
 }
@@ -686,6 +713,9 @@
 .p-24 {
     padding: 24px;
 }
+.pt-13 {
+    padding-top: 13px;
+}
 .pt-5 {
     padding-top: 5px;
 }
@@ -733,6 +763,12 @@
     padding-top: 4px;
     padding-bottom: 4px;
 }
+
+.py-13 {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
 .py-48 {
     padding-top: 48px;
     padding-bottom: 48px;
@@ -825,7 +861,9 @@
 .h-300 {
     height: 300px;
 }
-
+.h-29 {
+    height: 29px;
+}   
 .h-350 {
     height: 350px;
 }
@@ -956,7 +994,7 @@
 .w-150 {
     width: 150px;
 }
-.w-10{
+.w-10 {
     width: 10px;
 }
 .w-100 {
@@ -977,9 +1015,17 @@
 
 .w-350 {
     width: 350px;
-}   
+}
+
+.w-375 {
+    width: 375px;
+}
+
 .w-360 {
     width: 360px;
+}
+.w-36{
+    width: 36px;
 }
 
 .w-400 {
@@ -1039,6 +1085,10 @@
 
 .max-w-800 {
     max-width: 800px;
+}
+
+.max-w-988 {
+    max-width: 988px;
 }
 
 .max-w-full {
@@ -1134,6 +1184,14 @@
     border-color: var(--blue-176);
 }
 
+.border-yellow-hsl-76 {
+    border-color: hsl(39, 100%, 76%);
+}
+
+.border-yellow-hsl-80 {
+    border-color: hsl(39, 100%, 80%);
+}
+
 .border-grey-175 {
     border-color: var(--grey-175);
 }
@@ -1226,6 +1284,21 @@
     background-color: rgb(170, 170, 170);
 }
 
+.bg-yellow-hsl-69 {
+    background-color: var(--yellow-hsl-69);
+}
+.bg-yellow-hsl-80 {
+    background-color: var(--yellow-hsl-80);
+}
+.bg-yellow-hsl-72 {
+    background-color: var(--yellow-hsl-72);
+}
+
+.bg-yellow-hsl-76 {
+    background-color: var(--yellow-hsl-76);
+}
+
+
 .bg-transparent {
     background-color: transparent;
 }
@@ -1269,6 +1342,9 @@
    Hover & Group Hover Utilities
    ========================================================================== */
 
+
+
+
 .hover\:bg-medium-turquoise:hover {
     background-color: var(--medium-turquoise);
 }
@@ -1308,6 +1384,15 @@
 .hover\:border-grey-170:hover {
     border-color: rgb(170, 170, 170);
 }
+
+.hover\:border-yellow-hsl-76:hover {
+    border-color: hsl(39, 100%, 76%);
+}
+
+.hover\:border-yellow-hsl-80:hover {
+    border-color: hsl(39, 100%, 80%);
+}
+
 
 /* Border Styles */
 .border-transparent {
@@ -1370,6 +1455,25 @@
     background-color: var(--grey-10);
 }
 
+.group:hover .group-hover\:bg-yellow-hsl-69 {
+    background-color: var(--yellow-hsl-69);
+}
+
+.group:hover .group-hover\:bg-yellow-hsl-72 {
+    background-color: var(--yellow-hsl-72);
+}
+
+.group:hover .group-hover\:bg-yellow-hsl-76 {
+    background-color: var(--yellow-hsl-76);
+}
+
+.group:hover .group-hover\:bg-yellow-hsl-80 {
+    background-color: var(--yellow-hsl-80);
+}
+
+
+
+
 /* ==========================================================================
    Active State Utilities
    ========================================================================== */
@@ -1413,8 +1517,7 @@
 /* You can add more custom utilities here as needed */
 /* Custom grid layouts */
 
-
-.grid-cols--activity{
+.grid-cols--activity {
     grid-template-columns: 1fr;
 }
 .grid-cols-main {
@@ -1475,7 +1578,6 @@
     padding-bottom: 10px;
 }
 
-
 .justify-end {
     justify-content: flex-end;
 }
@@ -1498,11 +1600,6 @@
 
 .mt-80 {
     margin-top: 80px;
-}
-
-
-.h-80 {
-    height: 80px;
 }
 
 .h-75 {
@@ -1591,4 +1688,29 @@
 
 .h-72 {
     height: 72px;
+}
+
+
+.w-14 {
+    width: 14px;
+}
+
+.w-950 {
+    width: 950px;
+}
+
+.max-w-1036 {
+    width: 1036px;
+}
+
+.w-1000 {
+    width: 1000px;
+}
+
+.m-4 {
+    margin: 4px;
+}
+
+.m-8 {
+    margin: 8px;
 }

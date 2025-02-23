@@ -3,35 +3,37 @@
     <head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}"></head>
 
     <body class="container min-h-screen flex-col">
-        <header class="bg-white shadow-md">
-            <div class="container mx-auto px-32 py-16">
+        <header class="border-grey-229 bg-white">
+            <div class="max-w-988 space-between container mx-auto py-13">
                 <span class="fs-32 -tracking-2 text-bold text-yellow-400">socslingo</span>
+                <div class="align-center container flex-row gap-16">
+                    <span class="fs-15 text-grey-175 text-bold">SITE LANGUAGE:</span>
+                    <span class="fs-15 text-grey-175 text-bold">ENGLISH</span>
+                </div>
             </div>
         </header>
 
-        <main class="align-center container flex-grow justify-center">
-            <div class="container flex-row gap-16">
-                <div class="w-fit-content container">
+        <main class="align-center container flex-grow justify-center py-48">
+            <div class="container flex-row gap-80">
+                <div class="container">
                     <img
                         class="w-424 object-fit-cover object-position-right"
                         src="/images/threadjump_white_cropped.gif"
                         alt="Socslingo Logo"
                     />
                 </div>
-
-                <!-- Right Column - Text -->
-                <div class="w-500 align-center container mt-80">
-                    <div class="h-fit-content align-center h-fit-content container flex-col">
-                        <h1 class="fs-32 text-center">The free, fun, and effective way to learn a language!</h1>
+                <div class="w-500 align-center container">
+                    <div class="h-240 align-center container flex-col">
+                        <h1 class="fs-32 text-center text-grey-75">The free, fun, and effective way to learn a language!</h1>
                         <div class="container mt-40 flex-col gap-16">
                             <div class="btn-container radius-parent-16 w-330 h-46 group">
-                                <div class="btn__bottom bg-blue-153 group-hover:bg-blue-168"></div>
+                                <div class="btn__bottom bg-yellow-hsl-69 group-hover:bg-yellow-hsl-72"></div>
                                 <button
-                                    class="btn__top bg-blue-176 group-hover:bg-blue-194"
+                                    class="btn__top bg-yellow-hsl-76  group-hover:bg-yellow-hsl-80"
                                     type="submit"
                                     onclick="event.preventDefault();"
                                 >
-                                    <span class="fs-16 text-bold text-white"> LEARN THE CHARACTERS </span>
+                                    <span class="fs-16 text-bold text-white"> GET STARTED </span>
                                 </button>
                             </div>
                             <div class="btn-container radius-parent-16 w-330 h-46 group">
@@ -41,7 +43,7 @@
                                     type="submit"
                                     onclick="event.preventDefault();"
                                 >
-                                    <span class="fs-16 text-blue-176 text-bold"> TIPS </span>
+                                    <span class="fs-16 text-blue-176 text-bold"> I ALREADY HAVE AN ACCOUNT </span>
                                 </button>
                             </div>
                         </div>
@@ -51,7 +53,128 @@
         </main>
 
         <footer class="border-grey-229 border-t-2">
-            <div class="container mx-auto px-32 py-16 h-80">Footer</div>
+            <div class="max-w-1036 align-center gap-30 container mx-auto h-80 py-16">
+                <div class="container">
+                    <svg class="text-grey-175 h-14 w-14 cursor-pointer" fill="none" viewBox="0 0 16 16">
+                        <path
+                            d="M10 2L4 8L10 14"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        ></path>
+                    </svg>
+                </div>
+                <div class="w-950 container gap-20 overflow-hidden">
+                    <div class="align-center h-30 container flex-row">
+                        <div class="h-29 container mr-10 w-36 overflow-hidden">
+                            <img
+                                height="3000"
+                                width="82"
+                                src="/svg/flags.svg"
+                                class="object-position-top w-full object-contain"
+                                style="transform: translateY(-805px)"
+                            />
+                        </div>
+                        <span class="fs-15 text-grey-119 text-bold tracking-08">ENGLISH</span>
+                    </div>
+                    <div class="align-center h-30 container flex-row">
+                        <div class="h-29 container mr-10 w-36 overflow-hidden">
+                            <img
+                                height="3000"
+                                width="82"
+                                src="/svg/flags.svg"
+                                class="object-position-top w-full object-contain"
+                                style="transform: translateY(-834px)"
+                            />
+                        </div>
+                        <span class="fs-15 text-grey-119 text-bold tracking-08">SPANISH</span>
+                    </div>
+                    <div class="align-center h-30 container flex-row">
+                        <div class="h-29 container mr-10 w-36 overflow-hidden">
+                            <img
+                                height="3000"
+                                width="82"
+                                src="/svg/flags.svg"
+                                class="object-position-top w-full object-contain"
+                                style="transform: translateY(-863px)"
+                            />
+                        </div>
+                        <span class="fs-15 text-grey-119 text-bold tracking-08">FRENCH</span>
+                    </div>
+                    <div class="align-center h-30 container flex-row">
+                        <div class="h-29 container mr-10 w-36 overflow-hidden">
+                            <img
+                                height="3000"
+                                width="82"
+                                src="/svg/flags.svg"
+                                class="object-position-top w-full object-contain"
+                                style="transform: translateY(-892px)"
+                            />
+                        </div>
+                        <span class="fs-15 text-grey-119 text-bold tracking-08">GERMAN</span>
+                    </div>
+                    <div class="align-center h-30 container flex-row">
+                        <div class="h-29 container mr-10 w-36 overflow-hidden">
+                            <img
+                                height="3000"
+                                width="82"
+                                src="/svg/flags.svg"
+                                class="object-position-top w-full object-contain"
+                                style="transform: translateY(-950px)"
+                            />
+                        </div>
+                        <span class="fs-15 text-grey-119 text-bold tracking-08">ITALIAN</span>
+                    </div>
+                    <div class="align-center h-30 container flex-row">
+                        <div class="h-29 container mr-10 w-36 overflow-hidden">
+                            <img
+                                height="3000"
+                                width="82"
+                                src="/svg/flags.svg"
+                                class="object-position-top w-full object-contain"
+                                style="transform: translateY(-1066px)"
+                            />
+                        </div>
+                        <span class="fs-15 text-grey-119 text-bold tracking-08">PORTUGUESE</span>
+                    </div>
+                    <div class="align-center h-30 container flex-row">
+                        <div class="h-29 container mr-10 w-36 overflow-hidden">
+                            <img
+                                height="3000"
+                                width="82"
+                                src="/svg/flags.svg"
+                                class="object-position-top w-full object-contain"
+                                style="transform: translateY(-1038px)"
+                            />
+                        </div>
+                        <span class="fs-15 text-grey-119 text-bold tracking-08">DUTCH</span>
+                    </div>
+                    <div class="align-center h-30 container flex-row">
+                        <div class="h-29 container mr-10 w-36 overflow-hidden">
+                            <img
+                                height="3000"
+                                width="82"
+                                src="/svg/flags.svg"
+                                class="object-position-top w-full object-contain"
+                                style="transform: translateY(-923px)"
+                            />
+                        </div>
+                        <span class="fs-15 text-grey-119 text-bold tracking-08">JAPANESE</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <svg class="text-grey-175 h-14 w-14 cursor-pointer" fill="none" viewBox="0 0 16 16">
+                        <path
+                            d="M6 2L12 8L6 14"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        ></path>
+                    </svg>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
