@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{fragments/head :: head('Socslingo - The world\'s best way to learn Languages')}"></head>
+
+    <body class="container flex min-h-screen flex-col">
+        <main class="align-center container flex-grow flex-col p-30">
+            <div class="mb-4 flex w-full justify-end">
+                <div class="btn-container radius-parent-12 w-98 h-46 group">
+                    <div class="btn__bottom bg-grey-229 group-hover:bg-grey-224 group-hover:border-grey-224"></div>
+                    <button
+                        class="btn__top border-grey-229 group-hover:bg-grey-250 group-hover:border-grey-224 border-2 bg-white"
+                        type="button"
+                        onclick="window.location.href='/login'"
+                    >
+                        <span class="btn__text text-bold text-yellow-100">LOG IN</span>
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-grow items-center justify-center">
+                <div class="w-375 container flex-col gap-20">
+                    <h1 class="fs-26 text-grey-60 text-center font-bold">Create your profile</h1>
+                    <form class="container flex-col gap-20" th:action="@{/register}" method="post" th:object="${user}">
+                        <div class="container flex-col gap-8">
+                            <!-- Username Field -->
+                            <div class="container mb-10">
+                                <input
+                                    class="border-grey-229 bg-grey-247 text-grey-119 radius-12 fs-20 w-full border-2 p-10 outline-none"
+                                    th:class="${#fields.hasErrors('username')} ? 'border-red-500 bg-grey-247 text-grey-119 radius-12 fs-20 w-full border-2 p-10 outline-none' : 'border-grey-229 bg-grey-247 text-grey-119 radius-12 fs-20 w-full border-2 p-10 outline-none'"
+                                    type="text"
+                                    id="username"
+                                    th:field="*{username}"
+                                    placeholder="Username (optional)"
+                                />
+                                <div th:if="${#fields.hasErrors('username')}" class="text-red-500 text-sm mt-1">
+                                    <span th:errors="*{username}"></span>
+                                </div>
+                                <div th:if="${usernameError}" class="text-red-500 text-sm mt-1">
+                                    <span th:text="${usernameError}"></span>
+                                </div>
+                            </div>
+                            
+                            <!-- Email Field -->
+                            <div class="container mb-10">
+                                <input
+                                    class="border-grey-229 bg-grey-247 text-grey-119 radius-12 fs-20 w-full border-2 p-10 outline-none"
+                                    th:class="${#fields.hasErrors('email')} ? 'border-red-500 bg-grey-247 text-grey-119 radius-12 fs-20 w-full border-2 p-10 outline-none' : 'border-grey-229 bg-grey-247 text-grey-119 radius-12 fs-20 w-full border-2 p-10 outline-none'"
+                                    type="email"
+                                    id="email"
+                                    th:field="*{email}"
+                                    placeholder="Email"
+                                    required
+                                />
+                                <div th:if="${#fields.hasErrors('email')}" class="text-red-500 text-sm mt-1">
+                                    <span th:errors="*{email}"></span>
+                                </div>
+                                <div th:if="${emailError}" class="text-red-500 text-sm mt-1">
+                                    <span th:text="${emailError}"></span>
+                                </div>
+                            </div>
+                            
+                            <!-- Password Field -->
+                            <div class="container mb-10">
+                                <input
+                                    class="border-grey-229 bg-grey-247 text-grey-119 radius-12 fs-20 w-full border-2 p-10 outline-none"
+                                    th:class="${#fields.hasErrors('password')} ? 'border-red-500 bg-grey-247 text-grey-119 radius-12 fs-20 w-full border-2 p-10 outline-none' : 'border-grey-229 bg-grey-247 text-grey-119 radius-12 fs-20 w-full border-2 p-10 outline-none'"
+                                    type="password"
+                                    id="password"
+                                    th:field="*{password}"
+                                    placeholder="Password"
+                                    minlength="8"
+                                    required
+                                />
+                                <div th:if="${#fields.hasErrors('password')}" class="text-red-500 text-sm mt-1">
+                                    <span th:errors="*{password}"></span>
+                                </div>
+                            </div>
+                            
+                            <!-- Confirm Password Field -->
+                            <div class="container mb-10">
+                                <input
+                                    class="border-grey-229 bg-grey-247 text-grey-119 radius-12 fs-20 w-full border-2 p-10 outline-none"
+                                    th:class="${passwordError} ? 'border-red-500 bg-grey-247 text-grey-119 radius-12 fs-20 w-full border-2 p-10 outline-none' : 'border-grey-229 bg-grey-247 text-grey-119 radius-12 fs-20 w-full border-2 p-10 outline-none'"
+                                    type="password"
+                                    id="confirmPassword"
+                                    name="confirmPassword"
+                                    placeholder="Confirm Password"
+                                    required
+                                />
+                                <div th:if="${passwordError}" class="text-red-500 text-sm mt-1">
+                                    <span th:text="${passwordError}"></span>
+                                </div>
+                            </div>
+                            
+                            <!-- General Error Message -->
+                            <div th:if="${error}" class="text-red-500 text-center mb-4">
+                                <span th:text="${error}"></span>
+                            </div>
+                            
+                            <div class="btn-container radius-parent-16 h-46 group mt-16 w-full">
+                                <div class="btn__bottom bg-yellow-hsl-69 group-hover:bg-yellow-hsl-72"></div>
+                                <button
+                                    class="btn__top bg-yellow-hsl-76 group-hover:bg-yellow-hsl-80"
+                                    type="submit"
+                                >
+                                    <span class="fs-16 text-bold text-white"> CREATE ACCOUNT </span>
+                                </button>
+                            </div>
+                            <div class="container my-20 flex-row justify-center gap-10">
+                                <div class="divider bg-grey-229 h-1 w-full"></div>
+                                <div class="align-center container flex-row gap-10">
+                                    <span class="fs-16 text-grey-178 text-bold">OR</span>
+                                </div>
+                                <div class="divider bg-grey-229 h-1 w-full"></div>
+                            </div>
+                            <div class="btn-container radius-parent-16 h-46 group w-full">
+                                <div class="btn__bottom bg-grey-229 group-hover:bg-grey-206"></div>
+                                <button
+                                    class="btn__top border-grey-229 group-hover:bg-grey-229 group-hover:border-grey-206 border-2 bg-white"
+                                    type="button"
+                                >
+                                    <span class="fs-16 text-blue-176 text-bold"> GOOGLE </span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

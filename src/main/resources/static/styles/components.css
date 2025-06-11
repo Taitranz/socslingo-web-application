@@ -358,7 +358,6 @@
 }
 
 /* State modifiers */
-
 .select-pairs__top--correct {
     background-color: var(--correct-bg);
 }

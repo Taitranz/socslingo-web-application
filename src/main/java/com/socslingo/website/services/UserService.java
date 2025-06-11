@@ -1,7 +1,7 @@
 package com.socslingo.website.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import com.socslingo.website.models.User;
 import com.socslingo.website.repositories.UserRepository;
@@ -11,17 +11,22 @@ import com.socslingo.website.repositories.UserRepository;
 public class UserService {
     
     @Autowired
-    private UserRepository userRepository;
-
+    private PasswordEncoder passwordEncoder;
+    
     @Autowired
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
-
-    public void saveUser(User user) {
-        user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
-        userRepository.save(user);
+    private UserRepository userRepository;
+    
+    public boolean userExists(String email) {
+        return userRepository.existsByEmail(email);
     }
-
-    public User findByUsername(String username) {
-        return userRepository.findByUsername(username);
+    
+    public boolean usernameExists(String username) {
+        return userRepository.existsByUsername(username);
+    }
+    
+    public void registerUser(User user) {
+        // Hash password before saving
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        userRepository.save(user);
     }
 }
