@@ -4,11 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import com.socslingo.website.models.User;
 import com.socslingo.website.services.UserService;
+import jakarta.servlet.http.HttpServletRequest;
 
 @Controller
 public class AuthenticationController {
@@ -80,10 +80,34 @@ public class AuthenticationController {
             model.addAttribute("error", "Registration failed: " + e.getMessage());
             return "authentication/register";
         }
-    }
-
-    @GetMapping("/login")
-    public String login() {
+    }    @GetMapping("/login")
+    public String login(@RequestParam(value = "error", required = false) String error,
+                       @RequestParam(value = "logout", required = false) String logout,
+                       @RequestParam(value = "registered", required = false) String registered,
+                       Model model,
+                       HttpServletRequest request) {
+        if (error != null) {
+            model.addAttribute("error", "Invalid username/email or password. Please try again.");
+            
+            // Retrieve the last attempted username from session
+            String lastUsername = (String) request.getSession().getAttribute("SPRING_SECURITY_LAST_USERNAME");
+            if (lastUsername != null) {
+                model.addAttribute("username", lastUsername);
+                // Clear it from session after using it
+                request.getSession().removeAttribute("SPRING_SECURITY_LAST_USERNAME");
+            }
+        }
+        if (logout != null) {
+            model.addAttribute("message", "You have been logged out successfully.");
+        }
+        if (registered != null) {
+            model.addAttribute("message", "Registration successful! Please log in.");
+        }
         return "authentication/login";
+    }
+    
+    @GetMapping("/logout")
+    public String logout() {
+        return "redirect:/login?logout=true";
     }
 }
